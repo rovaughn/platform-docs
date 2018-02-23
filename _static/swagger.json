@@ -129,7 +129,7 @@
 		"/google/authenticate": {
 			"get": {
 				"summary": "Endpoint for Google sign-in authentication.",
-				"description": "After the OAuth2 flow in Google sign-in, obtain the id token. Once id token is obtained, use this endpoint to verify the access token and also create or login the user. Once the id token is verified, this endpoint will automatically create the user if she doesn't exist, or will login if existing user.",
+				"description": "After the OAuth2 flow in Google sign-in, obtain the id token. Once id token is obtained, use this endpoint to verify the access token and also create or login the user. Once the id token is verified, this endpoint will automatically create the user if they don't exist, or will login if existing user.",
 				"parameters": [
 					{
 						"name": "id_token",
@@ -161,7 +161,7 @@
 		"/facebook/authenticate": {
 			"get": {
 				"summary": "Endpoint for Facebook sign-in authentication.",
-				"description": "After the OAuth2 flow in Facebook sign-in, obtain the access token. Once access token is obtained, use this endpoint to verify the access token and also create or login the user. Once the access token is verified, this endpoint will automatically create the user if she doesn't exist, or will login if existing user.",
+				"description": "After the OAuth2 flow in Facebook sign-in, obtain the access token. Once access token is obtained, use this endpoint to verify the access token and also create or login the user. Once the access token is verified, this endpoint will automatically create the user if they don't exist, or will login if existing user.",
 				"parameters": [
 					{
 						"name": "access_token",
@@ -193,7 +193,7 @@
 		"/github/authenticate": {
 			"get": {
 				"summary": "Endpoint for Github sign-in authentication.",
-				"description": "After the OAuth2 flow in Github sign-in, obtain the access token. Once access token is obtained, use this endpoint to verify the access token and also create or login the user. Once the access token is verified, this endpoint will automatically create the user if she doesn't exist, or will login if existing user.",
+				"description": "After the OAuth2 flow in Github sign-in, obtain the access token. Once access token is obtained, use this endpoint to verify the access token and also create or login the user. Once the access token is verified, this endpoint will automatically create the user if they don't exist, or will login if existing user.",
 				"parameters": [
 					{
 						"name": "access_token",
