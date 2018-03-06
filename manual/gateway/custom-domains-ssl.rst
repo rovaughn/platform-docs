@@ -14,19 +14,13 @@ Hasura provisions free SSL certificates for each domain you add using `LetsEncry
 Adding a custom domain
 ----------------------
 
-- Get IP for the cluster
+- Point your domain's DNS to the cluster's Hasura domain from your registrar's dashboard by adding the following two CNAME records
 
-.. code-block:: bash
-
-   $ ping cluster-name.hasura-app.io
-
-- Point your domain's DNS to the cluster's IP from your registrar's dashboard by adding 2 A records for your domain pointing to the IP above
-
-+---+----------------+---------+
-| A | `*.domain.com` | 1.1.1.1 |
-+---+----------------+---------+
-| A | `domain.com`   | 1.1.1.1 |
-+---+----------------+---------+
++-------+----------------+------------------------------+
+| CNAME | `*.domain.com` | [cluster-name].hasura-app.io |
++-------+----------------+------------------------------+
+| CNAME | `domain.com`   | [cluster-name].hasura-app.io |
++-------+----------------+------------------------------+
 
 - Both of these entries are important for the LetsEncrypt agent to be able to generate all your SSL certificates properly
 
