@@ -1059,6 +1059,14 @@ p
   color: #32A061;
   text-decoration: none;
 }
+#sidebar .sphinxsidebar .sphinxsidebarwrapper li:not(.current) li {
+  display: none;
+}
+.expander, .collapser {
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+}
 .toctree-wrapper
 {
   font-family: 'Gudea';

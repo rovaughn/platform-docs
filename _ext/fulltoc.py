@@ -33,7 +33,7 @@ def html_page_context(app, pagename, templatename, context, doctree):
        document structure, ignores the maxdepth argument, and uses
        only prune and collapse.
     """
-    rendered_toc = get_rendered_toctree(app.builder, pagename)
+    rendered_toc = get_rendered_toctree(app.builder, pagename, False, False)
     context['toc_full'] = rendered_toc
     context['display_toc'] = True  # force toctree to display
 

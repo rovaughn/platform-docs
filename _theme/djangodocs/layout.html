@@ -477,6 +477,38 @@
     });
   </script>
 
+  <script type="text/javascript">
+  // collapsible sidebar links
+  $(document).ready( function() {
+    function htmlToElement(html) {
+      const template = document.createElement('template');
+      html = html.trim(); // Never return a text node of whitespace as the result
+      template.innerHTML = html;
+      return template.content.firstChild;
+    }
+
+    const expanderElement = '<span class="expander">+</span>';
+    const collapserElement = '<span class="collapser">-</span>';
+
+    $("#sidebar .sphinxsidebar .sphinxsidebarwrapper li:not(.current):has(ul) > a").after(expanderElement);
+    $("#sidebar .sphinxsidebar .sphinxsidebarwrapper li.current:has(ul) > a").after(collapserElement);
+
+    const expand = function(e) {
+      const parent = e.target.parentElement;
+      parent.classList.add('current');
+      parent.replaceChild(htmlToElement(collapserElement), e.target);
+    };
+    $(document).on('click', ".expander", expand);
+
+    const collapse = function(e) {
+      const parent = e.target.parentElement;
+      parent.classList.remove('current');
+      parent.replaceChild(htmlToElement(expanderElement), e.target);
+    };
+    $(document).on('click', ".collapser", collapse);
+  });
+</script>
+
   <script src="{{ pathto('_static/componentTabs.js', 1) }}"></script>
 
 {% endblock %}
