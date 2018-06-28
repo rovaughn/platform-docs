@@ -9,7 +9,7 @@ Project structure: microservices/\*/k8s.yaml
 
 A microservice on Hasura is defined as a `Kubernetes Deployment <https://kubernetes.io/docs/concepts/workloads/controllers/deployment/>`_ and a corresponding `Kubernetes Service <https://kubernetes.io/docs/concepts/services-networking/service/>`_. Both of these objects are saved in a single file, ``k8s.yaml`` as a Kubernetes List object.
 
-Whenever you ``git push`` or use :ref:`hasura ms apply <hasura_microservice_apply>`, this file is read and the objects are created on the cluster. You can edit this file to add secrets and other environment variables for the microservice.
+Whenever you ``git push`` or use :ref:`hasura ms apply <hasura_platform:microservice_apply>`, this file is read and the objects are created on the cluster. You can edit this file to add secrets and other environment variables for the microservice.
 
 Docker Image
 ------------

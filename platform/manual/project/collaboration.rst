@@ -33,7 +33,7 @@ Assuming the owner has shared the repo URL and added you as a collaborator to th
 
 * :ref:`Login using Hasura CLI <hasura_login>` with the account having email added as collaborator
 * Clone the project source code from the repository link shared by the owner and ``cd`` into the repo
-* Execute :ref:`hasura cluster list <hasura_cluster_list>`
+* Execute :ref:`hasura cluster list <hasura_platform:cluster_list>`
 * You should be able to see the clusters available to you and clusters added to the project
 * For each cluster added to the project, make sure it is listed as available with the actual owner's email. If not, request the owner to check your email address
 * Setup the project:

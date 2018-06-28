@@ -10,9 +10,9 @@ Configuration required to get a cluster ready for a project is stored as various
 
    All files in this directory are rendered as a templates. Refer to :ref:`Conf files templating <conf-templating>` for more details.
 
-You can apply configuration on a cluster either by doing ``git push`` or by using the :ref:`hasura conf apply <hasura_conf_apply>` command.
+You can apply configuration on a cluster either by doing ``git push`` or by using the :ref:`hasura conf apply <hasura_platform:conf_apply>` command.
 
-To see what the differences in configuration across clusters are, or even between the configuration applied on a cluster and the one present locally, use :ref:`hasura conf diff <hasura_conf_diff>`.
+To see what the differences in configuration across clusters are, or even between the configuration applied on a cluster and the one present locally, use :ref:`hasura conf diff <hasura_platform:conf_diff>`.
 
 Following are the files present in this directory:
 

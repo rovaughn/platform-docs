@@ -18,7 +18,7 @@ on the cluster could be hard. Also, any microservice can be contacted from
 within the cluster using the internal endpoint without authentication.
 
 Using Hasura, you can develop applications on the cluster just like you do on
-your local system. :ref:`hasura microservice sync <hasura_microservice_sync>`
+your local system. :ref:`hasura microservice sync <hasura_platform:microservice_sync>`
 command can sync files from a local directory to any directory inside the
 running container on the cluster. Using ``sync`` and live-reloading capabilities
 of the language/framework, you can make use of all the Hasura features, like
@@ -42,4 +42,4 @@ Below are some examples for various languages:
   python
   golang
 
-For more details, read the full CLI reference for :ref:`hasura microservice sync <hasura_microservice_sync>`.
+For more details, read the full CLI reference for :ref:`hasura microservice sync <hasura_platform:microservice_sync>`.

@@ -163,6 +163,6 @@ String
 ^^^^^^
 Any string value.
 
-You can list all your clusters using :ref:`hasura cluster list <hasura_cluster_list>` and add any of them to the project using :ref:`hasura cluster add <hasura_cluster_add>`.
+You can list all your clusters using :ref:`hasura cluster list <hasura_platform:cluster_list>` and add any of them to the project using :ref:`hasura cluster add <hasura_platform:cluster_add>`.
 
 If you need to remove a cluster from a project, just remove the entry from ``clusters.yaml``.

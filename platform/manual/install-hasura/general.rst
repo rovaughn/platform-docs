@@ -3,7 +3,7 @@ Installing Hasura on any Kubernetes Cluster
 
 Installing Hasura on any Kubernetes cluster is as easy as writing the
 configuration required in a yaml file and using it to execute :ref:`hasura
-cluster install <hasura_cluster_install>`.
+cluster install <hasura_platform:cluster_install>`.
 
 Step 1: Write the configuration
 -------------------------------
@@ -126,7 +126,7 @@ objects and storage classes are present.
    not possible, as ``hasura`` namespace will not be available. So, if PVC is
    being used for volumes, add their names in the cluster spec, but only create
    the PVC objects after executing the :ref:`hasura cluster install
-   <hasura_cluster_install>` command and when the command waits at
+   <hasura_platform:cluster_install>` command and when the command waits at
    ``Initializing the Hasura platform``.
 
 Step 2: Create required resources
@@ -171,9 +171,9 @@ bandwidth.
 Step 5: Add this cluster to a project
 -------------------------------------
 
-Clone a new Hasura project using :ref:`hasura clone <hasura_clone>` or ``cd``
+Clone a new Hasura project using :ref:`hasura clone <hasura_hub:clone>` or ``cd``
 into an existing project. You can then use :ref:`hasura cluster add
-<hasura_cluster_add>`  command to add this cluster to the project.
+<hasura_platform:cluster_add>`  command to add this cluster to the project.
 
 .. code-block:: bash
 

@@ -8,7 +8,7 @@ Everything regarding the microservices you add to the project is kept here. Each
 
 ``k8s.yaml`` can also be templated.
 
-Use :ref:`hasura microservice create <hasura_microservice_create>` to create a new microservice.
+Use :ref:`hasura microservice create <hasura_platform:microservice_create>` to create a new microservice.
 
 Following are the files present in this directory:
 

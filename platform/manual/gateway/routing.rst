@@ -18,7 +18,7 @@ templates Nginx with the new route configuration.
 Add a new route for a microservice:
 -----------------------------------
 
-A new route for a microservice can be added using the ``hasura`` CLI. See :doc:`../hasuractl/hasura_conf_generate-route`
+A new route for a microservice can be added using the ``hasura`` CLI. See :doc:`../hasuractl/hasura_platform:conf_generate-route`
 
 Change subdomain of a microservice:
 -----------------------------------

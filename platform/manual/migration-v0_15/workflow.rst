@@ -126,7 +126,7 @@ Managing SSH key
   * - Login to the cluster console, head to CLI > SSH Keys page. Add, view and
       remove keys from there and save.
     - Using hasura cli. ``hasura ssh-key add/remove/list``. For more details,
-      refer :doc:`../hasuractl/hasura_ssh-key`.
+      refer :doc:`../hasuractl/hasura_platform:ssh-key`.
 
 
 Cluster access settings
@@ -145,7 +145,7 @@ Viewing logs/events
   * - Login to the cluster console, head to particular microservice's page. Go
       to Logs page from there to view that microservice's logs.
     - Using the hasura cli. ``hasura microservice logs <microservice-name>``.
-      For more details, refer :doc:`../hasuractl/hasura_microservice_logs`.
+      For more details, refer :doc:`../hasuractl/hasura_platform:microservice_logs`.
 
 
 

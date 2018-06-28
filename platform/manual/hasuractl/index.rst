@@ -6,10 +6,10 @@
 
 .. highlight:: bash
 
-hasura CLI
+Hasura CLI
 ==========
 
-The ``hasura`` CLI is a command line tool which is the primary mode of managing Hasura projects and clusters.
+The ``Hasura CLI`` is a command line tool which is the primary mode of managing Hasura projects and clusters.
 
 .. _hasuractl-installation:
 
@@ -28,66 +28,76 @@ Commands
 
    Troubleshooting <troubleshooting>
    hasura <hasura>
-   hasura api-console <hasura_api-console>
-   hasura clone <hasura_clone>
-   hasura cluster <hasura_cluster>
-   hasura cluster add <hasura_cluster_add>
-   hasura cluster create <hasura_cluster_create>
-   hasura cluster delete <hasura_cluster_delete>
-   hasura cluster get-credentials <hasura_cluster_get-credentials>
-   hasura cluster get-default <hasura_cluster_get-default>
-   hasura cluster install <hasura_cluster_install>
-   hasura cluster list <hasura_cluster_list>
-   hasura cluster set-default <hasura_cluster_set-default>
-   hasura cluster status <hasura_cluster_status>
-   hasura cluster template-context <hasura_cluster_template-context>
-   hasura cluster top <hasura_cluster_top>
-   hsaura cluster upgrade <hasura_cluster_upgrade>
    hasura completion <hasura_completion>
-   hasura conf <hasura_conf>
-   hasura conf apply <hasura_conf_apply>
-   hasura conf diff <hasura_conf_diff>
-   hasura conf generate-domain <hasura_conf_generate-domain>
-   hasura conf generate-remote <hasura_conf_generate-remote>
-   hasura conf generate-route <hasura_conf_generate-route>
+   hasura console <hasura_console>
    hasura example <hasura_example>
+   hasura hub:clone <hasura_hub:clone>
+   hasura hub:publish <hasura_hub:publish>
+   hasura hub:quickstart <hasura_hub:quickstart>
+   hasura hub:search <hasura_hub:search>
+   hasura hub:unpublish <hasura_hub:unpublish>
+   hasura init <hasura_init>
    hasura login <hasura_login>
    hasura logout <hasura_logout>
-   hasura microservice <hasura_microservice>
-   hasura microservice apply <hasura_microservice_apply>
-   hasura microservice clone <hasura_microservice_clone>
-   hasura microservice copy <hasura_microservice_copy>
-   hasura microservice create <hasura_microservice_create>
-   hasura microservice exec <hasura_microservice_exec>
-   hasura microservice list <hasura_microservice_list>
-   hasura microservice logs <hasura_microservice_logs>
-   hasura microservice open <hasura_microservice_open>
-   hasura microservice port-forward <hasura_microservice_port-forward>
-   hasura microservice remove <hasura_microservice_remove>
-   hasura microservice restart <hasura_microservice_restart>
-   hasura microservice scale <hasura_microservice_scale>
-   hasura microservice start <hasura_microservice_start>
-   hasura microservice status <hasura_microservice_status>
-   hasura microservice stop <hasura_microservice_stop>
-   hasura microservice sync <hasura_microservice_sync>
-   hasura microservice template-list <hasura_microservice_template-list>
-   hasura migration <hasura_migration>
-   hasura migration apply <hasura_migration_apply>
-   hasura migration create <hasura_migration_create>
-   hasura migration db-reset <hasura_migration_db-reset>
-   hasura migration status <hasura_migration_status>
-   hasura publish <hasura_publish>
-   hasura quickstart <hasura_quickstart>
-   hasura search <hasura_search>
-   hasura secret <hasura_secret>
-   hasura secret list <hasura_secret_list>
-   hasura secret update <hasura_secret_update>
-   hasura setup <hasura_setup>
-   hasura ssh-key <hasura_ssh-key>
-   hasura ssh-key add <hasura_ssh-key_add>
-   hasura ssh-key list <hasura_ssh-key_list>
-   hasura ssh-key remove <hasura_ssh-key_remove>
-   hasura unpublish <hasura_unpublish>
+   hasura metadata <hasura_metadata>
+   hasura metadata apply <hasura_metadata_apply>
+   hasura metadata export <hasura_metadata_export>
+   hasura metadata reset <hasura_metadata_reset>
+   hasura migrate <hasura_migrate>
+   hasura migrate apply <hasura_migrate_apply>
+   hasura migrate create <hasura_migrate_create>
+   hasura migrate status <hasura_migrate_status>
+   hasura platform:api-console <hasura_platform:api-console>
+   hasura platform:cluster <hasura_platform:cluster>
+   hasura platform:cluster add <hasura_platform:cluster_add>
+   hasura platform:cluster create <hasura_platform:cluster_create>
+   hasura platform:cluster delete <hasura_platform:cluster_delete>
+   hasura platform:cluster get-credentials <hasura_platform:cluster_get-credentials>
+   hasura platform:cluster get-default <hasura_platform:cluster_get-default>
+   hasura platform:cluster install <hasura_platform:cluster_install>
+   hasura platform:cluster list <hasura_platform:cluster_list>
+   hasura platform:cluster set-default <hasura_platform:cluster_set-default>
+   hasura platform:cluster status <hasura_platform:cluster_status>
+   hasura platform:cluster template-context <hasura_platform:cluster_template-context>
+   hasura platform:cluster top <hasura_platform:cluster_top>
+   hasura platform:cluster upgrade <hasura_platform:cluster_upgrade>
+   hasura platform:conf <hasura_platform:conf>
+   hasura platform:conf apply <hasura_platform:conf_apply>
+   hasura platform:conf diff <hasura_platform:conf_diff>
+   hasura platform:conf generate-domain <hasura_platform:conf_generate-domain>
+   hasura platform:conf generate-remote <hasura_platform:conf_generate-remote>
+   hasura platform:conf generate-route <hasura_platform:conf_generate-route>
+   hasura platform:help <hasura_platform:help>
+   hasura platform:microservice <hasura_platform:microservice>
+   hasura platform:microservice apply <hasura_platform:microservice_apply>
+   hasura platform:microservice clone <hasura_platform:microservice_clone>
+   hasura platform:microservice copy <hasura_platform:microservice_copy>
+   hasura platform:microservice create <hasura_platform:microservice_create>
+   hasura platform:microservice exec <hasura_platform:microservice_exec>
+   hasura platform:microservice list <hasura_platform:microservice_list>
+   hasura platform:microservice logs <hasura_platform:microservice_logs>
+   hasura platform:microservice open <hasura_platform:microservice_open>
+   hasura platform:microservice port-forward <hasura_platform:microservice_port-forward>
+   hasura platform:microservice remove <hasura_platform:microservice_remove>
+   hasura platform:microservice restart <hasura_platform:microservice_restart>
+   hasura platform:microservice scale <hasura_platform:microservice_scale>
+   hasura platform:microservice start <hasura_platform:microservice_start>
+   hasura platform:microservice status <hasura_platform:microservice_status>
+   hasura platform:microservice stop <hasura_platform:microservice_stop>
+   hasura platform:microservice sync <hasura_platform:microservice_sync>
+   hasura platform:migration <hasura_platform:migration>
+   hasura platform:migration apply <hasura_platform:migration_apply>
+   hasura platform:migration create <hasura_platform:migration_create>
+   hasura platform:migration db-reset <hasura_platform:migration_db-reset>
+   hasura platform:migration status <hasura_platform:migration_status>
+   hasura platform:secret <hasura_platform:secret>
+   hasura platform:secret list <hasura_platform:secret_list>
+   hasura platform:secret update <hasura_platform:secret_update>
+   hasura platform:setup <hasura_platform:setup>
+   hasura platform:ssh-key <hasura_platform:ssh-key>
+   hasura platform:ssh-key add <hasura_platform:ssh-key_add>
+   hasura platform:ssh-key list <hasura_platform:ssh-key_list>
+   hasura platform:ssh-key remove <hasura_platform:ssh-key_remove>
    hasura update-cli <hasura_update-cli>
    hasura user-info <hasura_user-info>
    hasura version <hasura_version>

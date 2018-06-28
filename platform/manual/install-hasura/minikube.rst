@@ -82,9 +82,9 @@ bandwidth.
 Step 4: Add this cluster to a project
 -------------------------------------
 
-Clone a new Hasura project using :ref:`hasura clone <hasura_clone>` or ``cd``
+Clone a new Hasura project using :ref:`hasura clone <hasura_hub:clone>` or ``cd``
 into an existing project. You can then use :ref:`hasura cluster add
-<hasura_cluster_add>`  command to add this minikube cluster to the project.
+<hasura_platform:cluster_add>`  command to add this minikube cluster to the project.
 
 .. code-block:: bash
 
