@@ -17,5 +17,4 @@ Table of Contents
   :maxdepth: 2
   :titlesonly:
 
-  Hasura GraphQL Engine <graphql/manual/index>
   Hasura Platform <platform//manual/index>
