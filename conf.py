@@ -37,13 +37,13 @@ BASE_DOMAIN = os.getenv("BASE_DOMAIN", "development")
 ALGOLIA_SECRETS = {
     "development": {
         "APPLICATION_ID": "WCBB1VVLRC",
-        "APPLICATION_SEARCH_KEY": "19a7f1bbd9ca23d0b8ae2b5e655ebeb9",
-        "ALGOLIA_INDEX_NAME": "stg_docs_search",
+        "APPLICATION_SEARCH_KEY": "af6717fab9d17302c3dfc1fddc4c153c",
+        "ALGOLIA_INDEX_NAME": "stg_platform_docs_search",
     },
     "production": {
         "APPLICATION_ID": "WCBB1VVLRC",
-        "APPLICATION_SEARCH_KEY": "0ca574a476e8fe0db465410151288730",
-        "ALGOLIA_INDEX_NAME": "docs_search",
+        "APPLICATION_SEARCH_KEY": "ee7c02d87815060f517fd00a3383e7ad",
+        "ALGOLIA_INDEX_NAME": "platform_docs_search",
     }
 }
 
@@ -68,7 +68,7 @@ if os.getenv("GRAPHIQL_DEFAULT_ENDPOINT"):
 # set context
 html_context = {
     "SITEMAP_DOMAIN": "https://docs.hasura.io/",
-    "BASE_DOMAIN": "hasura.io" if BASE_DOMAIN == "production" else "hasura-stg.hasura-app.io",
+    "BASE_DOMAIN": "platform.hasura.io" if BASE_DOMAIN == "production" else "platform.hasura-stg.hasura-app.io",
     "GRAPHIQL_DEFAULT_ENDPOINT": GRAPHIQL_DEFAULT_ENDPOINT,
     "ALGOLIA_APPLICATION_ID": ALGOLIA_APPLICATION_ID,
     "ALGOLIA_SEARCH_KEY": ALGOLIA_SEARCH_KEY,
