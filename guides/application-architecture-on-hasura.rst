@@ -6,7 +6,9 @@
    :content-tags: app architecture, build apps
 
 .. rst-class:: guide-title
-.. rubric:: Application Architecture on Hasura
+
+Application Architecture on Hasura
+==================================
 
 Introduction
 ------------

@@ -24,7 +24,8 @@ http or event triggers for them.
 This tutorial assumes that you will be setting up Fission in a cloud-based Hasura cluster (such as GKE). 
 
 Setup
-======
+-----
+
 Requirements
 ~~~~~~~~~~~~~
 
@@ -76,7 +77,7 @@ This will add the following http endpoints to the hasura-project-conf:
 You are now ready to use Fission on Hasura!
 
 Deploying functions using git-push
-==================================
+----------------------------------
 You can deploy functions by pushing to a git remote. This can be done using the serverless-functions 
 `quickstart template <https://github.com/hasura/quickstart-docker-git>`__.
 To set this up, you can either use hasuractl :ref:`quickstart-cmd` to init the quickstart template or follow the steps 

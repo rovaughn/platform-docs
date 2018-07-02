@@ -8,7 +8,9 @@
 .. title:: React Native app with Hasura
 
 .. rst-class:: guide-title
-.. rubric:: React Native app with Hasura
+
+React Native app with Hasura
+============================
 
 Getting started with React Native
 ---------------------------------
