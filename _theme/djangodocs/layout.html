@@ -42,7 +42,7 @@
             <div class="inline-block hero"> DOCS </div>
           </a>
         </div>
-        <div class="inline-block input_search_box">
+        <div class="inline-block input_search_box" style="visibility: hidden;">
           <span class="fa fa-search"></span>
           <input type="text" class="search_element" placeholder="Search reference docs, tutorials, guides" />
         </div>
@@ -104,14 +104,10 @@
         {% include 'pages/loading.html' %}
         {%- if pagename == 'index' %}
           {% include 'pages/landing.html' %}
-        {%- elif pagename == 'guides/index' %}
-          {% include 'pages/guides.html' %}
-        {%- elif pagename == 'tutorials/index' %}
-          {% include 'pages/tutorials.html' %}
         {%- else %}
           {% block sidebarwrapper %}
             {% set currPage = pagename.split('/')[0] %}
-            {% if ( currPage == 'manual' or currPage == 'guides' ) %}
+            {% if ( currPage == 'manual' ) %}
               <div class="yui-b" id="sidebar">
                 {%- if last_updated %}
                   <span><b>Last updated:</b> {{ last_updated }}</span>

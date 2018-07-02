@@ -31,12 +31,12 @@ StandaloneHTMLBuilder.script_files = []
 
 ALGOLIA_SECRETS = {
     "development": {
-        "APPLICATION_ID": "2R09CYX6BF",
-        "APPLICATION_SEARCH_KEY": "1361d3d9973e36ed78e29c3018f74aa6"
+        "APPLICATION_ID": "WCBB1VVLRC",
+        "APPLICATION_SEARCH_KEY": "af6717fab9d17302c3dfc1fddc4c153c"
     },
     "production": {
         "APPLICATION_ID": "WCBB1VVLRC",
-        "APPLICATION_SEARCH_KEY": "11b1fdcf3e6d3961ac30c8708d9bbdd9"
+        "APPLICATION_SEARCH_KEY": "ee7c02d87815060f517fd00a3383e7ad"
     }
 }
 
