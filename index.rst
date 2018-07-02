@@ -24,3 +24,5 @@ Table of Contents
   :maxdepth: 2
 
   ref/index
+  guides/index
+  tutorials/index

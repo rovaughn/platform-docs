@@ -1,11 +1,11 @@
-:orphan:
-
-.. meta::
-   :description: A list of tags 
-   :keywords: hasura, docs, guides
-   :content-tags: guides
-
 Guides
 ======
 
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   how-to-get-started-with-hasura
+   application-architecture-on-hasura
+   hasura-platform-demo-video
 
