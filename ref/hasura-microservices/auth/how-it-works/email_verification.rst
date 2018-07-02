@@ -13,7 +13,7 @@ How to use it
 -------------
 
 You can setup verification of user's email by enabling email verification in
-the project console. Right now only `Sparkpost <https://www.sparkpost.com/>`_
+the project console. Right now only `Sparkpost <https://www.sparkpost.com/>`__
 is supported.
 
 To use email verification, you would also need to provide the API key of

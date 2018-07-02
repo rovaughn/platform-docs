@@ -23,7 +23,7 @@ Option 1: Using the Quickstart Templates
 ----------------------------------------
 
 Apps or Services deployed on Hasura run on Docker images, built according to a
-Dockerfile. We've prepared `starter kits <https://github.com/hasura/quickstart-docker-git>`_ for all your favourite
+Dockerfile. We've prepared `starter kits <https://github.com/hasura/quickstart-docker-git>`__ for all your favourite
 frameworks, that already contain pre-configured Dockerfiles for you to quickly
 setup your app!
 
@@ -34,7 +34,7 @@ Make sure you've create a Hasura project via dashboard.hasura.io.
 Let's say your project is called `<project-name>`
 
 Step 1: Install `hasuractl`
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The easiest way to use these templates is to install and set your project
 context on Hasuractl as shown in :doc:`../../ref/cli/hasuractl`.
 
@@ -146,7 +146,7 @@ In case there are any errors in building or deploying your code, the git push co
 
 
 Option 2: Using your own Dockerfile (advanced users)
-------------------------------------
+----------------------------------------------------
 
 Create a git-push enabled service on the Hasura console
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

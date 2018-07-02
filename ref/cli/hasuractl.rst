@@ -45,8 +45,8 @@ To do this, you can run the following command in your command prompt, remember t
 
     $ mkdir C:\Users\<username>\.kube && echo. > C:\Users\<username>\.kube\config
 
-Next, download `hasuractl.exe <https://storage.googleapis.com/hasuractl/latest/windows-amd64/hasuractl.exe>`_.
-and place it in your ``PATH``. Refer to this `video <https://drive.google.com/file/d/0B_G1GgYOqazYUDJFcVhmNHE1UnM/view>`_
+Next, download `hasuractl.exe <https://storage.googleapis.com/hasuractl/latest/windows-amd64/hasuractl.exe>`__.
+and place it in your ``PATH``. Refer to this `video <https://drive.google.com/file/d/0B_G1GgYOqazYUDJFcVhmNHE1UnM/view>`__
 if you need help with the installation on Windows.
 
     In Windows, you should only use ``git-bash`` to execute commands that you see in this documentation.
@@ -74,7 +74,7 @@ If you would like to add hasuractl manually to your path drop the ``sudo mv hasu
 Working with a Hasura project
 -----------------------------
 
-1. Create an account at `dashboard.hasura.io <https://dashboard.hasura.io>`_ if you do not have one.
+1. Create an account at `dashboard.hasura.io <https://dashboard.hasura.io>`__ if you do not have one.
 
 2. Log into your Hasura account:
 
@@ -85,7 +85,7 @@ Working with a Hasura project
 3. Set context to your Hasura project: 
 
    You will need to have created a Hasura project for this. You can do that
-   at `dashboard.hasura.io <https://dashboard.hasura.io/projects>`_.
+   at `dashboard.hasura.io <https://dashboard.hasura.io/projects>`__.
 
    Set the hasuractl context to your project context using:
 
@@ -97,13 +97,13 @@ Here <project-name> is the name of the project you created on the Hasura
 Dashboard. This command also sets the kubectl context (which can be skipped using the -k flag).
 
 Quickstart templates
--------------------
+--------------------
 
 Hasura provides readymade quickstart templates for a variety of frameworks. 
 These can help you get started with developing using these frameworks on the Hasura platform. You check out further documentation at :ref:`quickstart-cmd`.
 
 Frequently Used Commands
--------------------------
+------------------------
 
 .. _add-ssh-key-cmd:
 

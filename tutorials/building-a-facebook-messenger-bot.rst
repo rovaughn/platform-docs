@@ -38,13 +38,13 @@ Ensure that you have Node installed on your computer, do this by running node-v 
 Create a Hasura project
 -----------------------
 
-Signup or login to `Hasura <https://hasura.io/login>`_ and then head over to your `dashboard <https://dashboard.hasura.io>`_ to create a new project. Note down your project name (You will receive an email with the credentials to your project console or you could head back to your dashboard to check for the name). In this case, the project name I received was **apology69**.
+Signup or login to `Hasura <https://hasura.io/login>`_ and then head over to your `dashboard <https://dashboard.hasura.io>`__ to create a new project. Note down your project name (You will receive an email with the credentials to your project console or you could head back to your dashboard to check for the name). In this case, the project name I received was **apology69**.
 
 
 Download and install Hasuractl
 ------------------------------
 
-**hasuractl** is a command line tool. You can get instructions to download and install it from `here <https://docs.hasura.io/0.14/ref/cli/hasuractl.html>`_.
+**hasuractl** is a command line tool. You can get instructions to download and install it from `here <https://docs.hasura.io/0.14/ref/cli/hasuractl.html>`__.
 
 Once you have installed `hasuractl`.
 
@@ -160,7 +160,7 @@ Step 2 - Setting up a Facebook Application
 
 .. image:: ../img/tutorial_fb_app_screen3.png
 
------------------
+
 Enabling Webhooks
 -----------------
 
@@ -214,6 +214,7 @@ In the above code
   - Run **git add.**
   - Run **git commit -am "Commit message"**
   - Run **git push hasura master**
+
 *Note: For the rest of the tutorial, when we say "Deploy your code", you need to perform the above mentioned steps.*
 
 * Now, switch back to your facebook app page and fill in the pop up with:
@@ -226,7 +227,7 @@ In the above code
 
 .. image:: ../img/tutorial_fb_bot_enable_webhooks3.png
 
------------------
+
 PAGE ACCESS TOKEN
 -----------------
 
@@ -722,7 +723,7 @@ The steps involved in publishing your bot to Facebook is out of the scope of thi
 Future Scope
 ------------
 
-Currently, our bot is quite simple and does no analysis(NLP) on the messages sent by the user. You can integrate with `wit.ai <https://wit.ai/>`_ to do this.
+Currently, our bot is quite simple and does no analysis(NLP) on the messages sent by the user. You can integrate with `wit.ai <https://wit.ai/>`__ to do this.
 
 
-.. tip:: The complete code for this app can be found on `Github <https://github.com/hasura/facebook-messenger-bot>`_
+.. tip:: The complete code for this app can be found on `Github <https://github.com/hasura/facebook-messenger-bot>`__

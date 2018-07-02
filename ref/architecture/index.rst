@@ -16,8 +16,8 @@ dependent resources as required.
 
 The main intelligence and work of managing a Hasura project is done
 by a special kind of service, typically referred to in the Kubernetes community
-as a `controller <https://github.com/kubernetes/community/blob/master/contributors/devel/controllers.md>`_ or
-an `operator <https://coreos.com/blog/introducing-operators.html>`_.
+as a `controller <https://github.com/kubernetes/community/blob/master/contributors/devel/controllers.md>`__ or
+an `operator <https://coreos.com/blog/introducing-operators.html>`__.
 
 *Shukra* is a service that connects to the kubernetes API server
 and manages state, and other kubernetes resources that together represent the

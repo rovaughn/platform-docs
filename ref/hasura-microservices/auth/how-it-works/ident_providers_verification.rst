@@ -76,7 +76,7 @@ legitimate owner of the mobile number.
 Recaptcha
 ---------
 
-In this case, `Google's Recaptcha <https://developers.google.com/recaptcha/>`_
+In this case, `Google's Recaptcha <https://developers.google.com/recaptcha/>`__
 acts an identity provider, by simply asking the user to enter a recaptcha, and
 thereby just verifying that it is a legitimate user and not a bot.
 

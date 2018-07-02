@@ -18,7 +18,7 @@ Creating a Hasura project on Google Cloud Platform
 Introduction
 ------------
 
-`Google Cloud Platform <https://cloud.google.com/>`_ (GCP) is one of the biggest cloud infrastructure providers. Based on the same infrastructure used by Google, it is a great option for developers looking to deploy applications to the cloud.
+`Google Cloud Platform <https://cloud.google.com/>`__ (GCP) is one of the biggest cloud infrastructure providers. Based on the same infrastructure used by Google, it is a great option for developers looking to deploy applications to the cloud.
 
 .. tip:: **Free $300 credits for new users!**
 
@@ -69,7 +69,7 @@ To create a new project, navigate to https://console.cloud.google.com/projectcre
 2. Enabling billing for your GCP Project
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As mentioned above, if you are on the GCP free trial, you are good to proceed to the next step. If you aren't, then please check out this Google tutorial on `managing GCP billing accounts <https://support.google.com/cloud/answer/6288653?hl=en>`_
+As mentioned above, if you are on the GCP free trial, you are good to proceed to the next step. If you aren't, then please check out this Google tutorial on `managing GCP billing accounts <https://support.google.com/cloud/answer/6288653?hl=en>`__
 
 3. Enabling Deployment Manager API
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -119,7 +119,7 @@ Once you have signed-in, the Hasura Dashboard fetches a list of GCP projects lin
 
    If your Google Cloud account does not have a project linked to it or it is not configured for use with Hasura as specified in the above section on :ref:`prerequisite steps <GCP_prereq_config>`, you will be prompted to go to your Google Cloud console and setup the necessary configuration. You may follow the instructions provided in this section to do so.
 
-Once you have selected a properly configured project, you will be prompted to select a Google Cloud region and zone based mostly on the location of application users. You may refer to this Google tutorial on `how to pick the right region and zone for your application <https://cloud.google.com/compute/docs/regions-zones/regions-zones>`_.
+Once you have selected a properly configured project, you will be prompted to select a Google Cloud region and zone based mostly on the location of application users. You may refer to this Google tutorial on `how to pick the right region and zone for your application <https://cloud.google.com/compute/docs/regions-zones/regions-zones>`__.
 
 You will then be prompted to pick from a list of VM instance types offered by Google in the region/zone selected by you. The instance type recommended for early stage applications by Hasura will be marked as such.
 

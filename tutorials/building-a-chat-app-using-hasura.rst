@@ -126,7 +126,7 @@ Make the following changes to Project level build.gradle file
             }
         }
 
-For more information go to `Hasura Android SDK <https://github.com/hasura/android-sdk>`_.
+For more information go to `Hasura Android SDK <https://github.com/hasura/android-sdk>`__.
 
 3: Initializing your Hasura Project:
 ====================================
@@ -146,7 +146,7 @@ This initialization should be before you start using the SDK(like beginning of y
 4: SignUp and Login:
 ====================
 
-Regarding the signUp/Login part, please refer to `Hasura Android Module 1-Login <https://github.com/hasura/Modules-Android/tree/master/Module_1-Login>`_.
+Regarding the signUp/Login part, please refer to `Hasura Android Module 1-Login <https://github.com/hasura/Modules-Android/tree/master/Module_1-Login>`__.
 
 
 You can implement any one of the methods in the above module for performing SignUp/Login.
@@ -157,7 +157,7 @@ In this tutorial, we will be using ``Mobile OTP`` for Registration and Login.
 5: Storing Profile Information:
 ===============================
 
-Regarding storing user information, please refer to `Hasura Android Module 2-Registration <https://github.com/hasura/Modules-Android/tree/master/Module_2-Registration>`_.
+Regarding storing user information, please refer to `Hasura Android Module 2-Registration <https://github.com/hasura/Modules-Android/tree/master/Module_2-Registration>`__.
 
 
 In this case, we will also be storing the mobile number of the user in the user details table.
@@ -172,7 +172,7 @@ We build a socket-server using ``Socket.io`` for sending messages from one devic
 Step 1:
 -------
 
-Clone the `Hasura Quick-Start <https://github.com/hasura/quickstart-docker-git>`_ repository.
+Clone the `Hasura Quick-Start <https://github.com/hasura/quickstart-docker-git>`__ repository.
 
 Step 2:
 -------
@@ -327,7 +327,7 @@ The ``socketId`` of every user should be mapped to some unique value. In this ca
         console.log('Server app listening on port 8080!');
     });
 
-For more, visit `ChatServer <https://github.com/hasura/Modules-Android/blob/master/Module_3-Chat/chat-server/app/src/server.js>`_
+For more, visit `ChatServer <https://github.com/hasura/Modules-Android/blob/master/Module_3-Chat/chat-server/app/src/server.js>`__
 
 Step 4:
 -------
@@ -383,7 +383,7 @@ This is used to receive a message which has an identifier "sent message".
 This will disconnect the user from the socket server.
 
 
-For more visit `Socket.io <https://socket.io/get-started/chat/>`_
+For more visit `Socket.io <https://socket.io/get-started/chat/>`__
 
 7.Local Database (SQLite)
 =========================
@@ -511,7 +511,7 @@ This would also be useful when a user logins in from a different device as he wo
 Create a new Java class called ``MainActivity``. This activity will have 2 fragments,namely ``ConversationsFragment`` and ``AllContactsFragment``, one for displaying all the conversations and the other for displaying all the contacts that we will fetch from the user's mobile.
 
 
-We will use a ``viewPager`` to display these two fragments. For implementation, visit `ViewPager <https://developer.android.com/training/animation/screen-slide.html>`_.
+We will use a ``viewPager`` to display these two fragments. For implementation, visit `ViewPager <https://developer.android.com/training/animation/screen-slide.html>`__.
 
 Loading Conversations:
 ----------------------
@@ -606,7 +606,7 @@ Here we are using ``RecyclerView`` to display all contacts. ``adapter`` is a Rec
 ``adapter.setContacts(db.getAllContacts())`` would get all contacts and display them.
 
 
-For how to implement recyclerView, visit `RecyclerView <https://developer.android.com/training/material/lists-cards.html>`_.
+For how to implement recyclerView, visit `RecyclerView <https://developer.android.com/training/material/lists-cards.html>`__.
 
 
 ``Step 3: Listening for new messages``
@@ -643,7 +643,7 @@ Connect to the socket in the ``onCreateView`` method of the Fragment displaying 
 When any conversation is clicked, we have to open the ``ChattingActivity``. For this, first we have to store the userId of that user and then open the ``ChattingActivity`` for this user.
 
 
-For reference on how to obtain contacts from the mobile device, visit `AllContactsFragment <https://github.com/hasura/Modules-Android/blob/master/Module_3-Chat/app/src/main/java/com/example/android/chatmodule/AllContactsFragment.java>`_
+For reference on how to obtain contacts from the mobile device, visit `AllContactsFragment <https://github.com/hasura/Modules-Android/blob/master/Module_3-Chat/app/src/main/java/com/example/android/chatmodule/AllContactsFragment.java>`__
 
 9. Chatting
 ===========

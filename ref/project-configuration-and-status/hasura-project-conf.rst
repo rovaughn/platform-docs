@@ -168,7 +168,7 @@ AuthConf
    * - logoutMethods
      - true
      - string
-     - ``'["POST"]'`` by default to enable logouts using POST only (see: `stackoverflow.com/a/1458... <http://stackoverflow.com/a/14587231/3364697>`_). Use ``'["GET", "POST"]`` for backwards compatibility
+     - ``'["POST"]'`` by default to enable logouts using POST only (see: `stackoverflow.com/a/1458... <http://stackoverflow.com/a/14587231/3364697>`__). Use ``'["GET", "POST"]`` for backwards compatibility
    * - passwordMinLength
      - true
      - string

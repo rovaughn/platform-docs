@@ -14,7 +14,7 @@ Watch this video to see how permissions are defined using the console or continu
 .. admonition:: Video reference
 
    For a highly simplified version of this page and a super fast introduction
-   check `this video <https://www.youtube.com/watch?v=lW7iz3cFqAg>`_ out!
+   check `this video <https://www.youtube.com/watch?v=lW7iz3cFqAg>`__ out!
 
 Select
 ------

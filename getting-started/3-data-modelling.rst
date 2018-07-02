@@ -15,7 +15,7 @@ Our basic data requirements are as follows:
 
 .. admonition:: Video reference
 
-   `Basic data modelling <https://youtu.be/EdBjQ3zRBWg>`_
+   `Basic data modelling <https://youtu.be/EdBjQ3zRBWg>`__
 
    The video shows you how to create data models using the project console.
    The document below however, is an API driven approach to creating data models.

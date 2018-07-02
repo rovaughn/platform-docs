@@ -88,7 +88,7 @@ Make the following changes to Project level build.gradle file
         	}
     	}
 
-For more information go to `Hasura Android SDK <https://github.com/hasura/android-sdk>`_
+For more information go to `Hasura Android SDK <https://github.com/hasura/android-sdk>`__
 
 Initialiazing your Hasura Project
 =================================
@@ -109,7 +109,7 @@ This initialization should be before you start using the SDK(like beginning of y
 Signup and Login
 ================
 
-Regarding the signUp/Login part, please refer to `Hasura Android Module 1-Login <https://github.com/hasura/Modules-Android/tree/master/Module_1-Login>`_.
+Regarding the signUp/Login part, please refer to `Hasura Android Module 1-Login <https://github.com/hasura/Modules-Android/tree/master/Module_1-Login>`__.
 
 
 You can implement any one of the methods in the above module for performing SignUp/Login.
@@ -214,7 +214,7 @@ To do this, we have to fire a select query.
     		}
 	}
 
-For more about modelling, refer the `Hasura Data Docs <https://hasura.io/_docs/platform/0.6/ref/data/reference.html>`_
+For more about modelling, refer the `Hasura Data Docs <https://hasura.io/_docs/platform/0.6/ref/data/reference.html>`__
 
 
 To make calls to Hasura, we use the HasuraClient instance provided by the SDK

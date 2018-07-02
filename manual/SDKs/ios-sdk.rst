@@ -18,7 +18,7 @@ Installation
 ------------
 
 Step 1 : Download the Hasura iOS SDK
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 `CocoaPods <http://cocoapods.org>`__ is a dependency manager for iOS projects. You can install it with the following command:
 
@@ -48,12 +48,12 @@ Then, run the following command:
     $ pod install
 
 Step 2 : Setup Hasura
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 ``import Hasura`` wherever you are using the SDK.
 
 Project Config
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 You set the project name and other hasura-project related things in Project Config object.
 
@@ -92,7 +92,7 @@ The ``HasuraClient`` is the most functional feature of the SDK. It is built usin
 **Note**: The above method can throw a ``HasuraInitError``.
 
 Authentication
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 ``HasuraClient`` provides a ``HasuraUser`` for all of your
 authentication needs like login and signup. This ensures that certain data
@@ -105,7 +105,7 @@ like so :
 
     var user = client.currentUser;
 
-Hasura provides different ways to authenticate a user. Take a look at the  :doc:`docs <../users/index>` to get a better understanding of the various ways you can authenticate a user.
+Hasura provides different ways to authenticate a user. Take a look at the :doc:`docs <../users/index>` to get a better understanding of the various ways you can authenticate a user.
 
 Set the username and password.
 
@@ -126,7 +126,7 @@ verification, those parameters also become mandatory.
    user.mobile = "8888888888"
 
 SignUp
-^^^^^^
+~~~~~~
 
 .. code:: swift
 
@@ -146,7 +146,7 @@ SignUp
     }
 
 Login
-^^^^^
+~~~~~
 
 .. code:: swift
 
@@ -162,7 +162,7 @@ Login
     }
 
 Email-Verification Pending
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In case you have enabled email verification and want to resend the verification email.
 
@@ -177,7 +177,7 @@ In case you have enabled email verification and want to resend the verification 
    }
 
 Mobile-Verification Pending
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you have enabled mobile verification, performing a signup on a user will send an otp to the provided mobile number.
 To verify the mobile number, use the following:
@@ -218,7 +218,7 @@ To ``re-send OTP`` to mobile
    }
 
 Mobile - OTP
-------------
+~~~~~~~~~~~~
 
 Set the username and mobile number on the user object.
 
@@ -228,7 +228,7 @@ Set the username and mobile number on the user object.
   user.mobile = "8888888888"
 
 SignUp
-^^^^^^
+~~~~~~
 
 .. code-block:: swift
 
@@ -243,7 +243,7 @@ SignUp
 .. tip:: Calling this method will send an ``otp`` to the provided mobile number. Once you receive the OTP, call the ``user.otpLogin`` method to login.
 
 Login
-^^^^^
+~~~~~
 
 .. code-block:: swift
 
@@ -257,16 +257,16 @@ Login
 
 
 Social Login
-------------
+~~~~~~~~~~~~
 
 Hasura also providers authentication using various oauth login providers.
 
 Facebook
-^^^^^^^^
+********
 
 * **Step1**: Integrate facebook login with your Hasura Project, check out the :doc:`docs <../users/facebook>`.
 
-* **Step2**: Intergate facebook login in your iOS app. Check out the facebook `docs <https://developers.facebook.com/docs/facebook-login/ios/>`_ to do this.
+* **Step2**: Intergate facebook login in your iOS app. Check out the facebook `docs <https://developers.facebook.com/docs/facebook-login/ios/>`__ to do this.
 
 * **Step3**: Perform facebook login in the app and receive the ``access token``.
 
@@ -283,11 +283,11 @@ Facebook
    }
 
 Google
-^^^^^^
+******
 
 * **Step1**: Integrate google login with your Hasura Project, check out the :doc:`docs <../users/google>`.
 
-* **Step2**: Integrate google login in your iOS app. Check out the `docs <https://developers.google.com/identity/sign-in/ios/start-integrating>`_ to do this.
+* **Step2**: Integrate google login in your iOS app. Check out the `docs <https://developers.google.com/identity/sign-in/ios/start-integrating>`__ to do this.
 
 * **Step3**: Perform google login in the app and receive the ``access token``.
 
@@ -305,7 +305,7 @@ Google
 
 
 LoggedIn User
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 Each time a ``HasuraUser`` is signed up or logged in, the session is
 cached by the ``HasuraClient``. Hence, you do not need to log the user
@@ -320,7 +320,7 @@ in each time your app starts.
     }
 
 Log Out
-^^^^^^^
+~~~~~~~
 
 To log the user out, simple call ``.logout`` method on the user object.
 
@@ -335,10 +335,10 @@ To log the user out, simple call ``.logout`` method on the user object.
     }
 
 Data Service
-~~~~~~~~~~~~
+------------
 
 Hasura provides out of the box data APIs on the tables and views you
-make in your project. To learn more about how they work, check out the :doc:`docs <../users>`
+make in your project. To learn more about how they work, check out the :doc:`docs <../users/index>`
 
 .. code:: swift
 
@@ -396,7 +396,7 @@ In case you want to make the above call for a ``custom`` role,
 not** become the default role.
 
 Query Template Service
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 The syntax for the query template service remains the same as
 ``Data Service`` except for setting the name of the query template being
@@ -414,7 +414,7 @@ used.
     }
 
 Filestore Service
-~~~~~~~~~~~~~~~~~
+-----------------
 
 Hasura provides a filestore service, which can be used to upload and
 download files. To use the Filestore service properly, kindly take a

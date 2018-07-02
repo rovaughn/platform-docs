@@ -16,7 +16,7 @@ How to use it
 -------------
 
 You can setup verification of user's mobile by enabling mobile verification in
-the project console. Right now only `MSG91 <https://msg91.com/>`_ is supported.
+the project console. Right now only `MSG91 <https://msg91.com/>`__ is supported.
 
 To use mobile verification, you would also need to provide the API key of
 MSG91. See details :ref:`here <mobile>`.

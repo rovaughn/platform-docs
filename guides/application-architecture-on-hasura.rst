@@ -108,7 +108,7 @@ Additional information about the Hasura platform and underlying components:
 
 * **Microservices architecture:** All Hasura services are available as independent microservices and developers are encouraged to deploy their application as a set of microservices. Services in Hasura are exposed by the API gateway over HTTPS.
 
-* **Deployment using containers:** Code, including Hasura microservices, is deployed as `Docker <https://www.docker.com/what-docker>`_ images only. The Docker based services are orchestrated using `Kubernetes <https://kubernetes.io/>`_. `CoreOS <https://coreos.com/products/container-linux-subscription/>`_ is used as the operating system when installed on a cloud and a `MiniKube <https://github.com/kubernetes/minikube>`_ fork is used as the base in local-development mode.
+* **Deployment using containers:** Code, including Hasura microservices, is deployed as `Docker <https://www.docker.com/what-docker>`_ images only. The Docker based services are orchestrated using `Kubernetes <https://kubernetes.io/>`_. `CoreOS <https://coreos.com/products/container-linux-subscription/>`_ is used as the operating system when installed on a cloud and a `MiniKube <https://github.com/kubernetes/minikube>`__ fork is used as the base in local-development mode.
 
 Based on the above, the following is a more detailed visualization of Hasura's architecture:
 

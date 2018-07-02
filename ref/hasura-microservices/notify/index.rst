@@ -38,18 +38,18 @@ You need to configure the following options on the Hasura Project Console:
 
 .. note ::
 
-  If you are using GMail as your SMTP provider, you have to enable access to "Less Secure Apps" on your Google account. You can get a full explanation and how to enable it `here <https://support.google.com/accounts/answer/6010255>`_.
+  If you are using GMail as your SMTP provider, you have to enable access to "Less Secure Apps" on your Google account. You can get a full explanation and how to enable it `here <https://support.google.com/accounts/answer/6010255>`__.
 
 .. note ::
   
-  For Hasura projects on Google Compute Engine / Google Container Engine, SMTP settings with standard ports like 25, 465, 587 will not work, since Google Compute Engine does not allow outbound connections on these ports. Hence, make sure that your SMTP provider have alternate ports like 2525 in case you want to deploy on Google Cloud. You can find more details and possible solutions `here <https://cloud.google.com/compute/docs/tutorials/sending-mail/>`_.
+  For Hasura projects on Google Compute Engine / Google Container Engine, SMTP settings with standard ports like 25, 465, 587 will not work, since Google Compute Engine does not allow outbound connections on these ports. Hence, make sure that your SMTP provider have alternate ports like 2525 in case you want to deploy on Google Cloud. You can find more details and possible solutions `here <https://cloud.google.com/compute/docs/tutorials/sending-mail/>`__.
 
 .. _notify-sparkpost-settings:
 
 SparkPost
 ^^^^^^^^^
 
-To start sending emails using SparkPost, `signup <https://www.sparkpost.com/>`_ for an account and create a sending domain. You have to obtain an API key after verifying the sending domain. SparkPost provides helpful interface to guide through the process. SparkPost's free plan should be enough to cover your initial email volume.
+To start sending emails using SparkPost, `signup <https://www.sparkpost.com/>`__ for an account and create a sending domain. You have to obtain an API key after verifying the sending domain. SparkPost provides helpful interface to guide through the process. SparkPost's free plan should be enough to cover your initial email volume.
 
 .. note::
 
@@ -59,7 +59,7 @@ Please remember that you have to setup SPF and DKIM records for your domain
 to start sending emails from your domain. Otherwise, SparkPost will
 reject sending emails.
 
-Here are some SparkPost resources for `verifying sending domain <https://support.sparkpost.com/customer/portal/articles/1933360-verify-sending-domains>`_ and setting up `SPF/DKIM: <https://www.sparkpost.com/blog/understanding-spf-and-dkim-in-sixth-grade-english/>`_
+Here are some SparkPost resources for `verifying sending domain <https://support.sparkpost.com/customer/portal/articles/1933360-verify-sending-domains>`__ and setting up `SPF/DKIM: <https://www.sparkpost.com/blog/understanding-spf-and-dkim-in-sixth-grade-english/>`__
 
 You need to configure the following option on the Hasura Project Console:
 
@@ -73,7 +73,7 @@ Either Twilio or MSG91 can be configured and enabled to send SMS.
 Twilio
 ^^^^^^
 
-`Twilio <https://www.twilio.com>`_ is a SMS, Voice and Video provider. You can `signup <https://www.twilio.com/try-twilio>`_ for a free account and start sending SMS using Twilio. Once you have signed up and created a Twilio phone number, grab the *Account SID* and *Auth Token* from `Twilio Console <https://www.twilio.com/console/account/settings>`_.
+`Twilio <https://www.twilio.com>`_ is a SMS, Voice and Video provider. You can `signup <https://www.twilio.com/try-twilio>`__ for a free account and start sending SMS using Twilio. Once you have signed up and created a Twilio phone number, grab the *Account SID* and *Auth Token* from `Twilio Console <https://www.twilio.com/console/account/settings>`__.
 
 You need to configure the following option on the Hasura Project Console:
 
@@ -84,7 +84,7 @@ You need to configure the following option on the Hasura Project Console:
 MSG91
 ^^^^^
 
-`MSG91 <https://msg91.com/>`_ is a SMS provider where you can `signup <https://msg91.com/signup>`_ and get an API key to use with Hasura. Take a look at `this <http://help.msg91.com/article/177-where-can-i-find-my-authentication-key>`_ guide by MSG91 to obtain your API key.
+`MSG91 <https://msg91.com/>`_ is a SMS provider where you can `signup <https://msg91.com/signup>`_ and get an API key to use with Hasura. Take a look at `this <http://help.msg91.com/article/177-where-can-i-find-my-authentication-key>`__ guide by MSG91 to obtain your API key.
 
 You need to configure the following option on the Hasura Project Console:
 

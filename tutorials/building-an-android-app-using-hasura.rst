@@ -17,6 +17,6 @@ Building an Android app using a Java based backend
 
 The following tutorial on building an Android app using Java for the backend on Hasura was originally published here: 
 
-`Building an Android app using Hasura <https://blog.hasura.io/server-side-development-for-android-developers-using-java-on-hasura-417eb9aa8542>`_
+`Building an Android app using Hasura <https://blog.hasura.io/server-side-development-for-android-developers-using-java-on-hasura-417eb9aa8542>`__
 
 

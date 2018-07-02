@@ -25,7 +25,7 @@ Basic deployment
 ----------------
 Follow the 4 steps below so that you can start off and deploy a Laravel app
 within minutes. Refer to the next section on :ref:`laravel-local-development`
- for when you're developing and testing locally.
+for when you're developing and testing locally.
 
 Step 1a: Get a hasura project and make a note of your credentials
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -51,7 +51,7 @@ Step 1b: Install ``hasuractl``
 
 Install the command line tool: ``hasuractl``.
 
-Read full instructions `here <https://docs.hasura.io/0.14/ref/cli/hasuractl.html>`_.
+Read full instructions `here <https://docs.hasura.io/0.14/ref/cli/hasuractl.html>`__.
 
 Once you're done with that, login and setup ``hasuractl``:
 

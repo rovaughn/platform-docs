@@ -18,6 +18,6 @@ Deploying an HTML/JavaScript/CSS web app using Hasura
 
 The following tutorial on quickly deploying an HTML/JavaScript/CSS based web application on Hasura was originally published here:
 
-`Deploying an HTML/JavaScript/CSS web application using Hasura <https://blog.hasura.io/deploying-your-html-css-js-webapp-in-under-a-minute-with-hasura-5e1daec2e421>`_
+`Deploying an HTML/JavaScript/CSS web application using Hasura <https://blog.hasura.io/deploying-your-html-css-js-webapp-in-under-a-minute-with-hasura-5e1daec2e421>`__
 
 

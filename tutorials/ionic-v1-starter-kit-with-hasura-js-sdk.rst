@@ -14,15 +14,15 @@ Ionic V1 Starter-Kit with Hasura JS SDK
    :height: 0px
    :width: 0px
 
-`Ionic Framework <https://ionicframework.com/>`_ is a popular hybrid app development framework. `Hasura JS SDK <https://github.com/hasura/js-sdk>`_ can be used with Ionic to super-power your application with backend capabilities like authentication, data and file APIs. 
+`Ionic Framework <https://ionicframework.com/>`_ is a popular hybrid app development framework. `Hasura JS SDK <https://github.com/hasura/js-sdk>`__ can be used with Ionic to super-power your application with backend capabilities like authentication, data and file APIs.
 
 This guide lays out the required information for you to kickstart developing your Ionic application using Hasura backend APIs. We are using ``Ionic V1`` apps which makes use of ``AngularJS``.
 
-We have also made a `Ionic-Hasura starter-kit <https://github.com/hasura/ionic-v1-starter-kit>`_ which you can use to start your app. This kit has complete working pages that demonstrates capabilities of Hasura APIs. You can refer to these to get started or even use this kit directly for your applications. 
+We have also made a `Ionic-Hasura starter-kit <https://github.com/hasura/ionic-v1-starter-kit>`__ which you can use to start your app. This kit has complete working pages that demonstrates capabilities of Hasura APIs. You can refer to these to get started or even use this kit directly for your applications.
 
 Including Hasura JS SDK
 -----------------------
-Hasura JS SDK is available on `GitHub <https://github.com/hasura/js-sdk>`_. The minified sdk is included in the starter-kit by default. In case you are starting your own app, download ``hasura.min.js`` and add the following snippet to your app's ``index.html``.
+Hasura JS SDK is available on `GitHub <https://github.com/hasura/js-sdk>`__. The minified sdk is included in the starter-kit by default. In case you are starting your own app, download ``hasura.min.js`` and add the following snippet to your app's ``index.html``.
 
 .. code-block:: HTML 
 
@@ -66,7 +66,7 @@ Now, you can inject ``hasura`` into any AngularJS component, like controllers et
 
 .. note::
 
-  This step also assumes that you have a Hasura project ready. In case you don't have one, please login to `Hasura Dashboard <https://dashboard.hasura.io>`_ and create a project.
+  This step also assumes that you have a Hasura project ready. In case you don't have one, please login to `Hasura Dashboard <https://dashboard.hasura.io>`__ and create a project.
 
 Auth APIs
 ---------
@@ -74,7 +74,7 @@ Auth APIs
 Signup/Register
 ^^^^^^^^^^^^^^^
 
-Sample controller for using Signup API is given below. Complete working example can be seen at the `Ionic Hausra Starter-Kit <https://github.com/hasura/ionic-v1-starter-kit>`_
+Sample controller for using Signup API is given below. Complete working example can be seen at the `Ionic Hausra Starter-Kit <https://github.com/hasura/ionic-v1-starter-kit>`__
 
 .. code-block:: JavaScript
 
@@ -115,7 +115,7 @@ Sample controller for using Signup API is given below. Complete working example 
 Login
 ^^^^^
 
-Sample controller for using Login API is given below. Complete working example can be seen at the `Ionic Hausra Starter-Kit <https://github.com/hasura/ionic-v1-starter-kit>`_
+Sample controller for using Login API is given below. Complete working example can be seen at the `Ionic Hausra Starter-Kit <https://github.com/hasura/ionic-v1-starter-kit>`__
 
 .. code-block:: JavaScript
 
@@ -174,7 +174,7 @@ Now, you can use the following APIs.
 
 .. note:: 
 
-  Complete working example can be seen at the `Ionic Hausra Starter-Kit <https://github.com/hasura/ionic-v1-starter-kit>`_
+  Complete working example can be seen at the `Ionic Hausra Starter-Kit <https://github.com/hasura/ionic-v1-starter-kit>`__
 
 Select
 ^^^^^^

@@ -319,7 +319,7 @@ Facebook
 
 * **Step1**: Integrate facebook login with your Hasura Project, check out the :doc:`docs <../users/facebook>`.
 
-* **Step2**: Intergate facebook login in your Android app. Check out the facebook `docs <https://developers.facebook.com/docs/facebook-login/android/>`_ to do this.
+* **Step2**: Intergate facebook login in your Android app. Check out the facebook `docs <https://developers.facebook.com/docs/facebook-login/android/>`__ to do this.
 
 * **Step3**: Perform facebook login in the app and receive the ``access token``.
 
@@ -344,7 +344,7 @@ Google
 
 * **Step1**: Integrate google login with your Hasura Project, check out the :doc:`docs <../users/google>`.
 
-* **Step2**: Integrate google login in your Android app. Check out the `docs <https://developers.google.com/identity/sign-in/android/start-integrating>`_ to do this.
+* **Step2**: Integrate google login in your Android app. Check out the `docs <https://developers.google.com/identity/sign-in/android/start-integrating>`__ to do this.
 
 * **Step3**: Perform google login in the app and receive the ``access token``.
 
@@ -401,7 +401,7 @@ Logout
 Data Service
 ============
 
-Hasura provides out of the box data apis on the tables and views you make in your project. To learn more about how they work, check out the :doc:`docs <../users>`.
+Hasura provides out of the box data apis on the tables and views you make in your project. To learn more about how they work, check out the :doc:`docs <../users/index>`.
 
 .. code-block:: java
 
@@ -424,7 +424,7 @@ Hasura provides out of the box data apis on the tables and views you make in you
 
 In the above method, there are a few things to be noted :
 
-* ``.setRequestBody()``: This is an overloaded method which accepts either an object of type ``JsonObject`` or a POJO (ensure that the JSON representation of this object is correct). The sdk uses `gson <https://github.com/google/gson>`_ internally to map Java Objects to JSON.
+* ``.setRequestBody()``: This is an overloaded method which accepts either an object of type ``JsonObject`` or a POJO (ensure that the JSON representation of this object is correct). The sdk uses `gson <https://github.com/google/gson>`__ internally to map Java Objects to JSON.
 
   * For eg, the POJO representation of the following JSON
 
@@ -539,7 +539,7 @@ The syntax for the query template service remains the same as ``Data Service`` e
 Filestore Service
 =================
 
-Hasura provides a filestore service, which can be used to upload and download files. To use the Filestore service properly, kindly take a look at the `docs <https://docs.hasura.io/0.13/ref/hasura-microservices/filestore/index.html>`_ .
+Hasura provides a filestore service, which can be used to upload and download files. To use the Filestore service properly, kindly take a look at the `docs <https://docs.hasura.io/0.13/ref/hasura-microservices/filestore/index.html>`__ .
 
 Upload File
 -----------
@@ -600,7 +600,7 @@ Download File
 Custom Service
 ==============
 
-In addition to the ``data``, ``auth`` and ``fileStore`` services, you can also deploy your own custom service on Hasura. For such cases, you can still utilize the session management of the SDK to make your APIs. Currently, we have support for `Retrofit <http://square.github.io/retrofit/>`_.
+In addition to the ``data``, ``auth`` and ``fileStore`` services, you can also deploy your own custom service on Hasura. For such cases, you can still utilize the session management of the SDK to make your APIs. Currently, we have support for `Retrofit <http://square.github.io/retrofit/>`__.
 
 Using a custom service - Retrofit Support
 -----------------------------------------
@@ -678,10 +678,10 @@ Bonus: Handle the Response
 Examples
 ********
 
-To take a look at some sample apps built using the Hasura SDK, take a look at our `github repository <https://github.com/hasura/Modules-Android>`_.
+To take a look at some sample apps built using the Hasura SDK, take a look at our `github repository <https://github.com/hasura/Modules-Android>`__.
 
 ******
 Issues
 ******
 
-In case of bugs, please raise an issue `here <https://github.com/hasura/support>`_.
+In case of bugs, please raise an issue `here <https://github.com/hasura/support>`__.

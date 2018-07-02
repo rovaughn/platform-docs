@@ -8,7 +8,7 @@
 Logs
 ======
 
-#. Install `kubectl <https://kubernetes.io/docs/tasks/tools/install-kubectl>`_.
+#. Install `kubectl <https://kubernetes.io/docs/tasks/tools/install-kubectl>`__.
 #. Head to Console > Cluster Access > Kubectl. Follow the instructions to setup the access to cluster.
 
 Now, to list all running instances of your services, run

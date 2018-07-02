@@ -7,7 +7,7 @@ Custom domains & SSL
 
 Your Hasura project comes with a SSL enabled `hasura-app.io` domain. You can also add your domain to the project so that your services/website is available on the domain.
 
-Hasura provisions free SSL certificates for each domain you add using `LetsEncrypt <https://letsencrypt.org/>`_. All of your services will be available on each of these domains.
+Hasura provisions free SSL certificates for each domain you add using `LetsEncrypt <https://letsencrypt.org/>`__. All of your services will be available on each of these domains.
 
 Adding a custom domain
 ----------------------

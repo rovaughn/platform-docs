@@ -17,7 +17,7 @@ Let us explore 2 use cases.
 
 .. admonition:: Video reference
 
-   `Adding a custom service using a Docker image, or by using git push <https://youtu.be/LK1mgsl2uUs>`_
+   `Adding a custom service using a Docker image, or by using git push <https://youtu.be/LK1mgsl2uUs>`__
 
 
 Docker: Adding a custom database browser (adminer)
@@ -46,7 +46,7 @@ Git push: Adding a simple web-server to serve a UI
 --------------------------------------------------
 
 Let's take a simple nodejs, express example. The best way to get a base setup ready, is to
-grab the relevant base template directory from `quickstart-docker-git <https://github.com/hasura/quickstart-docker-git>`_
+grab the relevant base template directory from `quickstart-docker-git <https://github.com/hasura/quickstart-docker-git>`__
 
 Let's copy the ``quickstart-docker-git/nodejs-express`` for our example, and rename it to ``www``.
 

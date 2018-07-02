@@ -8,7 +8,7 @@ Part II: Users, roles and sessions
 
 .. admonition:: Video reference
 
-   `User management on Hasura <https://www.youtube.com/watch?v=Qbon0cgbneo>`_
+   `User management on Hasura <https://www.youtube.com/watch?v=Qbon0cgbneo>`__
 
    The video is an introduction to user-management via the
    project console and basic user-management APIs. **After going through the 2 min video,

@@ -17,6 +17,6 @@ Deploying a PHP/Apache web app using Hasura
 
 The following tutorial on quickly deploying a PHP/Apache based web application on Hasura was originally published here:
 
-`Deploying a PHP/Apache web application using Hasura <https://blog.hasura.io/deploying-your-php-apache-webapp-in-under-a-minute-with-hasura-16b8d5212117>`_
+`Deploying a PHP/Apache web application using Hasura <https://blog.hasura.io/deploying-your-php-apache-webapp-in-under-a-minute-with-hasura-16b8d5212117>`__
 
 

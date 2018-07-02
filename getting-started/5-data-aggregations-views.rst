@@ -17,9 +17,9 @@ Data APIs on Postgres views
 
 .. admonition:: Video reference
 
-   `Aggregations and Views <https://www.youtube.com/watch?v=d6VHJ7FiJTg>`_
+   `Aggregations and Views <https://www.youtube.com/watch?v=d6VHJ7FiJTg>`__
 
-Let us define a view in `SQL <https://www.postgresql.org/docs/current/static/sql-createview.html>`_:
+Let us define a view in `SQL <https://www.postgresql.org/docs/current/static/sql-createview.html>`__:
 
 .. code-block:: sql
 

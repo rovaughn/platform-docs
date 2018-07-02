@@ -360,7 +360,7 @@ To express complex queries like aggregations, window functions, custom joins etc
 
 Let's see how we can get the likes of an article.
 
-Let us define a view in `SQL <https://www.postgresql.org/docs/current/static/sql-createview.html>`_:
+Let us define a view in `SQL <https://www.postgresql.org/docs/current/static/sql-createview.html>`__:
 
 .. code-block:: sql
 

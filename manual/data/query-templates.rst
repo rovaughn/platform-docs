@@ -325,7 +325,6 @@ In the above example, in case of ``POST`` and ``PUT``, the parameters in the bod
 ``drop_query_template`` is used to drop an existing query template.
 
 .. code-block:: http
-   :emphasize-lines: 14
 
    POST data.<project-name>.hasura-app.io/v1/query HTTP/1.1
    Content-Type: application/json

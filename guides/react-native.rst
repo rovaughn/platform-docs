@@ -20,7 +20,7 @@ If you already have a working React Native application and want to integrate you
 Setting up the Expo Development Environment (XDE)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Download the Expo XDE from `here <https://expo.io/tools>`_.
+1. Download the Expo XDE from `here <https://expo.io/tools>`__.
 
 2. Open the XDE. Linux users, open using ``chmod a+x xde*.AppImage`` and ``./xde*.AppImage``.
 
@@ -31,7 +31,7 @@ Setting up the Expo Development Environment (XDE)
 Getting the app running
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Clone `this <https://github.com/hasura/expo-hasura.git>`_ git repository.
+1. Clone `this <https://github.com/hasura/expo-hasura.git>`__ git repository.
 
 .. code:: bash
 
@@ -57,7 +57,7 @@ Making the app public
 
 When you share the app using the QR code, you can open the app only if the phone is on the same connection as that of your computer. In order to make your app accessible from everywhere, click on the ``Publish`` button on the XDE. Now everybody in the world can open the app as long as they have the QR code and the Expo app.
 
-To know more about Expo, go to the `expo docs <https://docs.expo.io/versions/latest/index.html>`_.
+To know more about Expo, go to the `expo docs <https://docs.expo.io/versions/latest/index.html>`__.
 
 Building an expo app backend with Hasura
 ----------------------------------------
@@ -67,12 +67,12 @@ Hasura provides an easy way to build powerful backends for applications. They ar
 Creating a Cluster
 ^^^^^^^^^^^^^^^^^^
 
-1. Login to `dashboard.hasura.io <https://dashboard.hasura.io>`_ and activate your free trial project.
+1. Login to `dashboard.hasura.io <https://dashboard.hasura.io>`__ and activate your free trial project.
 
 2. Login to your project console. You'll receive an email in your inbox with credentials to your new project.
 
    Let's say your project name is ``test42``.
-   Login in to `console.test42.hasura-app.io <https://console.test42.hasura-app.io>`_ with the admin username
+   Login in to `console.test42.hasura-app.io <https://console.test42.hasura-app.io>`__ with the admin username
    and password from the email sent to you.
 
 6. If you are coming from the *Getting started to react native* guide: modify the cluster name in ``hasuraAPI.js`` file.
@@ -148,14 +148,14 @@ The Hasura Auth API is a handy way to include authentication in your application
       });
     }
 
-**Note**: To read more about authentication, roles and sessions, head on to `docs <https://docs.hasura.io/0.15/manual/users/index.html>`_.
+**Note**: To read more about authentication, roles and sessions, head on to `docs <https://docs.hasura.io/0.15/manual/users/index.html>`__.
 
 Adding a table
 ^^^^^^^^^^^^^^
 
 This section demonstrates adding a table to your database. We will do this by adding a simple table that is used in the "Getting started with React Native" guide.
 
-1. Open the project console. Say your project is ``test42``, head to `console.test42.hasura-app.io <https://console.test42.hasura-app.io>`_.
+1. Open the project console. Say your project is ``test42``, head to `console.test42.hasura-app.io <https://console.test42.hasura-app.io>`__.
 
 2. Go to ``Data`` -> ``Add table`` and add the table as shown below.
 
@@ -244,12 +244,12 @@ The response is a JSON Array with all the entries where ``user_id = my_user_id``
       }
     ]
 
-3. You can make numerous such queries, exploit relationships, manage permissions and a lot more complicated stuff. Go to API Explorer on your console, and search for a query you wish to make. It will generate the entire request body for you. Also, read more about managing data  at `here <https://docs.hasura.io/0.14/manual/data/index.html>`_.
+3. You can make numerous such queries, exploit relationships, manage permissions and a lot more complicated stuff. Go to API Explorer on your console, and search for a query you wish to make. It will generate the entire request body for you. Also, read more about managing data  at `here <https://docs.hasura.io/0.14/manual/data/index.html>`__.
 
 4. Your react native app with Hasura back-end is now ready. Modify it as you like.
 
 Custom API Endpoints
 ^^^^^^^^^^^^^^^^^^^^
 
-If you have a backend server ready (say in `nodejs-express` or `python-flask`)and you are looking for a place to deploy your code, it is exceptionally easy to deploy custom APIs on Hasura. Go on and read the `reference manual <https://docs.hasura.io/0.14/manual/deploying-webapp/index.html#deploy-webapp>`_.
+If you have a backend server ready (say in `nodejs-express` or `python-flask`)and you are looking for a place to deploy your code, it is exceptionally easy to deploy custom APIs on Hasura. Go on and read the `reference manual <https://docs.hasura.io/0.14/manual/deploying-webapp/index.html#deploy-webapp>`__.
 

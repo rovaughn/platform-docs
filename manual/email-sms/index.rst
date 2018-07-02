@@ -20,7 +20,7 @@ You need to configure the following options on the Hasura project console under 
 
 .. note ::
 
-  If you are using GMail as your SMTP provider, you have to enable access to "Less Secure Apps" on your Google account. You can get a full explanation and how to enable it `here <https://support.google.com/accounts/answer/6010255>`_.
+  If you are using GMail as your SMTP provider, you have to enable access to "Less Secure Apps" on your Google account. You can get a full explanation and how to enable it `here <https://support.google.com/accounts/answer/6010255>`__.
   GMail also enforces limits on emails sent (default 500/day).
 
 SparkPost

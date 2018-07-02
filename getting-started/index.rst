@@ -8,7 +8,7 @@
 Getting Started
 ===============
 
-Let's build a simple clone of the popular publishing platform `medium <https://medium.com/>`_ and use that to learn about the features provided by the Hasura platform. Our clone, called ``ether`` will have the following features:
+Let's build a simple clone of the popular publishing platform `medium <https://medium.com/>`__ and use that to learn about the features provided by the Hasura platform. Our clone, called ``ether`` will have the following features:
 
 #. Anyone can register on the site
 #. Users can publish posts, like and comment
@@ -17,7 +17,7 @@ Let's build a simple clone of the popular publishing platform `medium <https://m
 .. admonition:: Video reference
 
    You can also follow a roughly equivalent version of this getting started guide as a video series:
-   `Getting Started Playlist <https://www.youtube.com/playlist?list=PLTRTpHrUcSB-dJ02BRn1mMhJtgngX-mzI>`_
+   `Getting Started Playlist <https://www.youtube.com/playlist?list=PLTRTpHrUcSB-dJ02BRn1mMhJtgngX-mzI>`__
 
 This tutorial is split across the following sections:
 

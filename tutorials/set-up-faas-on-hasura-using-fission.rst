@@ -18,7 +18,7 @@ Setting up Serverless Functions (FaaS) on Hasura using Fission
 
 This tutorial will guide you how to set up and use serverless functions on Hasura using the Fission framework.
 
-`Fission <https://fission.io>`_ is a Kuberenetes Functions-as-a-Service framework wherein you can write short-lived functions and set up 
+`Fission <https://fission.io>`__ is a Kuberenetes Functions-as-a-Service framework wherein you can write short-lived functions and set up
 http or event triggers for them. 
 
 This tutorial assumes that you will be setting up Fission in a cloud-based Hasura cluster (such as GKE). 
@@ -57,7 +57,7 @@ Setup Hasura HTTP routes
 
 To expose Fission and the UI as a Hasura service, you need to add http routes to the hasura-project-conf. 
 
-The `add_routes.py <https://github.com/hasura/serverless-tutorial/blob/master/add-route.py>`_ script will do this for you.
+The `add_routes.py <https://github.com/hasura/serverless-tutorial/blob/master/add-route.py>`__ script will do this for you.
 Run the following command to do so:
 
 .. code ::
@@ -68,7 +68,7 @@ Run the following command to do so:
 This will add the following http endpoints to the hasura-project-conf:
 
 - https://fission-ui.<project-name>.hasura-app.io : The Fission UI, accessible only to the admin.
-    Check out Fission-UI on `github <https://github.com/fission/fission-ui>`_ to understand how to use it.
+    Check out Fission-UI on `github <https://github.com/fission/fission-ui>`__ to understand how to use it.
 
 - https://fission-router.<project-name>.hasura-app.io : Fission router, to trigger functions, and is accessible to Hasura user
     The functions can be triggered by `https://fission-router.<project-name>.hasura-app.io/<http-trigger>`.
@@ -78,7 +78,7 @@ You are now ready to use Fission on Hasura!
 Deploying functions using git-push
 ==================================
 You can deploy functions by pushing to a git remote. This can be done using the serverless-functions 
-`quickstart template <https://github.com/hasura/quickstart-docker-git>`_. 
+`quickstart template <https://github.com/hasura/quickstart-docker-git>`__.
 To set this up, you can either use hasuractl :ref:`quickstart-cmd` to init the quickstart template or follow the steps 
 below to manually set it up.
 
@@ -97,7 +97,7 @@ We'll use this service to git-push and deploy functions.
 Get the serverless-functions quickstart template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Clone the `quickstart-docker-git <https://github.com/hasura/quickstart-docker-git>`_ repo  using
+Clone the `quickstart-docker-git <https://github.com/hasura/quickstart-docker-git>`__ repo  using
 
 .. code::
 
@@ -188,5 +188,5 @@ You can access the endpoints via the Fission router.
 You have completed the tutorial. The quickstart provides only a very simple example. In reality you'd want to write 
 somewhat more complex functions such as getting the request parameters, doing something with them and returning a result.
 
-You can check out the github repos of `Fission <https://github.com/fission/fission>`_ 
-and `Fission-UI <https://github.com/fission/fission-ui>`_ for more on using Fission.
+You can check out the github repos of `Fission <https://github.com/fission/fission>`__
+and `Fission-UI <https://github.com/fission/fission-ui>`__ for more on using Fission.

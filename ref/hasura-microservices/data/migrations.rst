@@ -261,7 +261,6 @@ clean_metadata
 This query clears the entire metadata of the data service. This can be used when you want to start with a clean slate.
 
 .. code-block:: http
-   :emphasize-lines: 11
 
    POST data.<project-name>.hasura-app.io/v1/query HTTP/1.1
    Content-Type: application/json
@@ -285,7 +284,6 @@ export_metadata
 This query exports the entire metadata of the data service.
 
 .. code-block:: http
-   :emphasize-lines: 11
 
    POST data.<project-name>.hasura-app.io/v1/query HTTP/1.1
    Content-Type: application/json

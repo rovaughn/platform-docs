@@ -24,7 +24,7 @@ Benefits of using Hasura to deploy and host your Go-Iris app:
 Basic deployment
 ----------------
 Follow the 4 steps below so that you can start off and deploy a Iris Golang app
-within minutes. Refer to the next section on :ref:`local development`, to connect to develop and test locally.
+within minutes. Refer to the next section on :ref:`local-development`, to connect to develop and test locally.
 
 Step 1a: Get a hasura project and make a note of your credentials
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -48,7 +48,7 @@ Step 1b: Install ``hasuractl``
 
 Install the command line tool: ``hasuractl``.
 
-Read full instructions `here <https://docs.hasura.io/0.14/ref/cli/hasuractl.html>`_.
+Read full instructions `here <https://docs.hasura.io/0.14/ref/cli/hasuractl.html>`__.
 
 Once you're done with that, login and setup ``hasuractl``:
 
@@ -104,6 +104,7 @@ Step 4: ``git push`` and you're done!
    $ git push hasura master
 
 .. _local-development:
+
 Local development
 -----------------
 

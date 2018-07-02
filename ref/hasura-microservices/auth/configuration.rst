@@ -86,11 +86,11 @@ accounts for specific time.
 Email
 -----
 
-Right now Hasura Auth supports only `Sparkpost <https://www.sparkpost.com/>`_.
-But very soon, it will support `Mandrill <https://mandrill.com>`_ and `AWS
+Right now Hasura Auth supports only `Sparkpost <https://www.sparkpost.com/>`__.
+But very soon, it will support `Mandrill <https://mandrill.com>`__ and `AWS
 <https://aws.amazon.com/ses/>`_.
 
-To start sending emails, signup for `Sparkpost <https://www.sparkpost.com/>`_.
+To start sending emails, signup for `Sparkpost <https://www.sparkpost.com/>`__.
 Then create a sending domain, verify the domain and then obtain an API key.
 Sparkpost provides helful interface to guide through the process.
 
@@ -130,11 +130,11 @@ Sparkpost resources for setting up SPF/DKIM:
 Mobile
 ------
 
-For text messages, Hasura right now supports `MSG91 <https://msg91.com/>`_. But
+For text messages, Hasura right now supports `MSG91 <https://msg91.com/>`__. But
 there are plans in the future to support more providers.
 
 To start using mobile verification, or any text message related auth flow,
-please create an account in `MSG91 <https://msg91.com/>`_. Then obtain an API
+please create an account in `MSG91 <https://msg91.com/>`__. Then obtain an API
 key.
 
 * **MSG91 Key**: The API key obtained.

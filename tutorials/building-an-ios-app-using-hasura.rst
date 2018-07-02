@@ -17,6 +17,6 @@ Building an IOS app with a Swift based backend
 
 The following tutorial on building an IOS app using Swift for the backend on Hasura was originally published here: 
 
-`Building an IOS app using Hasura <https://blog.hasura.io/server-side-development-for-ios-developers-using-swift-on-hasura-bb17ed95c822>`_
+`Building an IOS app using Hasura <https://blog.hasura.io/server-side-development-for-ios-developers-using-swift-on-hasura-bb17ed95c822>`__
 
 

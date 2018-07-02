@@ -9,7 +9,7 @@
 
 Custom Microservices
 ====================
-Custom microservices are services that are deployed by developers on Hasura using a git push command or by using one of the thousands of `Docker images <https://hub.docker.com/explore/>`_ or build and use their own images.
+Custom microservices are services that are deployed by developers on Hasura using a git push command or by using one of the thousands of `Docker images <https://hub.docker.com/explore/>`__ or build and use their own images.
 
 
 You can create and manage your own microservices in a Hasura project.

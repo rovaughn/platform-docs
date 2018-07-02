@@ -21,9 +21,9 @@ Let's start by creating a project:
 
 .. admonition:: Video reference
 
-   `Creating a project on DigitalOcean with free Hasura DO credits <https://youtu.be/moRHAVjoFCg>`_ (credits available on request!)
+   `Creating a project on DigitalOcean with free Hasura DO credits <https://youtu.be/moRHAVjoFCg>`__ (credits available on request!)
 
-   `Introduction to the Hasura project console <https://www.youtube.com/watch?v=IIwZY1SM2dg>`_
+   `Introduction to the Hasura project console <https://www.youtube.com/watch?v=IIwZY1SM2dg>`__
 
 Terminology
 -----------

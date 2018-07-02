@@ -205,7 +205,7 @@ that you are really you! :doc:`../ref/cli/hasuractl` can push your SSH key to yo
 so that you can start pushing your code.
 
 In case you do not have an ssh-key,  you can create one following the
-instructions `here <https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html>`_.
+instructions `here <https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html>`__.
 
 
 .. code::

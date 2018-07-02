@@ -15,7 +15,7 @@ in the CLI page on the Hasura console.
 .. admonition:: Generating SSH keys
 
    In case you don't have an SSH key or aren't sure if you have one already, follow this guide:
-   `Creating SSH Keys <https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html>`_
+   `Creating SSH Keys <https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html>`__
 
 Once you have your SSH key, copy it to your clipbard. You can try any of the commands below to copy
 it to your clipboard:

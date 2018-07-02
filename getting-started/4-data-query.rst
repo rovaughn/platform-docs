@@ -37,7 +37,7 @@ Simple queries
 
 .. admonition:: Video reference
 
-   `Using Postman to make data API queries <https://www.youtube.com/watch?v=4OG2FEEFTGE>`_
+   `Using Postman to make data API queries <https://www.youtube.com/watch?v=4OG2FEEFTGE>`__
 
 Inserting Data
 --------------

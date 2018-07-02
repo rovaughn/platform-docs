@@ -14,17 +14,17 @@ AngularJS starter-kit with Yeoman Generator and using Hasura JS SDK
    :height: 0px
    :width: 0px
 
-`AngularJS <https://angularjs.org/>`_ is a popular JavaScript MVW Framework used to develop frontend applications. `Hasura JS SDK <https://github.com/hasura/js-sdk>`_ can be used with AngularJS to super-power your application with backend capabilities like authentication, data and file APIs.
+`AngularJS <https://angularjs.org/>`_ is a popular JavaScript MVW Framework used to develop frontend applications. `Hasura JS SDK <https://github.com/hasura/js-sdk>`__ can be used with AngularJS to super-power your application with backend capabilities like authentication, data and file APIs.
 
 This guide lays out the required information for you to kickstart developing your AngularJS application using Hasura backend APIs.
 
-We have also made a `AngularJS-Hasura starter-kit <https://github.com/hasura/quickstart-docker-git/tree/master/js-angularjs>`_ using `Yeoman Generator for AngularJS <https://github.com/yeoman/generator-angular>`_ which you can use to scaffold your application. This kit has complete working pages that demonstrates capabilities of Hasura APIs. You can refer to these to get started or even use this kit directly for your applications. 
+We have also made a `AngularJS-Hasura starter-kit <https://github.com/hasura/quickstart-docker-git/tree/master/js-angularjs>`_ using `Yeoman Generator for AngularJS <https://github.com/yeoman/generator-angular>`__ which you can use to scaffold your application. This kit has complete working pages that demonstrates capabilities of Hasura APIs. You can refer to these to get started or even use this kit directly for your applications.
 
 :ref:`Click here to jump to How to use the starter-kit section <using-quickstart>`
 
 Including Hasura JS SDK
 -----------------------
-Hasura JS SDK is available on `GitHub <https://github.com/hasura/js-sdk>`_. Add the following snippet to your app's ``index.html``.
+Hasura JS SDK is available on `GitHub <https://github.com/hasura/js-sdk>`__. Add the following snippet to your app's ``index.html``.
 
 .. code-block:: HTML 
 
@@ -73,7 +73,7 @@ Now, you can inject ``hasura`` into any AngularJS component, like controllers et
 
 .. note::
 
-  This step also assumes that you have a Hasura project ready. In case you don't have one, please login to `Hasura Dashboard <https://dashboard.hasura.io>`_ and create a project.
+  This step also assumes that you have a Hasura project ready. In case you don't have one, please login to `Hasura Dashboard <https://dashboard.hasura.io>`__ and create a project.
 
 Auth APIs
 ---------
@@ -81,7 +81,7 @@ Auth APIs
 Signup/Register
 ^^^^^^^^^^^^^^^
 
-Sample controller for using Signup API is given below. Complete working example can be seen at the `AngularJS-Hasura quickstart template <https://github.com/hasura/quickstart-docker-git/tree/master/js-angularjs>`_
+Sample controller for using Signup API is given below. Complete working example can be seen at the `AngularJS-Hasura quickstart template <https://github.com/hasura/quickstart-docker-git/tree/master/js-angularjs>`__
 
 .. code-block:: JavaScript
 
@@ -104,7 +104,7 @@ Sample controller for using Signup API is given below. Complete working example 
 Login
 ^^^^^
 
-A sample controller for login using ``hasura`` would look like this. Complete working example can be seen at the `AngularJS-Hasura quickstart template <https://github.com/hasura/quickstart-docker-git/tree/master/js-angularjs>`_ 
+A sample controller for login using ``hasura`` would look like this. Complete working example can be seen at the `AngularJS-Hasura quickstart template <https://github.com/hasura/quickstart-docker-git/tree/master/js-angularjs>`__
 
 .. code-block:: JavaScript
 
@@ -155,7 +155,7 @@ Now, you can use the following APIs.
 
 .. note:: 
 
-  Complete working example can be seen at the `AngularJS-Hasura quickstart template <https://github.com/hasura/quickstart-docker-git/tree/master/js-angularjs>`_ 
+  Complete working example can be seen at the `AngularJS-Hasura quickstart template <https://github.com/hasura/quickstart-docker-git/tree/master/js-angularjs>`__
 
 Select
 ^^^^^^
@@ -302,7 +302,7 @@ Using the Quick-start Template
 Step 1a: Get a Hasura Project
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Sign up on `Hasura Dashboard <https://dashboard.hasura.io>`_ and get yourself a Hasura project.
+Sign up on `Hasura Dashboard <https://dashboard.hasura.io>`__ and get yourself a Hasura project.
 Creating a hasura project will give you a domain. Something like: `project42.hasura-app.io`
 You will also get an email with your `admin` credentials for your project console and your
 database (search for "hasura credentials" in your inbox if you're having trouble finding the email).
