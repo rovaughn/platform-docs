@@ -67,7 +67,7 @@ if os.getenv("GRAPHIQL_DEFAULT_ENDPOINT"):
 
 # set context
 html_context = {
-    "SITEMAP_DOMAIN": "https://docs.hasura.io/",
+    "SITEMAP_DOMAIN": "https://docs.platform.hasura.io/",
     "BASE_DOMAIN": "platform.hasura.io" if BASE_DOMAIN == "production" else "platform.hasura-stg.hasura-app.io",
     "GRAPHIQL_DEFAULT_ENDPOINT": GRAPHIQL_DEFAULT_ENDPOINT,
     "ALGOLIA_APPLICATION_ID": ALGOLIA_APPLICATION_ID,
