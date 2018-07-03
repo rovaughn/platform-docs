@@ -29,24 +29,13 @@ Commands
    Troubleshooting <troubleshooting>
    hasura <hasura>
    hasura completion <hasura_completion>
-   hasura console <hasura_console>
-   hasura example <hasura_example>
    hasura hub:clone <hasura_hub:clone>
    hasura hub:publish <hasura_hub:publish>
    hasura hub:quickstart <hasura_hub:quickstart>
    hasura hub:search <hasura_hub:search>
    hasura hub:unpublish <hasura_hub:unpublish>
-   hasura init <hasura_init>
    hasura login <hasura_login>
    hasura logout <hasura_logout>
-   hasura metadata <hasura_metadata>
-   hasura metadata apply <hasura_metadata_apply>
-   hasura metadata export <hasura_metadata_export>
-   hasura metadata reset <hasura_metadata_reset>
-   hasura migrate <hasura_migrate>
-   hasura migrate apply <hasura_migrate_apply>
-   hasura migrate create <hasura_migrate_create>
-   hasura migrate status <hasura_migrate_status>
    hasura platform:api-console <hasura_platform:api-console>
    hasura platform:cluster <hasura_platform:cluster>
    hasura platform:cluster add <hasura_platform:cluster_add>

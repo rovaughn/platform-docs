@@ -34,18 +34,13 @@ SEE ALSO
 ~~~~~~~~
 
 * :ref:`hasura completion <hasura_completion>` 	 - Generate auto completion code
-* :ref:`hasura console <hasura_console>` 	 - Open console to manage database and try out APIs
-* :ref:`hasura example <hasura_example>` 	 - Show some examples for using hasura
 * :ref:`hasura hub:clone <hasura_hub:clone>` 	 - Clone a project from Hasura Hub
 * :ref:`hasura hub:publish <hasura_hub:publish>` 	 - Publish a hasura project
 * :ref:`hasura hub:quickstart <hasura_hub:quickstart>` 	 - Get started with a project from Hasura Hub
 * :ref:`hasura hub:search <hasura_hub:search>` 	 - Search for hasura projects on Hasura Hub
 * :ref:`hasura hub:unpublish <hasura_hub:unpublish>` 	 - Unpublish a hasura project
-* :ref:`hasura init <hasura_init>` 	 - Initialize directory for Hasura GraphQL Engine
 * :ref:`hasura login <hasura_login>` 	 - Login to hasura.io
 * :ref:`hasura logout <hasura_logout>` 	 - Logout from hasura.io
-* :ref:`hasura metadata <hasura_metadata>` 	 - Manage Hausra GraphQL Engine metdata saved in the database
-* :ref:`hasura migrate <hasura_migrate>` 	 - Manage migrations on the database
 * :ref:`hasura platform:api-console <hasura_platform:api-console>` 	 - Opens a Console UI connected to a cluster
 * :ref:`hasura platform:cluster <hasura_platform:cluster>` 	 - Manage hasura clusters
 * :ref:`hasura platform:conf <hasura_platform:conf>` 	 - Manage configuration on the cluster
