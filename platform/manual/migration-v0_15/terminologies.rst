@@ -60,7 +60,7 @@ of the app.
 
 Since, Hasura platform v0.15, collection of database schema (called
 migrations), and multiple clusters configuration (and optionally source code
-for custom microservices) is kept together in a git repository.  This is termed
+for custom microservices) are kept together in a git repository.  This is termed
 as **Hasura project**.
 
 
