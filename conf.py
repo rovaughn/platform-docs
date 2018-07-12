@@ -103,7 +103,6 @@ extensions = [
     "sphinx.ext.todo",
     "global_tabs",
     "sphinx_tabs.tabs",
-    "graphiql",
 ]
 
 # Add any paths that contain templates here, relative to this directory.

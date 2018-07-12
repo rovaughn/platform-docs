@@ -1267,30 +1267,6 @@ ol, ul
   max-width: 100%;
 }
 
-/* GraphiQL overrides */
-.graphiql {
-  height: 300px;
-  margin-bottom: 20px;
-}
-
-.graphiql .query, .graphiql .response {
-    display: none;
-}
-
-.graphiql-container .topBar {
-  background: #f7f7f7 !important;
-  border-top-left-radius: 3px !important;
-}
-
-.graphiql-container .docExplorerShow {
-  background: #f7f7f7 !important;
-  border-top-right-radius: 3px !important;
-}
-
-.graphiql .variable-editor, .graphiql a[title="Show History"], .graphiql.view-only .execute-button {
-  display: none !important;
-}
-
 @media (max-width: 768px) {
   .input_search_box {
     width: 90%;
