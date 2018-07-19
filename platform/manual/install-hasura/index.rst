@@ -17,3 +17,7 @@ Docker for Desktop.
    general
 ..   Azure Kubernetes Service <aks>
 ..   Amazon EKS <eks>
+
+.. note::
+    
+    The Hasura Kubernetes Platform is available under these `Terms of Use <https://hasura.io/legal/platform-terms-of-use/>`_.
