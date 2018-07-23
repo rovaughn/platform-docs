@@ -56,11 +56,13 @@ Step 3: Commit your changes
 Step 4: Create a Hasura cluster and add to the project
 ------------------------------------------------------
 
-.. code-block:: bash
+See this :doc:`guide <../cluster/create>` for instructions on creating a new Hasura cluster. Once you've created a cluster, you can add it the project using the CLI:
 
-   $ hasura cluster create --infra free
-   $ hasura cluster add [cluster-name] -c hasura
-   $ hasura cluster set-default hasura
+.. code-block:: bash
+   
+   # in project directory
+   # to add cluster named 'alarming52' as alias 'hasura' to project
+   $ hasura cluster add alarming52 -c hasura
 
 Step 5: Push to the cluster
 ---------------------------

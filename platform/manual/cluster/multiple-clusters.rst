@@ -12,47 +12,7 @@ project.
 Creating new clusters
 ---------------------
 
-To create a new cluster, use the ``hasura`` CLI.
-
-.. code-block:: bash
-
-  $ hasura cluster create --infra free
-
-
-As an example, let us create two clusters, one for staging and one for
-production.
-
-.. code-block:: bash
-
-  $ hasura cluster create --infra free
-
-  INFO Creating a Hasura cluster...
-  INFO Hasura cluster created                        cluster=alarming52
-  INFO Initializing the cluster...
-  INFO Cluster initialized
-  INFO Kubernetes context has been added to this system  context=alarming52
-
-  $ hasura cluster create --infra free
-
-  INFO Creating a Hasura cluster...
-  INFO Hasura cluster created                        cluster=ambitious93
-  INFO Initializing the cluster...
-  INFO Cluster initialized
-  INFO Kubernetes context has been added to this system  context=ambitious93
-
-
-This will create two cluster under your user account. You can see them by
-running:
-
-.. code-block:: bash
-
-  $ hasura cluster list
-
-  Clusters available in your account:
-  NO   NAME                 OWNER
-  1    alarming52           you
-  1    ambitious93          you
-
+Please see :doc:`this <create>` for instructions for creating new clusters.
 
 
 Add a cluster to a project

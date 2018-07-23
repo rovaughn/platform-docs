@@ -47,12 +47,12 @@ You're ready to start!
 Here's a list of your first steps:
 
 - :doc:`Install <../install-hasura-cli>` the ``hasura`` CLI
-- Quickstart (clone a hasura project + create a free cluster)
+- Clone a Hasura project
 
-  - ``hasura quickstart hasura/hello-world``.
+  - ``hasura clone hasura/hello-world``.
   - You can replace ``hasura/hello-word`` with any project from `hasura.io/hub <https://hasura.io/hub>`_
-
-- Deploy your project or changes you make to the cluster
+- Install Hasura on a Kubernetes cluster by following these :doc:`guides <../install-hasura/index>` (*Minikube, Docker for Desktop, Google Kubernetes Engine, etc.*). These guides also contain instructions on adding your cluster to the Hasura project you cloned in the previous step.
+- Deploy your project or changes you make to the cluster (*from inside the project folder*)
 
   - ``git push hasura master``
 

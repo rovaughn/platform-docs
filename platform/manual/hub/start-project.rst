@@ -11,36 +11,8 @@ Here are some useful projects to start with:
 2. ``hasura/base``: Use the base project to start off on a completely empty project. You can add your own microservices, schemas and configurations to this.
 
 
-Option 1: Clone the project and deploy it to a new cluster
-----------------------------------------------------------
-
-First, :doc:`install <../install-hasura-cli>` the hasura CLI.
-
-Then, run the following instructions on your terminal or command line:
-
-.. code-block:: bash
-
-   hasura quickstart <user/my-project>
-   cd <my-project>
-   git add . && git commit -m 'Initial commit'
-   git push hasura master
-
-Once your `git push` succeeds, everything is deployed to a new free Hasura cluster.
-
-Now you can add/remove/modify:
-
-1. microservices: In the ``microservices/`` directory
-2. schema: Run ``hasura api-console`` and head to the ``Data`` tab. You can browse, modify the schema appropriately.
-3. conf: Modify the appropriate files in the ``conf/`` directory.
-
-
-Option 2: Clone the project without deploying it
+Clone the project and deploy it to a new cluster
 ------------------------------------------------
-
-You might want to clone a project without deploying it for a few reasons:
-
-1. You want to deploy it on a cluster you already have
-2. You want to clone the source code of the project as reference
 
 First, :doc:`install <../install-hasura-cli>` the hasura CLI.
 
@@ -51,7 +23,22 @@ Then, run the following instructions on your terminal or command line:
    hasura clone <user/my-project>
    cd <my-project>
 
-Now, you'll have the project source code on your computer.
+Now, you'll have the project source code on your computer. You now need a cluster to deploy this project. Please see :doc:`this <../cluster/create>` for instructions on creating a new cluster and adding it to a project. Once you've added the cluster to the project, run the following commands on your terminal or command line, from inside the project directory:
+
+.. code-block:: bash
+
+   git add . && git commit -m 'Initial commit'
+   
+   # replace hasura with your cluster's alias
+   git push hasura master
+   
+Once your `git push` succeeds, everything is deployed to a new free Hasura cluster.
+
+Now you can add/remove/modify:
+
+1. microservices: In the ``microservices/`` directory
+2. schema: Run ``hasura api-console`` and head to the ``Data`` tab. You can browse, modify the schema appropriately.
+3. conf: Modify the appropriate files in the ``conf/`` directory.
 
 Starter hub projects:
 ^^^^^^^^^^^^^^^^^^^^^
