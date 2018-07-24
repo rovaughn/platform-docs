@@ -39,7 +39,7 @@ Alright, let's get started.
 Cloning a python cron microservice from Hasura Hub
 --------------------------------------------------
 
-Clone the ``cron`` microservice from `hasura/python-cron <https://hasura.io/hub/projects/hasura/python-cron>`_ into your project by following the
+Clone the ``cron`` microservice from `hasura/python-cron <https://platform.hasura.io/hub/projects/hasura/python-cron>`_ into your project by following the
 instructions :doc:`here <../microservices/add-microservice/using-template>`
 
 .. note::

@@ -3,7 +3,7 @@
 Hasura Hub
 ==========
 
-`hasura.io/hub <https://hasura.io/hub>`_ is a registry of hasura projects that you can use as a base
+`platform.hasura.io/hub <https://platform.hasura.io/hub>`_ is a registry of hasura projects that you can use as a base
 for your hasura project. These projects might help you get started with a bunch of microservices,
 frameworks or schemas on which you can build on top of.
 

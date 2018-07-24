@@ -21,15 +21,15 @@ Run the following command:
    ✓ Project cloned directory=<dir-path>/hello-world
 
 
-This will 'clone' the `hasura/hello-world <https://hasura.io/hub/projects/hasura/hello-world>`_ project from
-`hasura.io/hub <https://hasura.io/hub>`_ into your current directory.
+This will 'clone' the `hasura/hello-world <https://platform.hasura.io/hub/projects/hasura/hello-world>`_ project from
+`platform.hasura.io/hub <https://platform.hasura.io/hub>`_ into your current directory.
 
 .. admonition:: Note
 
    ``hasura/hello-world`` is a starter project that contains a few database migrations to add a sample schema and
    some sample data to let you start experimenting quickly.
 
-   You can clone any project from the `hub <https://hasura.io/hub>`_ and use that as a starting point for your new project.
+   You can clone any project from the `hub <https://platform.hasura.io/hub>`_ and use that as a starting point for your new project.
 
 Understand the project structure
 --------------------------------

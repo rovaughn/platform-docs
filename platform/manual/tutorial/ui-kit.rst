@@ -68,7 +68,7 @@ Enable auth with Google
              key: auth.google.client_secret
              name: hasura-secrets
 
-#. Add the client secret to `secrets <https://docs.hasura.io/0.15/manual/hasuractl/hasura_secret.html>`_ by running the following command from your project directory.
+#. Add the client secret to :doc:`secrets <../project/secrets/index>` by running the following command from your project directory.
 
    .. code-block:: bash
 

@@ -22,7 +22,7 @@ Watch this quick video to learn how to publish, maintain content and unpublish p
 hasura CLI publish
 ^^^^^^^^^^^^^^^^^^
 
-Any Hasura project can be published to `/hub <https://hasura.io/hub>`_.
+Any Hasura project can be published to `/hub <https://platform.hasura.io/hub>`_.
 The project name that you want to publish at is specified in ``hasura.yaml``.
 
 

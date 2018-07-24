@@ -419,7 +419,7 @@ Filestore Service
 Hasura provides a filestore microservice, which can be used to upload and
 download files. To use the Filestore microservice properly, kindly take a
 look at the docs
-`here <https://docs.hasura.io/0.13/ref/hasura-microservices/filestore/index.html>`__.
+`here <https://docs.platform.hasura.io/0.13/ref/hasura-microservices/filestore/index.html>`__.
 
 Upload File
 ^^^^^^^^^^^

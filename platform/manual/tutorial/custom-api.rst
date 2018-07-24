@@ -14,7 +14,7 @@ Custom code: Adding a simple web-server to serve a UI
 -----------------------------------------------------
 
 We'll use a Nodejs Express microservice for the server. To do this, we'll use the ``api`` microservice from the
-`hello-nodejs-express <https://hasura.io/hub/projects/hasura/hello-nodejs-express>`_ hub project as the base (it is
+`hello-nodejs-express <https://platform.hasura.io/hub/projects/hasura/hello-nodejs-express>`_ hub project as the base (it is
 basically a nodejs-express microservice boilerplate).
 
 Initialize the microservice using:

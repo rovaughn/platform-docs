@@ -369,5 +369,5 @@ To update the cache after deletion, add the following ``update`` prop to the Mut
 Reference
 ----------
 
-* `Hasura GraphQL <https://docs.hasura.io/0.15/manual/data/graphql.html>`_
+* `Hasura GraphQL <https://docs.platform.hasura.io/0.15/manual/data/graphql.html>`_
 * `Apollo Client <https://www.apollographql.com/docs/react/>`_

@@ -42,7 +42,7 @@ microservice you would need a ``Dockerfile`` and a ``k8s.yaml`` file. In Hasura
 everything runs as a Docker container on a Kubernetes cluster.
 
 You can find readymade Hasura projects and microservices to use as templates
-for most of the popular stacks on https://hasura.io/hub
+for most of the popular stacks on https://platform.hasura.io/hub
 
 :doc:`Read more <../microservices/add-microservice/index>` on how to create
 custom microservices.

@@ -12,7 +12,7 @@ Collaborating on a project
 Many developers can work on a single Hasura project and all the clusters added to it,
 since all the configuration is in files, managed by git.
 A project owner can share their project git repository and add collaborators to the
-clusters through `Hasura Dashboard <https://dashboard.hasura.io/clusters/>`_.
+clusters through `Hasura Dashboard <https://dashboard.platform.hasura.io/clusters/>`_.
 
 Adding collaborators to your project
 ------------------------------------
@@ -74,11 +74,11 @@ Assuming the owner has shared the repo URL and added you as a collaborator to th
 
 .. |hub-link| raw:: html
 
-   <a href="https://hasura.io/hub" target="_blank">Hasura Hub</a>
+   <a href="https://platform.hasura.io/hub" target="_blank">Hasura Hub</a>
 
 .. |dashboard-link| raw:: html
 
-   <a href="https://dashboard.hasura.io/clusters" target="_blank">Hasura Dashboard</a>
+   <a href="https://dashboard.platform.hasura.io/clusters" target="_blank">Hasura Dashboard</a>
 
 .. |github-link| raw:: html
 

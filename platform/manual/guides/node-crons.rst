@@ -1,7 +1,7 @@
 Adding a nodejs cron job to your Hasura Project
 ===============================================
 
-`hasura/nodejs-cron <https://hasura.io/hub/projects/hasura/nodejs-cron>`_ is a quickstart that you can find on Hasura Hub.
+`hasura/nodejs-cron <https://platform.hasura.io/hub/projects/hasura/nodejs-cron>`_ is a quickstart that you can find on Hasura Hub.
 
 It consists of a simple nodejs-cron job running which prints something to the console based on the specified time interval.
 

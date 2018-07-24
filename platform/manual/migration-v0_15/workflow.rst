@@ -12,7 +12,7 @@ Creating a Hasura project
   * - Old workflow (<= v0.14.x)
     - New workflow (>= v0.15.x)
   * - No specific workflow to create a project. Usually one heads to
-      `dashboard.hasura.io`_ and creates a cluster and then manually associates
+      `dashboard.platform.hasura.io`_ and creates a cluster and then manually associates
       it to a project.
     - Use the ``hasura`` cli to create a project. Start with an pre-built
       project using ``hasura clone``, or start a fresh project: ``hasura
@@ -26,7 +26,7 @@ Creating a Hasura cluster
 
   * - Old workflow (<= v0.14.x)
     - New workflow (>= v0.15.x)
-  * - Go to `dashboard.hasura.io`_ and create cluster from there. Admin
+  * - Go to `dashboard.platform.hasura.io`_ and create cluster from there. Admin
       credentials to the cluster are sent over email.
     - Install Hasura on any Kubernetes cluster or create a Pro tier cluster using the CLI. Add a cluster to an existing project by ``hasura cluster add <cluster-name>``. For more details refer: :doc:`../cluster/index`.
 
@@ -146,4 +146,4 @@ Viewing logs/events
 
 
 
-.. _dashboard.hasura.io: https://dashboard.hasura.io
+.. _dashboard.platform.hasura.io: https://dashboard.platform.hasura.io

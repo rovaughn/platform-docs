@@ -10,7 +10,7 @@ The Hasura platform allows you to deploy custom code as :ref:`microservices <has
 GraphQL Server Boilerplate
 --------------------------
 
-We have a Node/Express GraphQL `graphql-server-boilerplate <https://hasura.io/hub/projects/hasura/graphql-server-boilerplate>`_ that you can quickly add to your project and get your own GraphQL server live in under five minutes. It has a simple hello-world schema which looks like:
+We have a Node/Express GraphQL `graphql-server-boilerplate <https://platform.hasura.io/hub/projects/hasura/graphql-server-boilerplate>`_ that you can quickly add to your project and get your own GraphQL server live in under five minutes. It has a simple hello-world schema which looks like:
 
 .. code-block:: none
 

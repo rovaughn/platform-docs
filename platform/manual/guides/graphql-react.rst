@@ -182,5 +182,5 @@ The query is very similar to the update mutation, the only difference is that th
 Reference
 ----------
 
-* `Hasura GraphQL <https://docs.hasura.io/0.15/manual/data/graphql.html>`_
+* `Hasura GraphQL <https://docs.platform.hasura.io/0.15/manual/data/graphql.html>`_
 * `Apollo Client <https://www.apollographql.com/docs/react/>`_
