@@ -17,7 +17,7 @@ project.
 
 .. note::
 
-  * For pricing details for the pro-tier, see `Hasura pricing <https://hasura.io/pricing>`_.
+  * For pricing details for the pro-tier, see `Hasura pricing <https://platform.hasura.io/pricing>`_.
   
 
 See:

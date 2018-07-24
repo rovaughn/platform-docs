@@ -21,7 +21,7 @@ Examples
 ::
 
     # Upgrade an existing cluster to a different configuration
-    # visit https://hasura.io/pricing/ and select a config
+    # visit https://platform.hasura.io/pricing/ and select a config
     # get the infrastructure config code and execute the command
     $ hasura cluster upgrade -c [cluster-alias] -i [code]
 
@@ -33,7 +33,7 @@ Options
 
   -c, --cluster string      alias of cluster to be upgraded
   -h, --help                help for upgrade
-  -i, --infra string        code for new infrastructure configuration (generate from https://hasura.io/pricing/)
+  -i, --infra string        code for new infrastructure configuration (generate from https://platform.hasura.io/pricing/)
       --skip-confirmation   skip confirmation prompt to continue with cluster creation
 
 Options inherited from parent commands

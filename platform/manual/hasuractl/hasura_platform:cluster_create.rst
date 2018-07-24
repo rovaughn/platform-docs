@@ -25,7 +25,7 @@ Examples
     $ hasura cluster create -i free
 
     # Create a pro-tier Hasura cluster:
-    # visit https://hasura.io/pricing/ and select a config
+    # visit https://platform.hasura.io/pricing/ and select a config
     # get the infrastructure config code and execute the command
     $ hasura cluster create -i [code]
 

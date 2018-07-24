@@ -15,7 +15,7 @@ A cluster's initial configuration is set in ``clusters.yaml``.
 
 Subsequent changes to a cluster's configuration can be made by either modifying the
 infra spec as documented :doc:`here <pro-tier/infra-spec>`, or by
-using the `Pricing Calculator <https://hasura.io/pricing>`_, and then applying
+using the `Pricing Calculator <https://platform.hasura.io/pricing>`_, and then applying
 these changes.
 
 
@@ -28,7 +28,7 @@ these changes.
 Using the pricing calculator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Choose a configuration using the `Pricing Calculator
-  <https://hasura.io/pricing>`_  and copy the generated ``infra code``.
+  <https://platform.hasura.io/pricing>`_  and copy the generated ``infra code``.
 
 * Run the command:
 

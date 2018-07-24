@@ -13,7 +13,7 @@ Follow the below steps to create a pro-tier cluster and link it to a project:
 Choosing cluster configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 You can generate your cluster's configuration using the `Pricing Calculator
-<https://hasura.io/pricing>`_.
+<https://platform.hasura.io/pricing>`_.
 
 This will generate an ``infra code`` (eg: ZXPBVF) which can then be used to create a cluster
 of the chosen configuration.

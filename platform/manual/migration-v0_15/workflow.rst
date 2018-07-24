@@ -15,7 +15,7 @@ Creating a Hasura project
       `dashboard.hasura.io`_ and creates a cluster and then manually associates
       it to a project.
     - Use the ``hasura`` cli to create a project. Start with an pre-built
-      project using ``hasura quickstart``, or start a fresh project: ``hasura
+      project using ``hasura clone``, or start a fresh project: ``hasura
       clone base``. For more details refer: :doc:`../project/index`.
 
 

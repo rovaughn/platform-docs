@@ -107,7 +107,7 @@ zones https://cloud.google.com/compute/docs/regions-zones/
 .. note::
 
    All zones do not have GKE support. Please see `Hasura pricing
-   <https://hasura.io/pricing>`_ to see all the available zones.
+   <https://platform.hasura.io/pricing>`_ to see all the available zones.
 
 
 Node
