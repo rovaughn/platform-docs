@@ -1,8 +1,11 @@
 ### This is the documentation for the Hasura platform
 
-This documentation project is built using [Sphinx](http://www.sphinx-doc.org/en/master/).
+This documentation project is built using [Sphinx](http://www.sphinx-doc.org/en/master/). 
 
-Please raise PRs to contribute.
+To contribute, please raise PRs to the project.
+
+Sphinx documentation files are written in the RST markup language. Here is a 
+[guide to the RST markup language](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html).
 
 **To run docs locally:**
 
