@@ -33,4 +33,4 @@ See:
    set-default
    reusing-a-cluster
    connect-kubectl
-   
+   pro-tier/index
