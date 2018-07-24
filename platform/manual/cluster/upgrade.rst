@@ -1,15 +1,7 @@
 Upgrading a cluster
 ===================
 
-.. admonition:: Free cluster to pro-tier cluster
-
-   Currently upgrading a free cluster to a pro-tier cluster is a manual migration process.
-   We are working on a more seamless experience.
-
-   For now, :doc:`create a pro-tier cluster <pro-tier/create>` and follow :doc:`../guides/complete-cluster-migration`
-
-
-Upgrading (ie: scaling) a cluster is only possible for a :doc:`pro-tier cluster <index>`.
+Upgrading (ie: scaling) a cluster is only possible for a :doc:`Hasura pro-tier cluster <pro-tier/index>`.
 
 A cluster's initial configuration is set in ``clusters.yaml``.
 
