@@ -12,20 +12,11 @@
 Hasura cluster
 ==============
 
-A Hasura cluster is basically a `Kubernetes <https://kubernetes.io>`_ cluster underneath, which is usually running on a
-cloud infrastructure like ``Digital Ocean``, ``Google Cloud``, ``Azure`` or ``AWS``.
+A Hasura cluster is essentially a `Kubernetes <https://kubernetes.io>`_ cluster underneath with the platform installed on it. The Kubernetes cluster is usually running locally on your machine (*Minikube, Docker for Desktop*) or on cloud infrastructure like ``Digital Ocean``, ``Google Cloud``, ``Azure`` or ``AWS``.
 
-Hasura clusters are used to deploy :doc:`Hasura projects <../project/index>` and host its constituent
-:doc:`microservices <../microservices/index>` (ie: a Postgres database, Hasura backend APIs, custom microservices, etc).
+Hasura clusters are used to deploy :doc:`Hasura projects <../project/index>` and host its constituent :doc:`microservices <../microservices/index>` (ie: a Postgres database, Hasura backend APIs, custom microservices, etc).
 
-Hasura provides free clusters as well as paid pro-tier clusters.
-Hasura free-tier clusters are for development purposes or for hobby projects. For hosting production projects,
-Hasura :doc:`pro-tier clusters <pro-tier/index>` should be used.
-
-.. note::
-
-  Do not host production projects on free clusters as they don't
-  have production SLAs and stability.
+You may use any Kubernetes cluster to run the platform. Hasura's :doc:`Pro-tier <pro-tier/index>` provides a Hasura cluster on managed infrastructure (*by Hasura*). It is best suited for apps in production and/or for dev/staging environments on the cloud.
 
 See:
 ^^^^
@@ -42,4 +33,4 @@ See:
    set-default
    reusing-a-cluster
    connect-kubectl
-   pro-tier/index
+   

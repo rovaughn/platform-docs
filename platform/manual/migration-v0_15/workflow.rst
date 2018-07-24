@@ -28,10 +28,7 @@ Creating a Hasura cluster
     - New workflow (>= v0.15.x)
   * - Go to `dashboard.hasura.io`_ and create cluster from there. Admin
       credentials to the cluster are sent over email.
-    - Create a cluster by ``hasura cluster create --type=free``. Add a cluster
-      to an existing project by ``hasura cluster add <cluster-name>``. No admin
-      credentials are required to access the cluster. It can be accessed using
-      the hasura cli. For more details refer: :doc:`../cluster/index`.
+    - Install Hasura on any Kubernetes cluster or create a Pro tier cluster using the CLI. Add a cluster to an existing project by ``hasura cluster add <cluster-name>``. For more details refer: :doc:`../cluster/index`.
 
 
 Opening the console
