@@ -533,10 +533,12 @@
 
   <!-- global_tabs -->
   <script type="text/javascript">
-    if ($('.global-tabs').length > 0) {
-      loadCss("{{ pathto('_static/global_tabs/global_tabs.css', 1) }}", function(){});
-      loadScript("{{ pathto('_static/global_tabs/global_tabs.js', 1) }}", function(){});
-    }
+    $(document).ready( function() {
+      if ($('.global-tabs').length > 0) {
+        loadCss("{{ pathto('_static/global_tabs/global_tabs.css', 1) }}", function(){});
+        loadScript("{{ pathto('_static/global_tabs/global_tabs.js', 1) }}", function(){});
+      }
+    });
   </script>
 
 {% endblock %}
