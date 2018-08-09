@@ -103,6 +103,8 @@ extensions = [
     "sphinx.ext.todo",
     "global_tabs",
     "sphinx_tabs.tabs",
+    "lexer_jsx",
+    "lexer_graphql"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
