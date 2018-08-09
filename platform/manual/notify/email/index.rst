@@ -73,4 +73,3 @@ Email providers:
 
   SparkPost <sparkpost>
   Mandrill <mandrill>
-  Hasura Test Provider <hasura-test-provider>
