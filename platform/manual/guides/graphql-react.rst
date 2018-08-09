@@ -14,7 +14,7 @@ Configuration
 
 2. Create an `ApolloClient <https://www.apollographql.com/docs/react/basics/setup.html#ApolloClient>`_ instance and point it to the Hasura Data GraphQL URL via `Apollo Link <https://www.apollographql.com/docs/link/>`_.
 
-.. code-block:: js
+.. code-block:: jsx
 
   import ApolloClient from 'apollo-client';
   import { createHttpLink } from 'apollo-link-http';
@@ -39,7 +39,7 @@ Configuration
 
 3. Connect the client to your component tree using the ``ApolloProvider`` component. It is important to put ``ApolloProvider`` above every component where you need the GraphQL data. For example, it could be before your root component.
 
-.. code-block:: js
+.. code-block:: jsx
 
   import React from 'react';
   import ReactDOM from 'react-dom';
@@ -94,7 +94,7 @@ Querying for data
 
 The graphql query to fetch all the todos from the `todos` table will be:
 
-.. code-block:: js
+.. code-block:: jsx
 
   const QUERY_TODO = gql`
     query fetch_todos {
@@ -113,7 +113,7 @@ Mutations
 
 To **insert** a row into a table, in this case, the ``todos`` table, the GraphQL mutation will be:
 
-.. code-block:: js
+.. code-block:: jsx
 
   const MUTATION_TODO_ADD = gql`
     mutation insertTodoMutation ($objects: [todos_input]){
@@ -166,7 +166,7 @@ Things to be noted:
 
 To **delete** a row in the table, the mutation looks like:
 
-.. code-block:: js
+.. code-block:: jsx
 
   const MUTATION_TODO_DELETE = gql`
     mutation deleteTodoMutation ($todoId: Int) {
@@ -180,7 +180,7 @@ The query is very similar to the update mutation, the only difference is that th
 
 
 Reference
-----------
+---------
 
 * `Hasura GraphQL <https://docs.platform.hasura.io/0.15/manual/data/graphql.html>`_
 * `Apollo Client <https://www.apollographql.com/docs/react/>`_

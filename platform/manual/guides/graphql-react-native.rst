@@ -14,7 +14,7 @@ Configuration
 
 2. Create an `ApolloClient <https://www.apollographql.com/docs/react/basics/setup.html#ApolloClient>`_ instance and point it to the Hasura Data GraphQL URL via `Apollo Link <https://www.apollographql.com/docs/link/>`_.
 
-   .. code-block:: javascript
+   .. code-block:: jsx
 
     import { ApolloClient } from 'apollo-client';
     import { HttpLink } from 'apollo-link-http';
@@ -36,7 +36,7 @@ Configuration
 
    If you have to authorize your queries and mutations, you need to pass request headers to the Apollo Client using a middleware.
 
-   .. code-block:: javascript
+   .. code-block:: jsx
 
     const GRAPHQL_URL = `https://data.<cluster-name>.hasura-app.io/v1alpha1/graphql`
     const httpLink = new HttpLink({ uri: GRAPHQL_URL});
@@ -64,7 +64,7 @@ Configuration
 
 3. Connect the client to your component tree using the ``ApolloProvider`` component. It is important to put ``ApolloProvider`` above every component where you need the GraphQL data. For example, it could be before registering your root component.
 
-   .. code-block:: javascript
+   .. code-block:: jsx
 
     import { ApolloProvider } from 'react-apollo';
     import { ApolloClient } from 'apollo-client';
@@ -115,7 +115,7 @@ Queries and mutations
 
 Firstly, we will define our required queries and mutations as graphql strings.
 
-.. snippet:: javascript
+.. snippet:: js
   :filename: graphqlStrings.js
 
     const FETCH_TODOS = gql`
@@ -190,7 +190,7 @@ Query Components
 
 To fetch all todos, and render the tasks as a  list of `<Text>`, you can use
 
-.. code-block:: javascript
+.. code-block:: jsx
 
 
   const TodoListComponent = () => (
@@ -216,7 +216,7 @@ Insert
 
 Below is the code snippet for a ``Button`` that ``inserts`` an element in the ``todos`` table.
 
-.. code-block:: javascript
+.. code-block:: jsx
 
   const AddButton = (props) => (
     <Mutation
@@ -243,7 +243,7 @@ Below is the code snippet for a ``Button`` that ``inserts`` an element in the ``
 
 In most cases, you also need to update the memory cache of the Apollo client in order to reflect changes in the UI. To do that, you just have to add an update prop in the ``Mutation`` component:
 
-.. code-block:: javascript
+.. code-block:: jsx
 
     update= {(cache, {data: {insert_todos}}) => {
       const data = cache.readQuery({ query: FETCH_TODOS});
@@ -262,7 +262,7 @@ Update
 
 The ``Button`` below, sets the ``completed`` status of a task (id = 4) to ``true``.
 
-.. code-block:: javascript
+.. code-block:: jsx
 
   // this component should receive a prop called `todo` which is the todo item object to be updated
   const UpdateButton= (props) => {
@@ -299,7 +299,7 @@ The ``Button`` below, sets the ``completed`` status of a task (id = 4) to ``true
 
 To update the Apollo cache after performing the mutation, you just have to add an update prop in the ``Mutation`` component:
 
-.. code-block:: javascript
+.. code-block:: jsx
 
     update={(cache) => {
       const data = cache.readQuery({ query: FETCH_TODOS});
@@ -326,7 +326,7 @@ Delete
 
 Finally, if you want a ``Button`` to delete a task with ``id = 4``, you can use
 
-.. code-block:: javascript
+.. code-block:: jsx
 
     // this component should receive a prop called `todo` which is the todo item to be updated
     const DeleteButton = (props) => (
@@ -353,7 +353,7 @@ Finally, if you want a ``Button`` to delete a task with ``id = 4``, you can use
 
 To update the cache after deletion, add the following ``update`` prop to the Mutation component:
 
-.. code-block:: javascript
+.. code-block:: jsx
 
     update= {(cache) => {
       const data = cache.readQuery({ query: FETCH_TODOS});
@@ -367,7 +367,7 @@ To update the cache after deletion, add the following ``update`` prop to the Mut
     }}
 
 Reference
-----------
+---------
 
 * `Hasura GraphQL <https://docs.platform.hasura.io/0.15/manual/data/graphql.html>`_
 * `Apollo Client <https://www.apollographql.com/docs/react/>`_
