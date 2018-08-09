@@ -15,7 +15,7 @@ The full syntax of a ``select`` query can be found :ref:`here <data_select>`.
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_article {
            article (where: {is_published: {_eq: true}}) {
@@ -63,7 +63,7 @@ Boolean operators like ``$and``, ``$or``, ``$not`` can be used in a ``where`` cl
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_article {
            article (where: {_and: [ {is_published: {_eq: true}}, {author_id: {_eq: 6}}]}) {
@@ -115,7 +115,7 @@ Example,
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_article {
            article (where: {is_published: {_eq: true}}, limit:10, order_by: ["+author_id"]) {

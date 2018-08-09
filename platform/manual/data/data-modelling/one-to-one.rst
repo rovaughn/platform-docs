@@ -54,7 +54,7 @@ To fetch the list of all entries from the ``person`` table along with their ``vo
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
         query fetch_person {
             person {
@@ -99,7 +99,7 @@ Similarly, to fetch all the entries from the ``voter`` table along with the asso
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_voter {
             voter {

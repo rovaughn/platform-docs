@@ -40,7 +40,7 @@ To fetch the list of all ``articles`` along with the name of each of their ``aut
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_article {
             article {

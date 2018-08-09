@@ -48,7 +48,7 @@ You can now fetch the total likes from the ``article`` table
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
         query fetch_article {
           article {

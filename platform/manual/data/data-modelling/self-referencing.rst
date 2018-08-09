@@ -57,7 +57,7 @@ To fetch all the list of all top level comments along with their children commen
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_comment {
             comment (where: {parent_comment_id: null}) {

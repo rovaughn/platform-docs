@@ -46,7 +46,7 @@ for all tables.
 
 For example, if you have an ``author`` table defined, the GraphQL schema for ``query_root`` looks as follows:
 
-.. code-block:: none
+.. code-block:: graphql
 
    type query_root {
 
@@ -63,7 +63,7 @@ Examples:
 
 - Fetch all the authors with their id and name fields.
 
-  .. code-block:: none
+  .. code-block:: graphql
 
      query {
        author {
@@ -74,7 +74,7 @@ Examples:
 
 - Fetches the author whose name is ``"maya"``.
 
-  .. code-block:: none
+  .. code-block:: graphql
 
      query {
        author (where: {name: {_eq: "maya"}}) {
@@ -85,7 +85,7 @@ Examples:
 
 - ... and their articles (an array relationship to article table)
 
-  .. code-block:: none
+  .. code-block:: graphql
 
      query {
        author (where: {name: {_eq: "maya"}}) {
@@ -100,7 +100,7 @@ Examples:
 
 - ... and fetch only the top 5 sorted by rating
 
-  .. code-block:: none
+  .. code-block:: graphql
 
      query {
        author (where: {name: {_eq: "maya"}}) {
@@ -115,7 +115,7 @@ Examples:
 
 The ``mutation_root`` will be as follows:
 
-.. code-block:: none
+.. code-block:: graphql
 
    type mutation_root {
 
@@ -137,7 +137,7 @@ Examples:
 
 - Insert an author returing the id.
 
-  .. code-block:: none
+  .. code-block:: graphql
 
      mutation {
        insert_author (
@@ -151,7 +151,7 @@ Examples:
 
 - Update the name of the author named "srishti" to "shukra", returning the number of affected rows.
 
-  .. code-block:: none
+  .. code-block:: graphql
 
      mutation {
        update_author (
@@ -164,7 +164,7 @@ Examples:
 
 - Delete author named "shukra" returning id of the deleted author and the number of affected rows.
 
-  .. code-block:: none
+  .. code-block:: graphql
 
      mutation {
        delete_author (

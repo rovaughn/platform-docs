@@ -40,7 +40,7 @@ Inserting Data
 
 Let's insert a couple of authors. The full definition of `insert` request can be found :ref:`here <data_insert>`.
 
-.. code-block:: none
+.. code-block:: graphql
 
 	mutation insert_author {
 	   insert_author (objects: [{id: 100, name: "Warren"},{id: 101, name: "Greg"}]) {
@@ -60,7 +60,7 @@ The query language lets you make simple to complex queries.
 Let's look at a simple `select` query on the article table. The full definition of a `select` query can be
 found :ref:`here <data_select>`
 
-.. code-block:: none
+.. code-block:: graphql
 
 	query fetch_article {
 	  article {
@@ -74,7 +74,7 @@ This query returns ``id`` and ``title`` of rows from ``article`` table.
 In the above query, we can have a ``where`` clause to apply filters on the data. Boolean operators like ``$and``, ``$or``,
 ``$not`` can be used in a ``where`` clause. See :ref:`here <BoolExp>` for a full list of supported Boolean operators.
 
-.. code-block:: none
+.. code-block:: graphql
 
   query fetch_article {
       article (where: {_and: [{rating: {_gte: 2} author_id: {_eq: 6} }] } ) {
@@ -89,7 +89,7 @@ respectively. ``limit`` and ``offset`` are used to slice the result set.
 
 Example,
 
-.. code-block:: none
+.. code-block:: graphql
 
     query fetch_article {
       article (limit: 10, order_by: ["+author_id"]) {
@@ -105,7 +105,7 @@ Updating Data
 The request to update data consists of two parts - the new values and a ``where`` indicating what to update. The syntax
 of where clause is same as in the `select` query. For the full syntax of update request, see :ref:`here <data_update>`.
 
-.. code-block:: none
+.. code-block:: graphql
 
 	mutation update_article {
 	  update_article(where: {id: {_eq: 4}} _set: {title: "Mystery affair at Styles"}) {
@@ -119,7 +119,7 @@ Delete Data
 The request to delete data takes a ``where`` clause indicating what to delete. The syntax of where clause is same as in
 the `select` query. For the full syntax of delete request, see :ref:`here <data_delete>`.
 
-.. code-block:: none
+.. code-block:: graphql
 
 	mutation delete_article {
 	  delete_article(where: {rating: {_lte: 1}}) {

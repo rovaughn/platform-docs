@@ -45,7 +45,7 @@ Let's insert a couple of authors. The full definition of `insert` request can be
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          mutation insert_author {
            insert_author (objects: [{id: 100, name: "Sam"}, {id: 101, name: "Greg"}]) {
@@ -93,7 +93,7 @@ found :ref:`here <data_select>`
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
         query fetch_article {
           article {
@@ -131,7 +131,7 @@ In the above query, we can have a ``where`` clause to apply filters on the data.
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
           query fetch_article {
                article (where: {_and: [{rating: {_gte: 2} author_id: {_eq: 6} }] } ) {
@@ -187,7 +187,7 @@ Example,
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
         query fetch_article {
           article (limit: 10, order_by: ["+author_id"]) {
@@ -228,7 +228,7 @@ of where clause is same as in the `select` query. For the full syntax of update 
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
         mutation update_article {
           update_article(where: {id: {_eq: 4}} _set: {title: "Mystery affair at Styles"}) {
@@ -268,7 +268,7 @@ the `select` query. For the full syntax of delete request, see :ref:`here <data_
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
         mutation delete_article {
           delete_article(where: {rating: {_lte: 1}}) {

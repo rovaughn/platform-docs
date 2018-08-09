@@ -10,7 +10,7 @@ The full syntax of an ``insert`` query can be found :ref:`here <data_insert>`.
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          mutation insert_article {
            insert_article (objects: [{title: "Article 1", content: "Sample article 1"},{title: "Article 2", content: "Sample article 2"}]) {

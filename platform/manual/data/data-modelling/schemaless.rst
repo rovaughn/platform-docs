@@ -48,7 +48,7 @@ To insert data into the ``user`` table, you have to execute an :doc:`insert quer
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
         mutation addUser($objects: [user_input]) {
           insert_user(objects: $objects) {
@@ -139,7 +139,7 @@ You can now filter the ``user`` table by city or pincode
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
         query {
           user(where: {address_info: {city: {_eq: "Chennai" }}}) {

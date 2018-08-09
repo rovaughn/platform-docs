@@ -67,7 +67,7 @@ Now, let's fetch author details with their average rating:
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_author {
            author(order_by: ["+name"]) {

@@ -11,7 +11,7 @@ The full syntax of a ``delete`` query can be found :ref:`here <data_delete>`.
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          mutation delete_article {
            delete_article (where: {rating: {_lte: 1}}) {

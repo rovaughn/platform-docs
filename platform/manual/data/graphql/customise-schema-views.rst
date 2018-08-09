@@ -44,7 +44,7 @@ Fetching data from view
 
 To fetch the total likes for a particular article 
 
-.. code-block:: none
+.. code-block:: graphql
 
     query fetch_likes {
       article_like_count(where: { article_id: 1 }) {
@@ -63,7 +63,7 @@ In the form that comes up, select the following:
 
 Now, you can query the article table for articles along with their total_likes
 
-.. code-block:: none
+.. code-block:: graphql
 
     query fetch_articles {
       article (order_by: ["-likes.total_likes"]){

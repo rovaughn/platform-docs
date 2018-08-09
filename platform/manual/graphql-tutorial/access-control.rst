@@ -3,7 +3,7 @@ Part V: Access Control
 
 Now that we have the schema ready, lets go and try out the following sample query that fetches all articles along with the comments (from the comment table we created) using the comments relationship:
 
-.. code-block:: none
+.. code-block:: graphql
 
   query fetch_article {
       article {

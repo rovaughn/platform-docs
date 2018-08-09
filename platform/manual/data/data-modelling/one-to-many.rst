@@ -31,7 +31,7 @@ To fetch an ``author`` with ``name = "Clara"`` and all the ``articles`` authored
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_author {
             author (where: { name: "Clara" ){

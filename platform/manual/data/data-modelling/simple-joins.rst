@@ -35,7 +35,7 @@ Query the data
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
         query {
           student_info_all {

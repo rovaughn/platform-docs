@@ -11,7 +11,7 @@ The full definition of an `update` query can be found :ref:`here <data_update>`.
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          mutation update_article {
            update_article (where: {id: {_eq: 4}}, _set: {title: "Article 4", content: "Sample article 4"}) {

@@ -27,7 +27,7 @@ To fetch the list of all ``students`` along with the ``courses`` they are enroll
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_students {
             student {

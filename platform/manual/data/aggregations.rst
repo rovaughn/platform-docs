@@ -43,7 +43,7 @@ Let's fetch articles ordered by the number of likes.
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_articles_count {
            article (where: {is_published: {_eq: true}}, order_by: ["+article_like_count.like_count"]) {

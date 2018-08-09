@@ -13,7 +13,7 @@ To obtain the **author**'s name from the article table, we issue,
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_articles {
            article (where: {is_published: {_eq: true}}) {
@@ -57,7 +57,7 @@ The same syntax can be used to obtain the titles of all articles across all **au
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_authors {
            author {
@@ -102,7 +102,7 @@ author with name ``Warren`` , we could :
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_articles {
            article (where: { is_published: true, author: {name: "Warren"}}) {
@@ -144,7 +144,7 @@ Let's fetch authors who have never published anything.
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_author {
            author (where: { $not: { article: { $any: { is_published: true}}}}) {
@@ -183,7 +183,7 @@ and the author who posted the comment.
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_article {
            article (where: {is_published: true}) {
@@ -243,7 +243,7 @@ only their published articles:
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_article {
             author {

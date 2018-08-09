@@ -121,7 +121,7 @@ Queries using relationships
 
 To obtain the **author**'s name from the article table, we issue,
 
-.. code-block:: none
+.. code-block:: graphql
 
 	query fetch_article {
 	   article {
@@ -134,7 +134,7 @@ To obtain the **author**'s name from the article table, we issue,
 
 The same syntax can be used to obtain the titles of all articles across all **authors**.
 
-.. code-block:: none
+.. code-block:: graphql
 
 	query fetch_author {
 	   author {
@@ -148,7 +148,7 @@ The same syntax can be used to obtain the titles of all articles across all **au
 You can use relationships inside ``where`` clause. For example, if we wish to only fetch articles having a rating
 of 5 by author with name ``Warren`` , we could use:
 
-.. code-block:: none
+.. code-block:: graphql
 
 	query fetch_article {
 	   article (where: {rating: {_eq: 5} author: {name: {_eq: "Warren"}}} ) {
@@ -159,7 +159,7 @@ of 5 by author with name ``Warren`` , we could use:
 
 Let's fetch authors who has not written a article with rating less than 3:
 
-.. code-block:: none
+.. code-block:: graphql
 
 	query fetch_author {
 	   author (where: {_not: {articles: {rating: {_lte: 3}}}} ) {
@@ -169,7 +169,7 @@ Let's fetch authors who has not written a article with rating less than 3:
 
 As you probably guessed, relationships can be nested. Let's get all authors, with their articles, with their comments.
 
-.. code-block:: none
+.. code-block:: graphql
 
 	query fetch_article {
 	   author {
@@ -185,7 +185,7 @@ As you probably guessed, relationships can be nested. Let's get all authors, wit
 
 We can also use ``where``, ``limit``, ``offset`` inside array relationships. Let's say we want to fetch all authors and only their articles having a rating more than 2:
 
-.. code-block:: none
+.. code-block:: graphql
 
 	query fetch_author {
 	   author {

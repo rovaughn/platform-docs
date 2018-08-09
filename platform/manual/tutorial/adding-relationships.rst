@@ -126,7 +126,7 @@ To obtain the **author**'s name from the article table, we issue,
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_article {
            article {
@@ -167,7 +167,7 @@ The same syntax can be used to obtain the titles of all articles across all **au
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_author {
            author {
@@ -209,7 +209,7 @@ of 5 by author with name ``Warren`` , we could use:
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_article {
            article (where: {rating: {_eq: 5} author: {name: {_eq: "Warren"}}} ) {
@@ -249,7 +249,7 @@ Let's fetch authors who has not written a article with rating less than 3:
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_author {
            author (where: {_not: {articles: {rating: {_lte: 3}}}} ) {
@@ -286,7 +286,7 @@ As you probably guessed, relationships can be nested. Let's get all authors, wit
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_article {
            author {
@@ -336,7 +336,7 @@ We can also use ``where``, ``limit``, ``offset`` inside array relationships. Let
 
    .. tab:: GraphQL
 
-      .. code-block:: none
+      .. code-block:: graphql
 
          query fetch_author {
            author {

@@ -10,7 +10,7 @@ GraphQL Server Boilerplate
 
 We have a GraphQL `graphql-server-boilerplate <https://hasura.io/hub/projects/hasura/graphql-server-boilerplate>`_ that you can quickly add to your project and get your own GraphQL server live in under five minutes. It has a simple hello-world schema which looks like:
 
-.. code-block:: none
+.. code-block:: graphql
 
     type Hello {
       world: String
@@ -19,7 +19,7 @@ We have a GraphQL `graphql-server-boilerplate <https://hasura.io/hub/projects/ha
       time: String
     }
 
-.. code-block:: none
+.. code-block:: graphql
 
     type Query {
       hello(echo: String!): Hello

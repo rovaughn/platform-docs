@@ -58,7 +58,7 @@ Now, you can use a ``select`` query to fetch the author's average rating as if `
 
 Now, let's fetch author's average rating details:
 
-.. code-block:: none
+.. code-block:: graphql
 
  query fetch_author_average_rating {
    author_average_rating() {
@@ -91,7 +91,7 @@ table to ``author_average_rating`` view:
 
 Now, let's fetch author details with their average rating:
 
-.. code-block:: none
+.. code-block:: graphql
 
  query fetch_author {
    author(order_by: ["+name"]) {
