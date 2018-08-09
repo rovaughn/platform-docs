@@ -64,4 +64,3 @@ SMS Providers:
 
   Twilio <twilio>
   MSG91 <msg91>
-  Hasura Test Provider <hasura-test-provider>
