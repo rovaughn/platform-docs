@@ -8,9 +8,8 @@
 Sending emails
 ==============
 
-This section covers configuring Hasura ``notify`` microservice to send emails. Notify currently supports sending emails via :doc:`SparkPost <sparkpost>` and :doc:`Mandrill <mandrill>`.
-
-Also, for testing out Notify, Hasura has its own test provider called :doc:`Hasura <hasura-test-provider>` which you can use to send 10 emails per day.
+This section covers configuring Hasura ``notify`` microservice to send emails. Notify currently supports sending emails
+via :doc:`SparkPost <sparkpost>` and :doc:`Mandrill <mandrill>`.
 
 Sending an email
 ----------------

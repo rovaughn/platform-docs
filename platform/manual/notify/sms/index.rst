@@ -8,9 +8,8 @@
 Sending SMS
 ===========
 
-This section covers configuring Hasura ``notify`` microservice to send SMS. Notify currently supports sending SMS via :doc:`Twilio <twilio>` and :doc:`MSG91 <msg91>`.
-
-Also, for testing out Notify, Hasura has its own test provider called :doc:`Hasura <hasura-test-provider>` which you can use to send 10 SMS per day.
+This section covers configuring Hasura ``notify`` microservice to send SMS. Notify currently supports sending SMS
+via :doc:`Twilio <twilio>` and :doc:`MSG91 <msg91>`.
 
 Sending an SMS
 --------------
