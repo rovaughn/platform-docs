@@ -221,6 +221,7 @@ Below is the code snippet for a ``Button`` that ``inserts`` an element in the ``
   const AddButton = (props) => (
     <Mutation
       mutation={INSERT_TODO}
+    >
       {(insert_todos, {data}) => (
         <Button
           title="Insert Todo"
