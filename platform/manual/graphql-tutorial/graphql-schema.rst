@@ -5,7 +5,7 @@ GraphQL has its own type language that’s used to write GraphQL schemas - ``Gra
 
 In very simple form, a GraphQL schema looks something like this:
 
-.. code-block:: bash
+.. code-block:: graphql
 
 	type Author {
 	  id: ID!
