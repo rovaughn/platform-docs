@@ -50,7 +50,7 @@ Wrap your ``ProtectedRoute`` component with ``AuthProvider`` from ``react-check-
   import {AuthProvider} from "react-check-auth";
   
   const ProtectedRoute = () => (
-    <AuthProvider authUrl={'https://auth.cluster_name.hasura-app.io/v1/user/info'}>
+    <AuthProvider authUrl={'https://auth.<cluster_name>.hasura-app.io/v1/user/info'}>
       // Rest of the code goes here
     </AuthProvider>
   );
@@ -68,7 +68,7 @@ Now, in your ``ProtectedRoute`` component, you can route the user accordingly de
   import TodoApp from "./todoapp";
   
   const ProtectedRoute = () => (
-    <AuthProvider authUrl={"https://auth.cluster_name.hasura-app.io/v1/user/info"}>
+    <AuthProvider authUrl={"https://auth.<cluster_name>.hasura-app.io/v1/user/info"}>
       // Rest of the code goes here
       <AuthConsumer> 
         {({userInfo, isLoading, error}) => ( 
@@ -92,14 +92,14 @@ If you haven't implemented login/signup pages, you can use the :doc:`Auth UI Kit
   import TodoApp from "./todoapp";
   
   const ProtectedRoute = () => (
-    <AuthProvider authUrl={"https://auth.cluster_name.hasura-app.io/v1/user/info"}>
+    <AuthProvider authUrl={"https://auth.<cluster_name>.hasura-app.io/v1/user/info"}>
       // Rest of the code goes here
       <AuthConsumer> 
         {({userInfo, isLoading, error}) => ( 
           userInfo ?
             (<Route path="/" component={ TodoApp }></Route>) :
             (
-              <a href="https://auth.cluster_name.hasura-app.io/ui">Login</a>
+              <a href="https://auth.<cluster_name>.hasura-app.io/ui">Login</a>
             )
         )}
        </AuthConsumer>
