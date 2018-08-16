@@ -56,7 +56,9 @@ To insert data into the ``user`` table, you have to execute an :doc:`insert quer
           }
         }
 
-        Variables->
+      Variables->
+
+      .. code-block:: json
 
         {
           "objects": [
@@ -123,6 +125,7 @@ Head to *Data > SQL* section of the :doc:`API console <../../api-console/index>`
 This will create a view called ``user_address`` with ``user_id``, ``city`` and ``pincode`` as columns.
 
 .. image:: ../../../../img/platform/manual/data/data-modelling/schemaless-view-user-address.png
+   :scale: 50%
 
 We can now :doc:`fetch data <../select>` from this view just like you would from a table.
 
@@ -186,6 +189,6 @@ You can now filter the ``user`` table by city or pincode
          }
 
 Updating JSON data
--------------------------------
+------------------
 
 Currently, there is no direct support within the Data APIs to directly manipulate data inside of the JSON. To update, you will have to replace the whole JSON document using the :doc:`update query <../update>`.
