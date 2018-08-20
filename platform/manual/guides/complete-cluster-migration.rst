@@ -58,7 +58,7 @@ Next, dump data and schema from this database:
 
    hasura -c <src-cluster-alias> \
           ms exec -n hasura postgres -- \
-          pg_dump -O -x -U postgres -d hasuradb -Fc -Z9 -f data.sql.compressed
+          pg_dump -O -x -U postgres -d hasuradb -Fc -Z9 -f /data.sql.compressed
 
 Copy this file to your local machine:
 
