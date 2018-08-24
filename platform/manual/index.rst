@@ -33,3 +33,4 @@ This is the reference documentation of the entire Hasura platform.
   architecture/index
   billing/index
   Moving to v0.15 (old Hasura users) <migration-v0_15/index>
+  Upgrading to v0.16 from v0.15 <upgrading-v0_16>
