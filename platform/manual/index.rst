@@ -32,5 +32,5 @@ This is the reference documentation of the entire Hasura platform.
   install-hasura/index
   architecture/index
   billing/index
-  Moving to v0.15 (old Hasura users) <migration-v0_15/index>
-  Upgrading to v0.16 from v0.15 <upgrading-v0_16>
+  Moving to v0.16 from v0.15 <migration-v0_16/index>
+  Moving to v0.15 from older versions <migration-v0_15/index>
