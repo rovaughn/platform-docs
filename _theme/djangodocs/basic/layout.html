@@ -128,6 +128,7 @@
     {%- else %}
     <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
     {%- endif %}
+    <meta name="robots" content="noindex">
     {{- metatags }}
     {%- if pagename == "404" %}
     <base href="/{{ version }}/{{ pagename }}">
