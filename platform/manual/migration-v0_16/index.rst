@@ -29,5 +29,5 @@ the following command:
 
    hasura platform:upgrade -c <alias>
 
-Replace alias with the alias of the cluster that need to be upgraded.
+Replace alias with the alias of the cluster that needs to be upgraded.
 The cluster will be upgraded to ``v0.16``.
