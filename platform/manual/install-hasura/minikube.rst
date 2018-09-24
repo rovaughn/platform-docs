@@ -61,7 +61,7 @@ Now, you can use Hasura CLI to install Hasura platform on this cluster.
 .. code-block:: bash
 
    hasura cluster install \
-     --name=minkube-hasura-cluster \
+     --name=minikube-hasura-cluster \
      --provider=minikube \
      --kube-context=minikube \
      --data-path=/data/hasura-data \
