@@ -19,7 +19,7 @@ You can install the ``minikube`` CLI by following the instructions `here
    Hypervisor like KVM or VirtualBox, as mentioned in the minikube install page.
 
 Step 2: Start Minikube cluster
---------------------------------
+------------------------------
 
 Once ``minikube`` is installed, you can start a local Kubernetes cluster by
 executing the following command.
@@ -31,7 +31,7 @@ executing the following command.
 Once succeeded, the output will show the ``kube-context``, Minikube IP etc.
 
 Step 3: Create data directory
--------------------------------
+-----------------------------
 
 Once the minikube cluster starts running, you need to create a directory inside
 the VM to store Hasura platform's data, such as Postgres, Filestore etc. You can
@@ -79,7 +79,7 @@ bandwidth.
    IP. We are getting the minikube VM's IP using ``minikube ip`` and using it in
    the domain and as external IP address for the Hasura API gateway.
 
-Step 4: Add this cluster to a project
+Step 5: Add this cluster to a project
 -------------------------------------
 
 Clone a new Hasura project using :ref:`hasura clone <hasura_hub:clone>` or ``cd``
@@ -96,7 +96,7 @@ This command will add the cluster called ``minikube-hasura-cluster`` (name we us
 ``--name`` flag earlier in the install command), that can be contacted using the
 kube context ``minikube``, to the current project with an alias ``minikube``.
 
-Step 5: Configure domains in the project
+Step 6: Configure domains in the project
 ----------------------------------------
 
 Your current Hasura project is most likely to have the domain configured as ``"{{
@@ -139,7 +139,7 @@ provisioned clusters.
        conf: {}
    {% endif %}
 
-Step 6: Commit and push to the new cluster
+Step 7: Commit and push to the new cluster
 ------------------------------------------
 
 Commit the files and push to the newly added minikube cluster:
