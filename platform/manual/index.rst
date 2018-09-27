@@ -5,7 +5,7 @@
 Hasura Platform documentation
 =============================
 
-This is the reference documentation of the entire Hasura platform.
+This is the reference documentation of the Hasura Kubernetes platform.
 
 .. toctree::
   :maxdepth: 1
