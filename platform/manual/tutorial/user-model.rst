@@ -69,7 +69,7 @@ The "auth" microservice
 The ``auth`` microservice is a part of every hasura cluster. It has extensive APIs to manage users, roles and integrates
 with various social login providers.
 
-Lets explore the endpoints that we are interested in to build our blog app using the API console:
+Let's explore the endpoints that we are interested in to build our blog app using the API console:
 
 #. **Register a user**
 
@@ -97,7 +97,7 @@ Lets explore the endpoints that we are interested in to build our blog app using
 
 #. **Login**
 
-   Lets try to login with the username and password that we just registered with. Select ``Login`` in the left panel.
+   Let's try to login with the username and password that we just registered with. Select ``Login`` in the left panel.
 
 
    .. image:: ../../../img/platform/manual/tutorial/tutorial-username-login.png
