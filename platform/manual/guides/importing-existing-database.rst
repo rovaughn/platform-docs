@@ -47,6 +47,12 @@ Moving the Schema
    .. code-block:: bash
 
       $ pg_dump -s dbname --host=localhost --port=5432 > schema.dump
+      
+   .. note::
+
+      If the exported file contains ``SELECT pg_catalog.set_config('search_path', '', false);``,remove the whole line.
+      This can cause issues later when SQL is run without schema qualifiers, since this statement
+      sets search path to ``''`` instead of the default ``public`` and ``pg_catalog``.
 
 #. Copy this schema dump content in the migration that has ``.up.sql`` in the end (in the above example, ``1524223609768_data_import.up.sql``).
 
