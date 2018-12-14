@@ -171,3 +171,7 @@ commands:
 
    # Next, delete the data directory:
    rm -r /Users/hasura-data
+
+.. note::
+    
+    The Hasura Kubernetes Platform is available under these `Terms of Service <https://hasura.io/legal/platform-terms-of-service/>`_.
