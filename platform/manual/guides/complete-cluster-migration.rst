@@ -10,11 +10,6 @@ cluster including data.
 
    The new cluster will have a different ``hasura-app.io`` domain from the source.
 
-.. note::
-
-   This guide only applies to migration from a cluster on platform version
-   ``0.15.x`` to another cluster on version ``0.15.x``.
-
 We'll call the new cluster as 'destination cluster' (dst) and the existing cluster as
 'source cluster' (src), since we are migrating from source to destination.
 
@@ -37,11 +32,23 @@ execute the command:
 
    hasura cluster add <dst-cluster-name> -c <dst-cluster-alias>
 
-3. Migrate Postgres data
+3. Apply the migrations
+-----------------------
+
+Apply the migrations from the project on to the new cluster:
+
+.. code::
+
+   hasura migration apply -c <dst-cluster-alias>
+
+
+4. Migrate Postgres data
 ------------------------
 
 Next, we need to migrate all data from postgres on the source cluster to postgres on
-the destination cluster. Hasura stores all data in a database called ``hasuradb``.
+the destination cluster. Hasura stores all data in a database called
+``hasuradb``, particularly in 3 schemas: ``public``, ``hauth_catalog`` and
+``hf_catalog``. If you have data in other schemas, make sure you include them too.
 
 Before starting any data dump, put Postgres on the source cluster in read-only
 mode, so that no new writes happens while we're migrating the data: 
@@ -52,36 +59,54 @@ mode, so that no new writes happens while we're migrating the data:
           ms exec -n hasura postgres -- \
           psql -U admin -d hasuradb -c 'ALTER DATABASE hasuradb SET default_transaction_read_only = true;' 
 
-Next, dump data and schema from this database:
+Next, dump the data from this database:
 
 .. code::
 
    hasura -c <src-cluster-alias> \
           ms exec -n hasura postgres -- \
-          pg_dump -O -x -U postgres -d hasuradb -Fc -Z9 -f /data.sql.compressed
+          pg_dump -O -x -U postgres -d hasuradb --column-inserts --data-only \
+          --schema hauth_catalog \
+          --schema hf_catalog \
+          --schema public \
+          -f /data.sql
 
 Copy this file to your local machine:
 
 .. code::
 
    hasura -c <src-cluster-alias> \
-          ms cp hasura/postgres:/data.sql.compressed data.sql.compressed
+          ms cp hasura/postgres:/data.sql data.sql
 
 Then copy it to the destination cluster:
 
 .. code::
 
    hasura -c <dst-cluster-alias> \
-          ms cp data.sql.compressed hasura/postgres:/data.sql.compressed
+          ms cp data.sql hasura/postgres:/data.sql
 
-Restore the database on destination cluster:
+Before we restore the data, let's truncate certain tables on the new cluster:
+
+.. code::
+
+   hasura -c <dst-cluster-alias> \
+          ms exec -n hasura postgres -- \           
+          psql -U postgres -d hasuradb -c \
+          'TRUNCATE TABLE hauth_catalog.roles, hauth_catalog.users_roles, hauth_catalog.users, hauth_catalog.users_password, hauth_catalog.username_provider_users CASCADE;'
+
+
+   hasura -c <dst-cluster-alias> \
+          ms exec -n hasura postgres -- \           
+          psql -U postgres -d hasuradb -c \
+          'TRUNCATE TABLE hf_catalog.hf_version CASCADE;'
+
+Now, restore the database on destination cluster:
 
 .. code::
 
    hasura -c <dst-cluster-alias> \
           ms exec -n hasura postgres -- \
-          pg_restore -U postgres -d hasuradb -x \
-          --clean --single-transaction /data.sql.compressed
+          psql -U postgres -d hasuradb -1 -f /data.sql
 
 5. Copy the filestore data
 --------------------------
