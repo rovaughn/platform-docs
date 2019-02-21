@@ -92,13 +92,7 @@ Before we restore the data, let's truncate certain tables on the new cluster:
    hasura -c <dst-cluster-alias> \
           ms exec -n hasura postgres -- \           
           psql -U postgres -d hasuradb -c \
-          'TRUNCATE TABLE hauth_catalog.roles, hauth_catalog.users_roles, hauth_catalog.users, hauth_catalog.users_password, hauth_catalog.username_provider_users CASCADE;'
-
-
-   hasura -c <dst-cluster-alias> \
-          ms exec -n hasura postgres -- \           
-          psql -U postgres -d hasuradb -c \
-          'TRUNCATE TABLE hf_catalog.hf_version CASCADE;'
+          'TRUNCATE TABLE hauth_catalog.roles, hauth_catalog.users_roles, hauth_catalog.users, hauth_catalog.users_password, hauth_catalog.username_provider_users, hf_catalog.hf_version CASCADE;'
 
 Now, restore the database on destination cluster:
 
@@ -107,6 +101,21 @@ Now, restore the database on destination cluster:
    hasura -c <dst-cluster-alias> \
           ms exec -n hasura postgres -- \
           psql -U postgres -d hasuradb -1 -f /data.sql
+
+Once we restore the data, we need to update all sequences in the database:
+
+.. code::
+
+   # create a sql file with the sequence update commands
+   hasura -c <dst-cluster-alias> \
+          ms exec -n hasura postgres -- \
+          psql -U postgres -d hasuradb -Atq -c "SELECT 'SELECT SETVAL(' || quote_literal(quote_ident(PGT.schemaname) || '.' || quote_ident(S.relname)) || ', COALESCE(MAX(' ||quote_ident(C.attname)|| '), 1) ) FROM ' || quote_ident(PGT.schemaname)|| '.'||quote_ident(T.relname)|| ';' FROM pg_class AS S, pg_depend AS D, pg_class AS T, pg_attribute AS C, pg_tables AS PGT WHERE S.relkind = 'S' AND S.oid = D.objid AND D.refobjid = T.oid AND D.refobjid = C.attrelid AND D.refobjsubid = C.attnum AND T.relname = PGT.tablename ORDER BY S.relname;" -o seq-update.sql
+
+   # execute the sequence updates
+   hasura -c <dst-cluster-alias> \
+          ms exec -n hasura postgres -- \
+          psql -U postgres -d hasuradb -f seq-update.sql
+   
 
 5. Copy the filestore data
 --------------------------
