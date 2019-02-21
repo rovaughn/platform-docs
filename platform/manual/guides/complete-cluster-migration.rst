@@ -172,7 +172,7 @@ You can now git push your project to the new cluster, and it should be live!
 .. code-block:: shell
 
    # commit required files
-   $ git push <dst-cluster-alias> master
+   git push <dst-cluster-alias> master
 
 where ``<dst-cluster-alias>`` is the alias for the new cluster.
 
