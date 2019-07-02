@@ -1,7 +1,7 @@
 Changing subdomain of a microservice
 ====================================
 
-A microservice can be contacted externally (ie: from outside a cluster) on a subdomain which is configurable.
+A microservice can be contacted externally (i.e. from outside a cluster) on a subdomain which is configurable.
 The subdomain of a microservice is generally the same as the name of the microservice but it can be changed.
 
 To change the subdomain on which a microservice is exposed you need to modify the :doc:`conf/routes.yaml <../project/directory-structure/conf/routes.yaml>` file
@@ -35,4 +35,4 @@ To serve the microservice <myapp> at the subdomain <newsubdom>, update the confi
           upstreamServicePath: /
           upstreamServicePort: 80
 
-To apply the changes, commit ``conf/routes.yaml`` and ``git push hasura master`` to deploy the changes
+To apply the changes, commit ``conf/routes.yaml`` and ``git push hasura master`` to deploy the changes.

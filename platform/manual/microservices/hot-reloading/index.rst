@@ -1,18 +1,18 @@
 Live reloading local changes to a microservice
 ==============================================
 
-The biggest advantage with developing on a local machine is that you get
+The biggest advantage of developing on a local machine is that you get
 immediate feedback for whatever changes you make to code. Most of the languages
 have some tooling around them which enables live reloading of
 the code changes on a running instance of the program.
 
-But, your local development environment and the production deployment
+But your local development environment and the production deployment
 environment could be different. You might have other microservices that you need
 to contact. Normal workflow is to add these variable parameters as environment
-variables and set them differently on the local and production environment. But,
+variables and set them differently on the local and production environment. But
 in certain cases, this might not be possible or could be very hard to implement.
 For example, you have the Hasura API gateway resolving user cookie/token to user
-id and role. Your application need only look at this id/role to enforce access
+id and role. Your application only needs to look at this id/role to enforce access
 control. Doing this locally while the gateway and auth microservices are running
 on the cluster could be hard. Also, any microservice can be contacted from
 within the cluster using the internal endpoint without authentication.
@@ -28,7 +28,7 @@ cookie/tokens etc.
 This is the easiest and fastest way to develop applications on a Kubernetes
 cluster.
 
-Most of the Hasura published quickstarts on the Hub comes with documentation for
+Most of the Hasura published quickstarts on the Hub come with documentation for
 how to enable live reloading.
 
 Below are some examples for various languages:

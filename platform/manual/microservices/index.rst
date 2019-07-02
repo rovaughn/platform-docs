@@ -11,7 +11,7 @@ Microservices are basically the individual 'apps' that run on a :doc:`Hasura clu
 
 :doc:`Hasura microservices <hasura-microservices>` include the backend APIs provided by Hasura and other components of the Hasura platform.
 
-Some typical examples of custom microservices you would add to your project include, an API service,
+Some typical examples of custom microservices you would add to your project include an API service,
 a microservice that serves static files, a simple HTML site or a single-page app (eg: React),
 a ready made microservice like the ghost blog-engine or a 'stateful' microservice like a database.
 
@@ -19,7 +19,7 @@ Hasura microservices run in the **hasura namespace** while custom microservices 
 
 .. note::
 
-    If you are starting a new hasura project, head to `hasura.io/hub <https://hasura.io/hub>`_ to
+    If you are starting a new Hasura project, head to `hasura.io/hub <https://hasura.io/hub>`_ to
     find the right boilerplate project for you and follow the guide there!
 
 Here's what your Hasura cluster looks like before and after you add custom microservices:

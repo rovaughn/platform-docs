@@ -18,9 +18,9 @@ the following directory service:
        └── server.js
 
 A typical local development workflow would be to execute ``nodemon server.js``
-inside ``src`` directory. ``nodemon`` will start watching the files and runs the
+inside the ``src`` directory. ``nodemon`` will start watching the files and runs the
 web-server. Whenever you edit ``server.js`` or any other ``js`` files, nodemon
-will reload the server with latest code.
+will reload the server with the latest code.
 
 We can replicate the same workflow on a Hasura cluster also. Let's see how we
 can modify the typical ``Dockerfile`` for the above microservice to include
@@ -52,15 +52,15 @@ can modify the typical ``Dockerfile`` for the above microservice to include
    # Step 8: run the nodemon command
    CMD ["nodemon", "server.js"]
 
-As per step 6, we are copying ``src`` directory from local system into
+As per step 6, we are copying the ``src`` directory from the local system into the
 ``/src`` of the container. Also, in step 8, we are starting a server using
 nodemon. Once you commit and push this dockerfile, the microservice is running
 nodemon and will restart for any changes to ``server.js`` and related files.
 
 Next step is to start the ``sync`` command which continuously copies the
 required files to the container as and when they change. As we mentioned
-earlier, the dockerfile indicates local ``src`` directory is copied over as
-``/src``. So, we execute the following command (assuming microservice name is
+earlier, the dockerfile indicates that the local ``src`` directory is copied over as
+``/src``. So, we execute the following command (assuming the microservice name is
 api):
 
 .. code-block:: bash
@@ -74,5 +74,5 @@ using another terminal window:
 
    $ hasura microservice open api
 
-Make some changes to ``server.js`` and save. Voila! You can see that changes
+Make some changes to ``server.js`` and save. Voila! You can see that it changes
 live in the browser tab.

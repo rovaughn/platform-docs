@@ -2,7 +2,7 @@
    :description: How to serve static files using hasura
    :keywords: hasura, manual, static files, custom microservice, nginx
 
-Adding a microservice using your own Dockerfile and source-code
+Adding a microservice using your own Dockerfile and source code
 ===============================================================
 
 If you want to deploy your own source code as a microservice on Hasura, all you need to do is to write a Dockerfile for the same. Hasura's CI system can build and deploy the microservice based on the Dockerfile and source code pushed to a cluster.
@@ -56,7 +56,7 @@ We'll configure the cluster to build this microservice when the project is pushe
             
 .. admonition:: Behind The Scenes
 
-   Checkout :ref:`ci.yaml <hasura-dir-conf-ci.yaml>` to learn more about this file 
+   Check out :ref:`ci.yaml <hasura-dir-conf-ci.yaml>` to learn more about this file 
 
 Step 4: Expose the microservice at a sub-domain
 -----------------------------------------------
@@ -73,7 +73,7 @@ This command above will add the default route configuration for your microservic
 
 .. admonition:: Behind The Scenes
 
-   Checkout :ref:`routes.yaml <hasura-dir-conf-routes.yaml>` to learn more about this file 
+   Check out :ref:`routes.yaml <hasura-dir-conf-routes.yaml>` to learn more about this file 
 
 Step 5: Git push and deploy!
 ----------------------------
@@ -86,7 +86,7 @@ Step 5: Git push and deploy!
     $ git commit -am 'Adds <my-app> microservice, ci and route config'
     $ git push hasura master
 
-Checkout the list of microservices:
+Check out the list of microservices:
 
 .. code-block:: bash
 
@@ -100,7 +100,7 @@ If the status for ``<my-app>`` says ``Error``, you can see more details using:
 
    $ hasura microservice logs <my-app>
 
-If there are any errors in Dockerfile, source code etc, fix them commit and push again
+If there are any errors in Dockerfile, source code etc, fix them, commit and push again.
 
 You can open the microservice on a browser if you've added routes:
 

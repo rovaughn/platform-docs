@@ -7,11 +7,11 @@ Communicating between microservices
 
 Every microservice has an ``internal endpoint`` at which other microservices
 can reach it. The internal URL is typically of the structure: ``http://<microservice-name>.<namespace>``.
-This microservice discovery is powered by kubernetes's internal DNS.
+This microservice discovery is powered by Kubernetes's internal DNS.
 
 Examples:
 
-1. Hasura Data API: ``http://data.hasura``
+1. Hasura data API: ``http://data.hasura``
 2. Custom webapp called my-app: ``http://my-app.default``
 
 This is because Hasura microservices run in the ``hasura`` namespace and custom microservices run in the ``default`` namespace.
@@ -20,7 +20,7 @@ Also every microservice expects a ``X-Hasura-User-Id`` and ``X-Hasura-Role`` hea
 
 In fact, when a microservice is ``exposed externally`` on a route, the API gateway proxies the request to the internal URL of the microservice while setting the ``X-Hasura-User-Id`` and ``X-Hasura-Role`` headers based on the user session token passed.
 
-To get the URLs of externally exposed microservices running on a hasura cluster run:
+To get the URLs of externally exposed microservices running on a Hasura cluster, run:
 
 .. code-block:: bash
 
@@ -47,7 +47,7 @@ To get the URLs of externally exposed microservices running on a hasura cluster 
 Contacting other microservices during local development of a microservice
 -------------------------------------------------------------------------
 
-To contact microservices on a cluster from your localhost while development you need to port forward the service from the cluster to your localhost
+To contact microservices on a cluster from your localhost while in development you need to port forward the service from the cluster to your localhost.
 
 
 Examples:
