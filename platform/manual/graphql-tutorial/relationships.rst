@@ -1,10 +1,10 @@
-Part IV: Add Relationships
+Part IV: Add relationships
 ==========================
 
 Exploiting relationships in your data
 -------------------------------------
 
-The Data microservice allows to setup different relationships between data, which enables you to make more
+The data microservice allows you to set up different relationships between data, which enables you to make more
 complex and interesting queries to fetch data.
 
 For example:
@@ -53,7 +53,7 @@ Let's look at the different relationships we have in our data models:
   * has one ``article`` that has been liked
 
 These relationships can be captured by foreign key constraints. If we were to represent rows of our table in JSON, as
-objects, then we can express these relationships as nested arrays or objects. Eg: Every ``author`` object can have
+objects, then we can express these relationships as nested arrays or objects. E.g.: Every ``author`` object can have
 a key called ``articles`` which is an array of article objects. Similarly, every ``article`` object can have a key
 called ``author`` which is an author object.
 
@@ -97,16 +97,16 @@ Creating relationships
 
 You can create relationships for tables via the ``API console``.
 
-By default the object relationship, ``author`` for the ``article`` table has already been created. Click on the
+By default the object relationship ``author`` for the ``article`` table has already been created. Click on the
 ``article`` table and navigate to the *Relationships* tab.
 
 You'll see an entry in *object relationships* for ``author_id -> author::id``:
 
 .. image:: ../../../img/platform/manual/graphql-tutorial/tutorial-article-relationships-page.png
 
-Let's say you wish to add the array relationship, ``comments`` for the ``article`` table.
+Let's say you wish to add the array relationship ``comments`` for the ``article`` table.
 You'll see entries under *suggested relationships*, if you had added all the foreign key constraints that were mentioned
-in the previous part. Click on *Add* to add a new array relationship and give name ``comments`` to the relationship:
+in the previous part. Click on *Add* to add a new array relationship and name the relationship ``comments``:
 
 .. image:: ../../../img/platform/manual/graphql-tutorial/tutorial-add-relationship-comments.png
 
@@ -119,7 +119,7 @@ You can create the other relationships similarly.
 Queries using relationships
 ---------------------------
 
-To obtain the **author**'s name from the article table, we issue,
+To obtain the **author**'s name from the article table, we can write the following query:
 
 .. code-block:: graphql
 
@@ -145,8 +145,8 @@ The same syntax can be used to obtain the titles of all articles across all **au
 	   }
 	}
 
-You can use relationships inside ``where`` clause. For example, if we wish to only fetch articles having a rating
-of 5 by author with name ``Warren`` , we could use:
+You can use relationships inside ``where`` clauses. For example, if we wish to only fetch articles having a rating
+of 5 by the author with the name ``Warren``, we could use:
 
 .. code-block:: graphql
 
@@ -157,7 +157,7 @@ of 5 by author with name ``Warren`` , we could use:
 	   }
 	}
 
-Let's fetch authors who has not written a article with rating less than 3:
+Let's fetch authors who have not written an article with a rating that is lower than 3:
 
 .. code-block:: graphql
 
@@ -183,7 +183,7 @@ As you probably guessed, relationships can be nested. Let's get all authors, wit
 	   }
 	}
 
-We can also use ``where``, ``limit``, ``offset`` inside array relationships. Let's say we want to fetch all authors and only their articles having a rating more than 2:
+We can also use ``where``, ``limit``, ``offset`` inside array relationships. Let's say we want to fetch all authors and only their articles having a rating that is higher than 2:
 
 .. code-block:: graphql
 

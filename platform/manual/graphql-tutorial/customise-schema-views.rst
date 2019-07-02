@@ -1,4 +1,4 @@
-Part VI: Customise Schema with Views
+Part VI: Customise schema with views
 ====================================
 
 In the previous steps, we have created tables, added foreign keys, relationships and applied permissions as well. GraphQL APIs were automatically generated based on the available schema. There are instances where you would like to fetch data from multiple tables based on various conditions and joins or if you have a lot of complex calculations.
@@ -14,7 +14,7 @@ If you have a query that fetches data from multiple tables based on various cond
 
 **Security**
 
-Let’s say you have multiple tables which has both public and private data. In this case, you can create a view with just the public data from these tables and only expose this view.
+Let’s say you have multiple tables which have both public and private data. In this case, you can create a view with just the public data from these tables and only expose this view.
 
 Now to cater to above use cases, we can create views in Postgres and expose them via GraphQL APIs for querying.
 
@@ -23,7 +23,7 @@ Now to cater to above use cases, we can create views in Postgres and expose them
 Creating a view
 ---------------
 
-We already have article, author, like and comment tables. Let’s create a view to get the average rating of all articles written by an author.
+We already have the article, author, like and comment tables. Let’s create a view to get the average rating of all articles written by an author.
 
 Let's `define the view in SQL <https://www.postgresql.org/docs/current/static/sql-createview.html>`_:
 
@@ -45,18 +45,18 @@ aware of the created view.
 
 .. image:: ../../../img/platform/manual/graphql-tutorial/tutorial-create-view.png
 
-Hit *Run* to create the view on the Postgres database and to track it in the Data microservice (ie: allow querying via
-Data APIs).
+Hit *Run* to create the view on the Postgres database and to track it in the data microservice (i.e. allow querying via
+data APIs).
 
-Now, you can use a ``select`` query to fetch the author's average rating as if ``author_average_rating`` is a table.
+Now, you can use a ``select`` query to fetch the author's average rating as if ``author_average_rating`` was a table.
 
 .. admonition:: Views are read only!
 
    Views are like read-only logical tables on the database.
-   So that means that Data API requests to select will work, but you cannot
+   So that means that data API requests to select will work, but you cannot
    insert/update/delete items from the view.
 
-Now, let's fetch author's average rating details:
+Now, let's fetch the author's average rating details:
 
 .. code-block:: graphql
 
@@ -73,19 +73,19 @@ Now, let's fetch author's average rating details:
 Relationships to/from views
 ---------------------------
 
-We have seen how we can get author's average rating using the Data APIs. However, additional information of each author
+We have seen how we can get the author's average rating using the Data APIs. However, additional information of each author
 can be attached to the ``author_average_rating`` view using an object relationship say, ``author``.
 
 All the relationships that we've defined till now use foreign key constraints. However, you cannot define foreign key
 constraints on/to views. So, in these cases, we have to manually define a relationship.
 
-Here, we are defining a relationship from a ``author_average_rating`` view to ``author`` table:
+Here, we are defining a relationship from the ``author_average_rating`` view to the ``author`` table:
 
 .. image:: ../../../img/platform/manual/graphql-tutorial/tutorial-add-manual-relationship.png
 
-The above relationship will allow you to fetch author's details when querying the view. But we might want to fetch
-author's average rating when querying the author table itself. So we will now create a relationship from ``author``
-table to ``author_average_rating`` view:
+The above relationship will allow you to fetch author's details when querying the view. But we might want to fetch the
+author's average rating when querying the author table itself. So we will now create a relationship from the ``author``
+table to the ``author_average_rating`` view:
 
 .. image:: ../../../img/platform/manual/graphql-tutorial/tutorial-add-manual-rel-from-table.png
 
@@ -104,7 +104,7 @@ Now, let's fetch author details with their average rating:
  }
 
 
-Next: Customise Schema with Resolvers
+Next: Customise schema with resolvers
 -------------------------------------
 
 Next, let's head to :doc:`write-your-own-resolvers`.
