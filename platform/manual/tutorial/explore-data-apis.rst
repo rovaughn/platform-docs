@@ -10,8 +10,8 @@ Every Hasura project comes with a data microservice. The ``data`` microservice p
 over PostgreSQL, an extremely versatile open source relational database. We create tables in Postgres and access the
 data using the APIs provided by the ``data`` microservice.
 
-Any user with the ``admin`` role has full-access to the data microservice. All requests to the ``data`` microservice
-are ``POST`` requests to ``/v1alpha1/graphql`` and ``/v1/query`` endpoints for the GraphQL and JSON APIs respectively.
+Any user with the ``admin`` role has full access to the data microservice. All requests to the ``data`` microservice
+are ``POST`` requests to the ``/v1alpha1/graphql`` and ``/v1/query`` endpoints for the GraphQL and JSON APIs respectively.
 
 Explore using the API explorer & the query builder
 --------------------------------------------------
@@ -24,7 +24,7 @@ Run:
    $ hasura api-console
 
 This will open up the ``API console`` and show you the ``API explorer`` page which you can use to understand the APIs
-provided by the Data microservice.
+provided by the data microservice.
 
 .. image:: ../../../img/platform/manual/tutorial/tutorial-api-console.png
 
@@ -35,10 +35,10 @@ provided by the Data microservice.
    Head to ``API explorer > Data > GraphQL`` for GraphQL APIs or head to ``API explorer > Data > JSON Query Builder``
    for JSON APIs
 
-Inserting Data
+Inserting data
 --------------
 
-Let's insert a couple of authors. The full definition of `insert` request can be found :ref:`here <data_insert>`.
+Let's insert a couple of authors. The full definition of the `insert` request can be found :ref:`here <data_insert>`.
 
 .. rst-class:: api_tabs
 .. tabs::
@@ -80,7 +80,7 @@ Let's insert a couple of authors. The full definition of `insert` request can be
 
 Note the ``returning`` key. We would like to get back the ``id`` assigned for each inserted row.
 
-Querying Data
+Querying data
 -------------
 
 The query language lets you make simple to complex queries.
@@ -120,7 +120,7 @@ found :ref:`here <data_select>`
          }
 
 
-This query returns ``id`` and ``title`` of rows from ``article`` table.
+This query returns the ``id`` and ``title`` from the ``article`` table.
 
 
 In the above query, we can have a ``where`` clause to apply filters on the data. Boolean operators like ``$and``, ``$or``,
@@ -217,11 +217,11 @@ Example,
          }
 
 
-Updating Data
+Updating data
 -------------
 
 The request to update data consists of two parts - the new values and a ``where`` indicating what to update. The syntax
-of where clause is same as in the `select` query. For the full syntax of update request, see :ref:`here <data_update>`.
+of the where clause is same as the one in the `select` query. For the full syntax of update request, see :ref:`here <data_update>`.
 
 .. rst-class:: api_tabs
 .. tabs::
@@ -260,7 +260,7 @@ of where clause is same as in the `select` query. For the full syntax of update 
 Delete Data
 -----------
 
-The request to delete data takes a ``where`` clause indicating what to delete. The syntax of where clause is same as in
+The request to delete data takes a ``where`` clause indicating what to delete. The syntax of the where clause is same as the one in
 the `select` query. For the full syntax of delete request, see :ref:`here <data_delete>`.
 
 .. rst-class:: api_tabs

@@ -127,7 +127,7 @@ infrastructure so that you can create instances of your infra on-demand.
 Information about the actual clusters added to this project can be found in this file. Each cluster is defined by it’s ``name``
 allotted by Hasura, and an ``alias`` that matches with one in ``clusters.yaml``. While adding the cluster to the project
 you are prompted to give an alias, which is just ``hasura`` by default.
-The ``kubeContext`` mentions the name of kubernetes context used to access the cluster, which is also managed by hasura.
+The ``kubeContext`` mentions the name of kubernetes context used to access the cluster, which is also managed by Hasura.
 The ``data`` key is for holding custom variables that you can define.
 
 .. code-block:: yaml

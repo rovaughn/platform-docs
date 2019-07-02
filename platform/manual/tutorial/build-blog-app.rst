@@ -14,9 +14,9 @@ Hasura features
 
 While making this simple application, these are the steps we will go through involving the features provided by Hasura:
 
-#. Exploring the user & authentication Hasura APIs
+#. Exploring the user & authentication of Hasura APIs
 #. Creating tables (on postgres) using the ``API console`` UI
-#. Exploring the hasura data APIs as an ``admin``
+#. Exploring the Hasura data APIs as an ``admin``
 #. Adding permissions and access control on the data models
 #. Adding relationships between the data models
 #. Adding aggregations & views to compute derived information (eg: total likes)

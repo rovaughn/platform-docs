@@ -6,10 +6,10 @@ Let's list out the user management features required in our blog app:
 * User registration, login, logout, user-info etc.
 * There are two classes of visitors, logged in users and anonymous users. We need roles to model this.
 
-Before we implement the functionality needed for our blog app, let's understand what the hasura platform offers.
+Before we implement the functionality needed for our blog app, let's understand what the Hasura platform offers.
 
 
-The Hasura Auth Workflow
+The Hasura auth workflow
 ------------------------
 
 When a user signs up using the auth microservice's ``/signup`` endpoint, they are assigned a unique identity i.e. a
@@ -23,7 +23,7 @@ represents the user session. This ``auth_token`` is mapped with the user's infor
 
 .. admonition:: Note
 
-    Hasura Auth microservice comes with a default user called **'admin'** with ``hasura_id`` = ``1`` and roles ``admin``
+    Hasura's auth microservice comes with a default user called **'admin'** with ``hasura_id`` = ``1`` and roles ``admin``
     and ``user``.
 
 
@@ -66,10 +66,10 @@ provided by the Auth microservice.
 The "auth" microservice
 -----------------------
 
-The ``auth`` microservice is a part of every hasura cluster. It has extensive APIs to manage users, roles and integrates
+The ``auth`` microservice is a part of every Hasura cluster. It has extensive APIs to manage users, roles and integrates
 with various social login providers.
 
-Lets explore the endpoints that we are interested in to build our blog app using the API console:
+Let's explore the endpoints that we are interested in to build our blog app using the API console:
 
 #. **Register a user**
 
@@ -97,7 +97,7 @@ Lets explore the endpoints that we are interested in to build our blog app using
 
 #. **Login**
 
-   Lets try to login with the username and password that we just registered with. Select ``Login`` in the left panel.
+   Let's try to login with the username and password that we just registered with. Select ``Login`` in the left panel.
 
 
    .. image:: ../../../img/platform/manual/tutorial/tutorial-username-login.png
@@ -132,7 +132,7 @@ Lets explore the endpoints that we are interested in to build our blog app using
 
    Copy the ``auth_token`` from the login response and paste it in the ``Authorization`` header as shown in the image below.
 
-    If the ``Authorization`` header is absent, session token is read from cookie.
+    If the ``Authorization`` header is absent, the session token is read from the cookie.
 
    .. image:: ../../../img/platform/manual/tutorial/tutorial-user-info.png
 
@@ -164,14 +164,14 @@ Lets explore the endpoints that we are interested in to build our blog app using
       }
 
 
-Generate API Code
+Generate API code
 -----------------
 
-The API-console has a code-generator that can automatically generate code to access all the above APIs (and more)
-in most popular languages. To generate API code, click on the ``Generate API Code`` button next to the ``Send`` button
+The API console has a code generator that can automatically generate code to access all the above APIs (and more)
+in the most popular languages. To generate API code, click on the ``Generate API Code`` button next to the ``Send`` button
 and choose your desired language.
 
-Other Login Providers
+Other login providers
 ---------------------
 
 You can also perform auth with ``Mobile``, ``Email``, ``Google`` and several more providers. Read more :ref:`here <providers>`.

@@ -76,10 +76,10 @@ You'll have to fix the errors, commit and push again!
 
 You can add more code to the above nodejs-express app to build a proper UI and then simply commit and ``git push`` to redeploy.
 
-.. admonition:: Behind The Scenes
+.. admonition:: Behind the scenes
 
    The Hasura platform basically builds a ``docker`` image from the latest git changes
-   pushed by you, and deploys the corresponding ``kubernetes`` microservice, deployment underneath.
+   pushed by you, and deploys the corresponding ``kubernetes`` microservice underneath.
 
 
 Docker: Adding a custom database browser (adminer)
@@ -119,7 +119,7 @@ the familiar ``adminer`` UI.
 
    The Hasura platform automatically creates Grade A SSL certificates using LetsEncrypt.
 
-   SSL certificate creation can take a few minutes. During this time ``https://adminer.<cluster-name>.hasura-app.io``
+   The SSL certificate creation can take a few minutes. During this time ``https://adminer.<cluster-name>.hasura-app.io``
    will not be served, and you'll have to access your microservice on ``http`` instead. As soon as
    the certificate is ready, ``http://adminer.test42.hasura-app.io`` will automatically
    start redirecting to the ``https`` version.
