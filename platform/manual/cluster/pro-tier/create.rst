@@ -20,7 +20,7 @@ of the chosen configuration.
 
 Creating the cluster
 ^^^^^^^^^^^^^^^^^^^^
-After you get the ``infra code`` from the above step, run the following hasura CLI command:
+After you get the ``infra code`` from the above step, run the following Hasura CLI command:
 
 .. code-block:: bash
 
@@ -35,7 +35,7 @@ This will create a cluster with the configuration described by the ``infra code`
    so that the infra requirements of the project can be saved and version controlled. See :doc:`infra-spec` for more details.
 
    The added infra spec will have an alias assigned to it. By default, the alias is ``hasura``.
-   An infra spec with alias <some-cluster-alias> defines the config of the cluster which is running with  alias <some-cluster-alias>
+   An infra spec with alias <some-cluster-alias> defines the config of the cluster which is running with  alias <some-cluster-alias>.
 
    To give your own alias to the infra spec, run this instead of the above:
 
@@ -48,7 +48,7 @@ This will create a cluster with the configuration described by the ``infra code`
 
 Adding the cluster to a Hasura project
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-If you executed, ``cluster create`` inside a project directory, the cluster will already be added to the project.
+If you executed ``cluster create`` inside a project directory, the cluster will already be added to the project.
 
 Otherwise, see :doc:`this <../add>` to add the created cluster to a project. This will also add the infra spec to the project
 as described in the note above.
@@ -56,9 +56,9 @@ as described in the note above.
 Example
 ^^^^^^^
 Let's assume the infra code generated from the Pricing Calculator is ``ZXPBVF``,
-and assume we want alias of this cluster to be ``prod``.
+and assume we want the alias of this cluster to be ``prod``.
 
-Then the flow to create a cluster and adding it to a project is one of the follows:
+Then the process to create a cluster and adding it to a project is one of the following two:
 
 .. code-block:: bash
 
@@ -78,7 +78,7 @@ OR
 Advanced
 ^^^^^^^^
 
-You can also write declarative configuration of your cluster. The file
+You can also write a declarative configuration of your cluster. The file
 ``clusters.yaml`` contains
 cluster configuration. Check out :doc:`infra-spec` and some :doc:`sample infra specs <sample-infra-specs>`.
 

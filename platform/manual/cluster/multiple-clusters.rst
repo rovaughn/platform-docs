@@ -1,10 +1,10 @@
 Setting up multiple environments using clusters
 ===============================================
 
-Multiple Hasura clusters can be added to a single Hasura project. This is a common use-case in development workflows
+Multiple Hasura clusters can be added to a single Hasura project. This is a common use case in development workflows
 to simulate different environments.
 
-For example, for a project one might have, a ``dev`` cluster for use during development, a ``staging`` cluster, which
+For example, for a project one might have a ``dev`` cluster for use during development, a ``staging`` cluster, which
 replicates the production environment and is used to test before making the
 project live, and a ``production`` cluster for the live instance of the
 project.
@@ -12,7 +12,7 @@ project.
 Creating new clusters
 ---------------------
 
-Please see :doc:`this <create>` for instructions for creating new clusters.
+Please see :doc:`this <create>` for instructions on creating new clusters.
 
 
 Add a cluster to a project
@@ -28,7 +28,7 @@ To add a cluster to a project we use:
 
 .. note::
 
-   The ``-c`` flag tells to create an alias for the cluster. We can then use this alias in various other commands including git push.
+   The ``-c`` flag is to create an alias for the cluster. We can then use this alias in various other commands including git push.
 
 Let's add the newly created two clusters to our projects.
 
