@@ -13,7 +13,7 @@ In the default configuration, it points to ``authorizedKeys``
 of ``ssh-authorized-keys`` ConfigMap which is created
 when the cluster is created.
 
-In order to add a new SSH key, see :ref:`hasura ssh-key add <hasura_platform:ssh-key_add>`
+In order to add a new SSH key, see :ref:`hasura ssh-key add <hasura_platform:ssh-key_add>`.
 
 .. code-block:: yaml
 

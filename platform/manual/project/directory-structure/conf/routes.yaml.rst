@@ -62,8 +62,8 @@ Example 1:
        upstreamServicePath: /
        upstreamServicePort: 80
 
-Here, we are configuring the gateway to send any request on data
-subdomain to the 'data' microservice in the hasura  namespace if
+Here, we are configuring the gateway to send any request on the data
+subdomain to the 'data' microservice in the Hasura  namespace if
 the location has a prefix '/'. Since every location starts with
 '/', this means that any request arriving on the data subdomain
 is received by the data microservice.
@@ -100,7 +100,7 @@ Here,
    1. Since the convention is to deploy a microservice on each domain, you'll rarely
       see a configuration which has a location prefix other than '/'
 
-   2. If in case the location matches to more than one rule, the configuration
+   2. In case the location matches to more than one rule, the configuration
       related to the more specific rule is used
 
 Location Configuration
@@ -139,11 +139,11 @@ The following options are available:
 
 - enableAuth:
     This enables the session middleware on the gateway to intercept the
-    request and resolve the user's session based on Authorization header
-    or the Cookie
+    request and resolve the user's session based on the authorization header
+    or the cookie
 
 - authorizationPolicy:
-    This can be used to restrict access to a microservice when the  microservice
+    This can be used to restrict access to a microservice when the microservice
     is not aware of users or roles. For example, let's say you want to run some
     analytics service (pghero) that should only be allowed for admins:
 
@@ -159,9 +159,9 @@ The following options are available:
            authorizationPolicy:
              restrictToRoles: ["admin"]
 
-    With this conf, only logged in users with the role admin can access 'metabase' service
+    With this conf, only logged in users with the role admin can access 'metabase' service.
 
-    Now we need a need a way for the admins to login so that they can access this service.
+    Now we need a way for the admins to login so that they can access this service.
     The auth service has a ui-kit that can be used for this purpose.
 
     .. code-block:: yaml
@@ -177,7 +177,7 @@ The following options are available:
              restrictToRoles: ["admin"]
              noSessionRedirectUrl: https://auth.{{ cluster.name }}.hasura-app.io/ui/
 
-    So if there is no session, the gateway redirects the user to the auth service's ui to login.
+    So if there is no session, the gateway redirects the user to the auth service's UI to login.
 
     Sometimes, additionally we may want to redirect users which do not have access to this page
 
@@ -199,10 +199,10 @@ The following options are available:
     Can take the following 3 values:
 
     1. "allow_all": Cross origin requests from any domain are allowed
-       Eg. corsPolicy: allow_all
+       E.g.: corsPolicy: allow_all
 
     2. "upstream" : The upstream service should handle CORS requests.
-       Eg. corsPolicy: upstream
+       E.g.: corsPolicy: upstream
 
     3. Array of allowed origins: This allows the listed origins along
        with all the subdomains on the current domain to make CORS requests.

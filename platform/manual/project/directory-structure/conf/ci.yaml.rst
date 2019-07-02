@@ -12,7 +12,7 @@ Continuous integration settings for a cluster is specified in this file. Two par
 remotes
 -------
 
-Details under a remote indicate which microservices has to be updated when a git push happens against that remote. Each key creates a git remote on the cluster. When a push is made to this cluster, docker images are built and the microservices are updated as per the definition.
+Details under a remote indicate which microservices have to be updated when a git push happens against that remote. Each key creates a git remote on the cluster. When a push is made to this cluster, docker images are built and the microservices are updated as per the definition.
 
 .. code-block:: yaml
 

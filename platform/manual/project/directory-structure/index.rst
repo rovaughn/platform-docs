@@ -6,7 +6,7 @@ Project Directory Structure
 ===========================
 
 The project (a.k.a. project directory) has a particular directory structure and
-it has to be maintained strictly, else hasura cli would not work as expected. A
+it has to be maintained strictly, else Hasura CLI would not work as expected. A
 representative project is shown below:
 
 .. toctree::

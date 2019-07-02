@@ -24,7 +24,7 @@ migrations, microservice configuration, added/removed
 microservices) will all be applied to your cluster with the ``git push
 hasura master`` command.
 
-You can also apply each type of change separately as well as described :ref:`here <partial-deploy>`.
+You can also apply each type of change separately as well, as described :ref:`here <partial-deploy>`.
 
 **To deploy:**
 
@@ -32,13 +32,13 @@ You can also apply each type of change separately as well as described :ref:`her
 
 See :doc:`../cluster/create`
 
-**Step 2: Add cluster to your project**
+**Step 2: Add a cluster to your project**
 
 See :doc:`../cluster/add`
 
-**Step 3: Deploy project to cluster**
+**Step 3: Deploy a project to the cluster**
 
-Commit all the files in the project folder and run ``git push hasura master``
+Commit all the files in the project folder and run ``git push hasura master``.
 
 This will deploy everything, including your custom microservices, database migrations and project configuration to the cluster.
 
@@ -53,7 +53,7 @@ It applies the following changes:
 3. Applies microservices Kubernetes spec changes.
 4. Pushes custom microservices source code (if it exists).
 
-So, whenever a change is made to the project in database schema, cluster
+So, whenever a change is made to the project in the database schema, cluster
 configuration, or microservice config changes; commit the changes and execute
 ``git push hasura master`` to apply all of the changes.
 
@@ -87,14 +87,14 @@ directory, run the following command:
 
 Applying microservice configuration changes only
 ------------------------------------------------
-To only apply microservice configuration changes, i.e any change inside to the
+To only apply microservice configuration changes, i.e. any change inside to the
 ``k8s.yaml`` file inside a microservice directory, run the following command:
 
 .. code-block:: bash
 
   $ hasura microservice apply # optionally -c <cluster-alias>
 
-This can be port changes, Docker image changes, change environment variables
+These can be port changes, Docker image changes, change environment variables
 etc.
 
 Pushing microservice source code changes only

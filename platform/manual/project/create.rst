@@ -9,9 +9,9 @@
 Creating a project
 ==================
 
-You can create a hasura project by cloning a project from the collection on `hasura hub <https://platform.hasura.io/hub>`_
+You can create a Hasura project by cloning a project from the collection on `hasura hub <https://platform.hasura.io/hub>`_.
 
-The following will 'clone' the project `hasura/base <https://platform.hasura.io/hub/project/hasura/base>`_ (an empty hasura project) to your system.
+The following will 'clone' the project `hasura/base <https://platform.hasura.io/hub/project/hasura/base>`_ (an empty Hasura project) to your system.
 
 .. code:: bash
 

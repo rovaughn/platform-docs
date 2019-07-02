@@ -11,10 +11,10 @@ A microservice on Hasura is defined as a `Kubernetes Deployment <https://kuberne
 
 Whenever you ``git push`` or use :ref:`hasura ms apply <hasura_platform:microservice_apply>`, this file is read and the objects are created on the cluster. You can edit this file to add secrets and other environment variables for the microservice.
 
-Docker Image
+Docker image
 ------------
 
-Docker image to be used by the microservice is given as ``image:`` key in ``k8s.yaml``. You can change it, commit and push to get the new image deployed.
+The docker image to be used by the microservice is given as ``image:`` key in ``k8s.yaml``. You can change it, commit and push to get the new image deployed.
 
 For microservices with continuous integration enabled, i.e. their name appears in :ref:`ci.yaml <hasura-dir-conf-ci.yaml>`, the ``image`` key is ignored. The image is built on the cluster using :ref:`Dockerfile <hasura-dir-ms-dockerfile>` and the image is updated automatically, post git push.
 
@@ -24,7 +24,7 @@ Secrets
 
 Check out :doc:`this page <../../secrets/index>` for more info on using secrets.
 
-Environment Variables
+Environment variables
 ---------------------
 
 Check out :doc:`this page <../../../microservices/env-variables>` for more info on passing ENV variables to a microservice.
@@ -32,7 +32,7 @@ Check out :doc:`this page <../../../microservices/env-variables>` for more info 
 Ports
 -----
 
-The port on which the microservice is listening at should be denoted in ``k8s.yaml``. A port and a target port is mentioned in the ``ports`` section along with protocol used and a name. Multiple ports can also be defined in this manner. Service section in ``k8s.yaml`` for a microservice with port 8080 on the microservice mapped to port 80 would look like the following:
+The port on which the microservice is listening at should be denoted in ``k8s.yaml``. A port and a target port is mentioned in the ``ports`` section along with the protocol used and a name. Multiple ports can also be defined in this manner. A service section in ``k8s.yaml`` for a microservice with port 8080 on the microservice mapped to port 80 would look like the following:
 
 .. code-block:: yaml
    :emphasize-lines: 11-15

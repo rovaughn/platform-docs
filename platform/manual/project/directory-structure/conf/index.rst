@@ -4,7 +4,7 @@
 Project structure: conf/
 ========================
 
-Configuration required to get a cluster ready for a project is stored as various files in this directory. When a configurations is applied on a cluster using either ``git push`` or ``conf apply`` command, these files are read to build a complete configuration object, also called ``hasura-conf``.
+Configuration required to get a cluster ready for a project is stored as various files in this directory. When a configurations is applied on a cluster using either the ``git push`` or the ``conf apply`` command, these files are read to build a complete configuration object, also called ``hasura-conf``.
 
 .. note::
 
