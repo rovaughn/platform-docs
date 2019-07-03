@@ -1,11 +1,11 @@
 .. _api_explorer:
 
-Hasura API Console
+Hasura API console
 ==================
 
 .. image:: ../../../img/platform/manual/api-console/console-screenshot.png
 
-The Hasura API console is an easy-to-use UI that lets you explore the Data, Auth, Filestore and Notify Hasura APIs on a cluster and also lets you manage the data & configuration of these microservices.
+The Hasura API console is an easy-to-use UI that lets you explore the data, auth, filestore and notify Hasura APIs on a cluster and also lets you manage the data & configuration of these microservices.
 
 To open the API console, ``cd`` into the project directory and run:
 

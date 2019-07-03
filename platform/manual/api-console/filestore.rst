@@ -1,9 +1,9 @@
-Hasura Api Console: Filestore
+Hasura API console: filestore
 =============================
 
 In this section, you will get a quick overview of the ``FILESTORE`` section of the :doc:`API console <index>`. Go to the ``FILESTORE`` tab on the top to navigate to this section.
 
-Manage Files
+Manage files
 ------------
 
 You can upload, download, manage and delete files in your database in this section.

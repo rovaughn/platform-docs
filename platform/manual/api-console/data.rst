@@ -1,16 +1,16 @@
-Hasura Api Console: Data
+Hasura API console: data
 ========================
 
 In this section, you will get a quick overview of the ``DATA`` section of the :doc:`API console <index>`. Go to the ``DATA`` tab on the top to navigate to this section.
 
-Create Table
+Create table
 ------------
 
 To create a table, just click on the ``Create Table`` button.
 
 .. image:: ../../../img/platform/manual/api-console/api-console-data-create-table.png
 
-View/Modify Table
+View / modify table
 -----------------
 
 To view, modify and delete a table, choose the table from the left panel.

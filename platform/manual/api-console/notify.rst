@@ -1,4 +1,4 @@
-Hasura Api Console: Notify
+Hasura API console: notify
 ==========================
 
 In this section, you will get a quick overview of the ``NOTIFY`` section of the :doc:`API console <index>`. Go to the ``NOTIFY`` tab on the top to navigate to this section.
