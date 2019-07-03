@@ -8,15 +8,15 @@ Facebook authentication
 Configuration
 -------------
 
-* To use Facebook login with Hasura, create an App on Facebook from
+* To use Facebook login with Hasura, create an app on Facebook at
   https://developers.facebook.com/.
 
-* In the newly created app's page, and obtain the "App ID" and "App Secret"
+* In the newly created app page, obtain the "App ID" and "App Secret"
   values.
 
-* Now you need to configure Hasura Auth microservice with these credentials.
+* Now you need to configure the Hasura auth microservice with these credentials.
 
-* To configure, go to :doc:`conf/auth.yaml <../../../project/directory-structure/conf/auth.yaml>` file inside your Hasura
+* To configure, go to the :doc:`conf/auth.yaml <../../../project/directory-structure/conf/auth.yaml>` file inside your Hasura
   project.
 
 * Under ``facebook``, set your ``clientId``.
@@ -46,8 +46,8 @@ Configuration
 Web apps
 ~~~~~~~~
 
-For web apps, use the Facebook Login for Web Javascript SDK to integrate with
-Hasura Auth.
+For web apps, use the Facebook login for web Javascript SDK to integrate with
+Hasura auth.
 
 See here on how to use it:
 https://developers.facebook.com/docs/facebook-login/web/
@@ -55,9 +55,9 @@ https://developers.facebook.com/docs/facebook-login/web/
 Mobile apps
 ~~~~~~~~~~~
 
-For mobile apps, you Facebook mobile SDKs to integrate with Hasura Auth.
+For mobile apps, use the Facebook mobile SDKs to integrate with Hasura auth.
 
-See here on how to use it:
+See here how to use it:
 
 * Android: https://developers.facebook.com/docs/facebook-login/android/
 * iOS: https://developers.facebook.com/docs/facebook-login/ios/
@@ -66,13 +66,13 @@ See here on how to use it:
 API
 ---
 
-Login/Signup
+Login / signup
 ~~~~~~~~~~~~
 
-* Use Facebook SDK from above to obtain ``accessToken`` (or ``access_token``)
+* Use Facebook SDK from above to obtain the ``accessToken`` (or ``access_token``)
   of the logged in Facebook user.
 
-* Once the ``access_token`` is obtained, send the ``access_token`` to Hasura Auth
+* Once the ``access_token`` is obtained, send the ``access_token`` to the Hasura auth
   microservice:
 
   .. code:: http
@@ -111,4 +111,4 @@ Login/Signup
 
 * To logout, make a call to ``/v1/user/logout``.
 
-* To get Hasura credentials of current logged in user, ``/v1/user/info``.
+* To get the Hasura credentials of the current logged in user, ``/v1/user/info``.

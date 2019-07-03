@@ -12,11 +12,11 @@ Configuration
   https://console.developers.google.com/.  You can know more about using Google
   login from https://developers.google.com/identity/.
 
-* Register an application with Google, obtain the Client Id and Client secret.
+* Register an application with Google, obtain the client ID and client secret.
 
-* Now you need to configure Hasura Auth microservice with these credentials.
+* Now you need to configure the Hasura auth microservice with these credentials.
 
-* To configure, go to :doc:`conf/auth.yaml <../../../project/directory-structure/conf/auth.yaml>` file inside your Hasura
+* To configure, go to the :doc:`conf/auth.yaml <../../../project/directory-structure/conf/auth.yaml>` file inside your Hasura
   project.
 
 * Under ``google``, set the array of ``clientIds``.
@@ -51,16 +51,16 @@ Configuration
 Web apps
 ~~~~~~~~
 
-For web apps, use the Google SDK to integrate with Hasura Auth.
+For web apps, use the Google SDK to integrate with Hasura auth.
 
-See here on how to use it:
+See here how to use it:
 https://developers.google.com/identity/sign-in/web/
 
 
 Mobile apps
 ~~~~~~~~~~~
 
-For mobile apps, you can use Google SDK to integrate with Hasura Auth.
+For mobile apps, you can use Google SDK to integrate with Hasura auth.
 
 See here for more information:
 
@@ -70,15 +70,15 @@ See here for more information:
 API
 ---
 
-Login/Signup
+Login / signup
 ~~~~~~~~~~~~
 
-* Use Google SDK from above to obtain ``id_token`` (or ``idToken``) of the
-  logged in Google user. (In some older platforms you might receive
+* Use Google SDK from above to obtain the ``id_token`` (or ``idToken``) of the
+  logged in Google user. (In some older platforms you might receive an
   ``access_token`` (or ``accessToken``). In that case, you can replace
   ``id_token`` with ``access_token`` in the rest of article.)
 
-* Once the ``id_token`` is obtained, send the ``id_token`` to Hasura Auth
+* Once the ``id_token`` is obtained, send the ``id_token`` to the Hasura auth
   microservice:
 
 .. code-block:: http
@@ -117,4 +117,4 @@ Login/Signup
 
 * To logout, make a call to ``/v1/user/logout``.
 
-* To get Hasura credentials of current logged in user, ``/v1/user/info``.
+* To get the Hasura credentials of the current logged in user, ``/v1/user/info``.

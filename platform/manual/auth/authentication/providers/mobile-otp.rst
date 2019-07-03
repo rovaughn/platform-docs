@@ -7,19 +7,19 @@ Mobile/OTP based authentication
 ===============================
 
 This provider supports mobile based **password-less** authentication. The way it
-works is, user's mobile number is used to send an OTP (One Time Password) on their mobile phone.
+works is that user's mobile number is used to send an OTP (one time password) on their mobile phone.
 Once they receive the OTP, they can use that to signup or login.
 
 
 .. note::
 
-  For this provider to send OTP via SMS, you have to :doc:`enable a SMS provider <../../../notify/sms/index>` in
-  the Hasura Notify microservice.
+  For this provider to send OTP via SMS, you have to :doc:`enable an SMS provider <../../../notify/sms/index>` in
+  the Hasura notify microservice.
 
 Configuration
 -------------
 
-You can configure Mobile/OTP provider settings in the :doc:`conf/auth.yaml <../../../project/directory-structure/conf/auth.yaml>` file in your project. Find a top level key called ``mobile`` in the ``auth.yaml``. By default the mobile conf looks like this:
+You can configure mobile/OTP provider settings in the :doc:`conf/auth.yaml <../../../project/directory-structure/conf/auth.yaml>` file in your project. Find a top level key called ``mobile`` in the ``auth.yaml`` file. By default the mobile conf looks like this:
 
 .. snippet:: yaml
     :filename: auth.yaml
@@ -81,7 +81,7 @@ Once the OTP is obtained, then the user should make a signup request.
    }
 
 
-If the request is successful, Hasura Auth will create and login the user.
+If the request is successful, Hasura auth will create and login the user.
 
 Typical response of the ``/v1/signup`` request is :
 
@@ -102,9 +102,9 @@ Typical response of the ``/v1/signup`` request is :
 * ``auth_token``  is the authentication token of the user for the current
   session.
 
-* ``hasura_roles``  is an list of all roles assigned to the user.
+* ``hasura_roles``  is a list of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id``  is the Hasura identifier of the user.
 
 
 Login
@@ -141,7 +141,7 @@ Once the OTP is obtained, then the user should make a login request.
      }
    }
 
-If the request is successful, Hasura Auth will login the user.
+If the request is successful, Hasura auth will login the user.
 
 Typical response of the ``/v1/login`` request is :
 
@@ -163,9 +163,9 @@ Typical response of the ``/v1/login`` request is :
 * ``auth_token``  is the authentication token of the user for the current
   session.
 
-* ``hasura_roles``  is an list of all roles assigned to the user.
+* ``hasura_roles``  is a list of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id``  is the Hasura identifier of the user.
 
 
 Get user info
@@ -203,7 +203,7 @@ Typical response is :
   session.
 * ``hasura_roles``  is an array of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id``  is the Hasura identifier of the user.
 
 
 Logout

@@ -11,28 +11,28 @@ Setup
 Web apps
 ~~~~~~~~
 
-For web apps using Github, we have to use the "Authorization Code" grant flow
-(or the traditional web server flow) as Github doesn't support the `implicit
-grant flow`_. So this flow needs a backend server to handle intermediate
+For web apps using Github, we have to use the "Authorization Code" grant process
+(or the traditional web server process) as Github doesn't support the `implicit
+grant process`_. So this process needs a backend server to handle intermediate
 requests.
 
 Overview
 ~~~~~~~~
 
 First, you have setup and configure your Github application.  Then, you have
-to make a request to Github API for an "authorization code", specifying a
+to make a request to the Github API for an "authorization code", specifying a
 "Redirect URI" (which is basically a URL to your application). Github would
 respond to this "Redirect URI" with the "authorization code". Your backend
-application has to parse the authorization code and make one more request to
+application has to parse the authorization code and make one more request to the
 Github API. This final API call will return an access token in the response.
-Your application should now validate the access token by passing to a Hasura
-Auth endpoint. Hasura will validate the token, and will login the user (if the
+Your application should now validate the access token by passing it to a Hasura
+auth endpoint. Hasura will validate the token, and will login the user (if the
 user is seen for the first time then Hasura will also create the user).
 
 Pre-requisites
 ~~~~~~~~~~~~~~
 
-* Register an application with Github, obtain the Client ID and Client secret.
+* Register an application with Github, obtain the client ID and client secret.
 
   * Go to https://github.com/settings/developers and on top right and click on
     "Register a new application" to create a new application. Fill the
@@ -48,9 +48,9 @@ Pre-requisites
 Configuration
 ~~~~~~~~~~~~~
 
-* Now you need to configure Hasura Auth to tell it to use these credentials.
+* Now you need to configure Hasura auth to tell it to use these credentials.
 
-* To configure, go to :doc:`conf/auth.yaml <../../../project/directory-structure/conf/auth.yaml>` file inside your Hasura
+* To configure, go to the :doc:`conf/auth.yaml <../../../project/directory-structure/conf/auth.yaml>` file inside your Hasura
   project.
 
 * Under ``github``, set the ``clientId``.
@@ -69,7 +69,7 @@ Configuration
 
 * **clientId**: The client ID obtained when creating the application.
 
-* **clientSecret**: The client secret obtained when creating the application. As you see in the above code snippet, client secret is a reference to a :ref:`hasura project secret <hasura-secrets-manual>` called ``auth.github.client_secret``.
+* **clientSecret**: The client secret obtained when creating the application. As you see in the above code snippet, the client secret is a reference to a :ref:`hasura project secret <hasura-secrets-manual>` called ``auth.github.client_secret``.
   To add your client secret to ``hasura project secrets``, run the following command from your project directory.
 
   .. code-block:: bash
@@ -77,7 +77,7 @@ Configuration
     $ hasura secret update auth.github.client_secret
 
 
-The flow
+The process
 --------
 
 * Redirect the browser (full page or popup) to
@@ -104,8 +104,8 @@ The flow
       client_id=812741506391&
       state=DgkRrHXmyu3KLd0KDdfq
 
-  The documentation (in details) for this can be found here:
-  https://developer.github.com/v3/oauth/
+  The documentation (in detail) for this can be found here:
+  https://developer.github.com/v3/oauth/.
 
 * Github will handle the authentication, and if the user has granted permission
   for your app, it will redirect back to the "Redirect URI" with the

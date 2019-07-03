@@ -4,21 +4,21 @@
 
 .. _providers:
 
-Authentication methods a.k.a. Providers
+Authentication methods a.k.a. providers
 =======================================
 
-Hasura Auth has support for multiple ways to authenticate (ie: login/register) a user. e.g. username-based, email-based, mobile-based, social logins, etc.
+Hasura auth has support for multiple ways to authenticate (i.e. login/register) a user. e.g. username-based, email-based, mobile-based, social logins, etc.
 
-Hasura Auth calls each authentication method a **"provider"**.
+Hasura auth calls each authentication method a **"provider"**.
 
 You can :doc:`enable/disable providers <configure-auth-methods>` in your auth configuration. Once a provider is
 enabled you can use them to signup your users. **You can have multiple
 providers enabled at the same time.**
 
 Also, if you have an **existing custom authentication system** you can create a
-:doc:`custom provider <providers/custom-provider>` and configure it with Hasura Auth.
+:doc:`custom provider <providers/custom-provider>` and configure it with Hasura auth.
 
-The following providers come by default with Hasura Auth:
+The following providers come by default with Hasura auth:
 
 .. list-table::
    :header-rows: 1
