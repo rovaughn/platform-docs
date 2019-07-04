@@ -6,7 +6,7 @@ Using gin
 
 `codegangsta/gin <https://github.com/codegangsta/gin>`_ is a live reload utility
 for Go web servers. It can run any ``main.go`` file and restart it when
-dependent code changes. gin runs a webserver on it's own and proxies requests to
+dependent code changes. gin runs a webserver on its own and proxies requests to
 the actual webserver. The only requirement is that the actual webserver should
 take a ``PORT`` environment variable and listen on that address so that gin can
 set it arbitrarily.
@@ -45,7 +45,7 @@ started in port 8080 and it will restart automatically for any code change.
 
 
 Step 4 copies the source code from ``src`` to ``/gp/src/app/src``. Sync for
-these directories can be done using the following command (assuming name of the
+these directories can be done using the following command (assuming the name of the
 microservice is ``api``):
 
 .. code-block:: bash
@@ -60,5 +60,5 @@ using another terminal window:
    $ hasura microservice open api
 
 Make some changes to ``main.go`` and save. Refresh the browser and voila! You
-can see that changes live in the browser tab.
+can see that it changes live in the browser tab.
 

@@ -25,7 +25,7 @@ As you would normally do with any relational database, data is modelled as table
 |comment                                 |id, user_id, article_id, comment        |
 +----------------------------------------+----------------------------------------+
 
-**Note:** If you are using the ``hello-world`` quickstart, tables ``author`` and ``article`` have already been created
+**Note:** If you are using the ``hello-world`` quickstart, the tables ``author`` and ``article`` have already been created
 via migrations
 
 You can create tables via the ``API console``. Head to *Data -> Add Table*.
@@ -52,14 +52,14 @@ After creating the tables, the following foreign key constraints need to be set 
 To add foreign key constraints, click on the table, go to the *Modify* tab and edit the columns for which you wish
 to add foreign keys.
 	    
-Adding foreign key constraint to ``article_id`` of ``like`` table:
+Adding a foreign key constraint to the ``article_id`` of the ``like`` table:
 
 .. image:: ../../../img/platform/manual/tutorial/tutorial-modify-table-like.png
 
 Similarly, add the other foreign key constraints.
 
 	    
-Next: Explore the Data APIs
+Next: Explore the data APIs
 ---------------------------
 
 Next, head to :doc:`explore-data-apis`.

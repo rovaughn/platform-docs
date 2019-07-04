@@ -1,17 +1,17 @@
 Part IX: Permissions & access control on data models
 ====================================================
 
-By default, the data APIs can only be accessed by users with the ``admin`` role. However,
-our blog app users will not have the admin role assigned. So, we need to allow access to the data APIs for
+By default, the data APIs can only be accessed by users with the ``admin`` role. However, in
+our blog app, users will not have the admin role assigned. So, we need to allow access to the data APIs for
 roles other than ``admin``. This is handled by the permission layer of the ``data`` microservice,
-which lets you define row level and column level access control policies for all the roles for different query types.
+which lets you define row level and column level access control policies for all the roles and for different query types.
 
 In our blog app, what roles do we have other than ``admin``?
 
 #. ``user`` for logged in users
 #. ``anonymous`` for users who haven't logged in.
 
-We need to define permissions on all the tables that we have created so far for ``user`` and ``anonymous`` roles.
+We need to define permissions on all the tables that we have created so far for the ``user`` and ``anonymous`` roles.
 
 Let's look at the access conditions we should set up for our tables:
 
@@ -192,7 +192,7 @@ Let's look at the access conditions we should set up for our tables:
 
 To summarize:
 
-* ``anonymous`` role users can select (read) all the data
+* ``anonymous`` role users can select (read) all the data.
 * ``anonymous`` role users cannot modify (insert/delete/update) any data.
 * ``user`` role users can select (read) all the data.
 * ``user`` role users can insert/delete "their own data" and update only certain fields once inserted.
@@ -295,7 +295,7 @@ Defining permissions:
 We can use the ``API console`` UI to add permissions for our tables. Head to *Data -> [table-name] -> Permissions* to
 see/modify the permissions on the table.
 
-**For example**, let's set the ``update`` permissions for ``user`` role on the ``article`` table:
+**For example**, let's set the ``update`` permissions for the ``user`` role on the ``article`` table:
 
 The *Permissions* tab of the ``article`` table should look like this:
 
@@ -305,7 +305,7 @@ Click on the *Edit* icon next to the user/update cell. It should open up an edit
 
 .. image:: ../../../img/platform/manual/tutorial/tutorial-permissions-edit-empty.png
 
-Now, set the permissions as described above. It should finally look like this:
+Now, set the permissions as described above. It should eventually look like this:
 
 .. image:: ../../../img/platform/manual/tutorial/tutorial-permissions-edit-filled.png
 

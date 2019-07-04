@@ -8,18 +8,18 @@
 Getting started
 ===============
 
-Hasura helps you build applications quickly. Hasura provides APIs for common uses cases (data, auth, filestore)
+Hasura helps you build applications quickly. Hasura provides APIs for common use cases (data, auth, filestore)
 and allows you to build your custom microservices easily too.
 
 This getting started guide will help you grok Hasura and will get you off the ground with your first running
 application in a few minutes.
 
 There are 3 core concepts that drive everything you do with Hasura. Hasura projects, Hasura clusters and deploying
-your project to the cluster. The ``hasura`` CLI tool is required to run manage everything Hasura.
+your project to the cluster. The ``hasura`` CLI tool is required to run and manage everything in Hasura.
 
 .. image:: ../../../img/platform/manual/getting-started/core-hasura-concepts.png
 
-Concept #1: A hasura project
+Concept #1: A Hasura project
 ----------------------------
 
 Hasura breaks your entire application into a collection of microservices. There are few ready-made microservices
@@ -35,7 +35,7 @@ specifications written by you.
 
 .. image:: ../../../img/platform/manual/getting-started/hasura-project-structure.png
 
-Concept #2: A hasura cluster
+Concept #2: A Hasura cluster
 ----------------------------
 
 A Hasura cluster is a Kubernetes cluster on the cloud that can host any Hasura project. It has all the Hasura
@@ -43,7 +43,7 @@ microservices running and the necessary tooling for you to deploy your Hasura pr
 
 .. image:: ../../../img/platform/manual/getting-started/hasura-cluster.png
 
-Concept #3: Deploying to the hasura cluster
+Concept #3: Deploying to the Hasura cluster
 -------------------------------------------
 
 Once you have a Hasura cluster that is added to your Hasura project, running ``git push hasura master`` will

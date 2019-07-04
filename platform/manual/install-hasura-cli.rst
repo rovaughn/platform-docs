@@ -1,11 +1,11 @@
 .. .. meta::
-   :description: Installing the hasura CLI on Linux, Mac OS, Windows.
+   :description: Installing the Hasura CLI on Linux, Mac OS, Windows.
    :keywords: hasura, hasura CLI, install, linux, mac, windows
 
 .. _install-cli:
 
 =========================
-Installing the hasura CLI
+Installing the Hasura CLI
 =========================
 
 Step 1: Install
@@ -42,7 +42,7 @@ Step 1: Install
 
          .. note::
 
-            You should have ``git bash`` installed to use ``hasura`` CLI. Download git bash using the following `(link) <https://git-scm.com/download/win>`_.
+            You should have ``git bash`` installed to use ``hasura`` CLI. Download git bash using the following `link <https://git-scm.com/download/win>`_.
             Also, make sure you install it in ``MinTTY`` mode, instead of Windows' default console.
 
          Download the ``hasura`` installer:
@@ -97,7 +97,7 @@ Step 2: Login
 Troubleshooting
 ^^^^^^^^^^^^^^^
 
-If you face any issue while logging in, checkout the :ref:`Troubleshooting
+If you face any issue while logging in, check out the :ref:`Troubleshooting
 <hasuractl_alternate_login>` section for an alternate login method. 
 
 (Optional) Add shell completion

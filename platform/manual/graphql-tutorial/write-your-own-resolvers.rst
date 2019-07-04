@@ -1,11 +1,11 @@
-Part VII: Write your own Resolvers
+Part VII: Write your own resolvers
 ==================================
 
-You can customise GraphQL schema using views. But there are instances where you would like to write custom business logic, contacting third party APIs, returning data which is not stored in the database etc. In those cases, you would want to write your own resolver in GraphQL and expose an API endpoint.
+You can customise your GraphQL schema using views. But there are instances where you would like to write custom business logic, contacting third party APIs, returning data which is not stored in the database etc. In those cases, you would want to write your own resolver in GraphQL and expose an API endpoint.
 
-The Hasura platform allows you to deploy custom code as :ref:`microservices <hasura_microservice_doc>` with a git push. Your microservices can act as a GraphQL proxy where you can add custom resolvers and then connect to Hasura GraphQL engine or any other third-party API.
+The Hasura platform allows you to deploy custom code as :ref:`microservices <hasura_microservice_doc>` with a git push. Your microservices can act as a GraphQL proxy where you can add custom resolvers and then connect to the Hasura GraphQL engine or any other third-party API.
 
-GraphQL Server Boilerplate
+GraphQL server boilerplate
 --------------------------
 
 We have a GraphQL `graphql-server-boilerplate <https://hasura.io/hub/projects/hasura/graphql-server-boilerplate>`_ that you can quickly add to your project and get your own GraphQL server live in under five minutes. It has a simple hello-world schema which looks like:
@@ -25,7 +25,7 @@ We have a GraphQL `graphql-server-boilerplate <https://hasura.io/hub/projects/ha
       hello(echo: String!): Hello
     }
 
-The ``graphql-server-boilerplate`` exposes the GraphQL API at the ``/`` endpoint. It also servers ``GraphiQL`` at the ``/graphiql`` endpoint where you can try out the API.
+The ``graphql-server-boilerplate`` exposes the GraphQL API at the ``/`` endpoint. It also serves ``GraphiQL`` at the ``/graphiql`` endpoint where you can try out the API.
 
 Adding the GraphQL server boilerplate to your project
 -----------------------------------------------------

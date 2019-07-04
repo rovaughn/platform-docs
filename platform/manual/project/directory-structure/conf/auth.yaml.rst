@@ -7,7 +7,7 @@ Project structure: conf/auth.yaml
 
    This file is rendered as a template. Refer to :ref:`Conf files templating <conf-templating>` for more details.
 
-Configuration for Hasura Auth microservice is defined in this file.
+The configuration for the Hasura auth microservice is defined in this file.
 
 By default, this file is extensively commented to indicate usage and possible values for each key.
 

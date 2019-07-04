@@ -8,9 +8,9 @@ Part XII: Using the Auth UI Kit
 
 In the previous section, we deployed our own custom app. If you want to add authentication to your app and do not want
 to write auth code, you can use the Auth UI kit which is a ready to use frontend interface that comes pre-loaded with
-the Hasura Auth microservice.
+the Hasura auth microservice.
 
-The UI kit runs on the url: ``auth.<cluster-name>.hasura-app.io/ui``.
+The UI kit runs on this url: ``auth.<cluster-name>.hasura-app.io/ui``.
 
 It allows your application users to login/signup seamlessly using the :doc:`authentication providers <../auth/authentication/index>`
 configured in the ``conf/auth.yaml`` file. The UI adapts automatically to display the enabled auth providers. Just
@@ -52,7 +52,7 @@ Enable auth with Google
 
 #. Obtain your Google OAuth ``client ID`` and ``client secret``.
 
-#. Open the ``conf/auth.yaml`` file from the project directory. Enable Google provider to by setting ``defaultProviders > google > enabled`` to *true*.
+#. Open the ``conf/auth.yaml`` file from the project directory. Enable the Google provider by setting ``defaultProviders > google > enabled`` to *true*.
 
 #. Find the ``google`` key in ``conf/auth.yaml`` and enter your client ID in the ``clientIds`` array there. (The ``google`` key might be commented)
 

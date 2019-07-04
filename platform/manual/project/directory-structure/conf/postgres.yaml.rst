@@ -7,7 +7,7 @@ Project structure: conf/postgres.yaml
 
    This file is rendered as a template. Refer to :ref:`Conf files templating <conf-templating>` for more details.
 
-Config for PostgreSQL database running on Hasura can be found here. Changing them is not recommended.
+Config for PostgreSQL database running on Hasura can be found in this file. Changing it is not recommended.
 
 .. code-block:: yaml
 
@@ -23,9 +23,9 @@ Config for PostgreSQL database running on Hasura can be found here. Changing the
        name: hasura-secrets
    volume: {{ cluster.metadata.postgres.volume|json }}
 
-As shown in the config, username and password is read from secrets and volume comes from metadata.
+As shown in the config, the username and password are read from secrets and the volume comes from metadata.
 
-**These values are read only on database initialisation and hence changing these secrets will not change the actual credentials, as initialisation is done at cluster creation**.
+**These values are read only on database initialisation and hence changing these secrets will not change the actual credentials, as initialisation is done at the point of the cluster creation**.
 
 You can find the default file at `conf/postgres.yaml <https://github.com/hasura/base/blob/master/conf/postgres.yaml>`_ in the base repo.
 

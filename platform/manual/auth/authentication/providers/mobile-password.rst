@@ -3,7 +3,7 @@
    :keywords: hasura, users, signup, login, mobile, verify mobile
 
 
-Mobile/Password based authentication
+Mobile / password based authentication
 ====================================
 
 This provider supports mobile/password based authentication.  The user's mobile
@@ -12,13 +12,13 @@ provider there are extra steps to be performed to verify the user's mobile.
 
 .. note::
 
-  For this provider to send OTP via SMS, you have to :doc:`enable a SMS provider <../../../notify/sms/index>` in
-  the Hasura Notify microservice.
+  For this provider to send an OTP via SMS, you have to :doc:`enable an SMS provider <../../../notify/sms/index>` in
+  the Hasura notify microservice.
 
 Configuration
 -------------
 
-You can configure Mobile/Password provider settings in the :doc:`conf/auth.yaml <../../../project/directory-structure/conf/auth.yaml>` file in your project. Find a top level key called ``mobilePassword`` in the ``auth.yaml``. By default the mobile-password conf looks like this:
+You can configure Mobile/password provider settings in the :doc:`conf/auth.yaml <../../../project/directory-structure/conf/auth.yaml>` file in your project. Find a top level key called ``mobilePassword`` in the ``auth.yaml``. By default the mobile-password conf looks like this:
 
 .. snippet:: yaml
     :filename: auth.yaml
@@ -64,8 +64,8 @@ To signup a user, make a request to the signup endpoint : ``/v1/signup``.
      }
    }
 
-If the request is successful, Hasura Auth will send a verification SMS to the
-given mobile number and will return a response with user details.
+If the request is successful, Hasura auth will send a verification SMS to the
+given mobile number and will return a response with the user details.
 
 
 This will not login the user automatically (unlike the ``username`` provider),
@@ -90,21 +90,21 @@ Typical response of the ``/v1/signup`` request is :
    }
 
 
-* ``auth_token``  is the authentication token of the user for the current
+* ``auth_token`` is the authentication token of the user for the current
   session. This is null because at this point the mobile verification is
   pending, hence no session is created for the user.
 
-* ``hasura_roles``  is an list of all roles assigned to the user.
+* ``hasura_roles`` is a list of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id`` is the Hasura identifier of the user.
 
 
 Verify mobile
 ~~~~~~~~~~~~~
 
-To verify the mobile number, Hasura Auth will send a SMS with a one time
+To verify the mobile number, Hasura auth will send an SMS with a one time
 password or OTP to the user's mobile number, and within a configurable amount of
-time, the user has to submit the OTP to a Hasura Auth API endpoint to verify
+time, the user has to submit the OTP to a Hasura auth API endpoint to verify
 the mobile number.
 
 To verify the mobile number, make the following request.
@@ -169,11 +169,11 @@ Typical response of the ``/v1/login`` request is :
      ]
    }
 
-* ``auth_token``  is the authentication token of the user for the current
+* ``auth_token`` is the authentication token of the user for the current
   session.
-* ``hasura_roles``  is an array of all roles assigned to the user.
+* ``hasura_roles`` is an array of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id`` is the Hasura identifier of the user.
 
 
 Get user info
@@ -208,11 +208,11 @@ Typical response is :
    }
 
 
-* ``auth_token``  is the authentication token of the user for the current
+* ``auth_token`` is the authentication token of the user for the current
   session.
-* ``hasura_roles``  is an array of all roles assigned to the user.
+* ``hasura_roles`` is an array of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id`` is the Hasura identifier of the user.
 
 
 Logout
@@ -254,7 +254,7 @@ If a user has forgotten their password, it can be reset.
 
 .. note::
 
-  This flow is meant for users who have forgotten their password and
+  This process is meant for users who have forgotten their password and
   can't login. For logged-in user to change their password use
   ``/v1/user/change-password`` endpoint.
 
@@ -275,11 +275,11 @@ mobile number.
      "country_code" : "91"
    }
 
-After obtaining the OTP, your application should make auth API call to
+After obtaining the OTP, your application should make auth API call to the
 ``/v1/providers/mobile-password/reset-password`` endpoint to reset the user's password.
 
 The reset password endpoint takes the OTP and the new password of the user.
-
+  
 .. code-block:: http
 
    POST auth.<cluster-name>.hasura-app.io/v1/providers/mobile-password/reset-password HTTP/1.1

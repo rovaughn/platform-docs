@@ -59,7 +59,7 @@ Use the volume in your microservice
 You can configure persistent volumes for a microservice by editing the
 ``k8s.yaml`` file found at ``/microservices/<my-microservice>/k8s.yaml``.
 
-Let's say you need use ``myvolume``, created in the previous step, in a ghost
+Let's say you need to use ``myvolume``, created in the previous step, in a ghost
 blog microservice.
 
 The ``k8s.yaml`` for such a configuration would look like the following:
@@ -97,7 +97,7 @@ The ``k8s.yaml`` for such a configuration would look like the following:
             - {{ cluster.metadata.volumes.myvolume | json }}
 
 
-These are the keys that has to be filled:
+These are the keys that have to be provided:
 
 * ``volumeMounts``:
 

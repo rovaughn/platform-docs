@@ -42,6 +42,6 @@ OR (only for Hasura CLI versions >= v0.2.50)
 
 If you own a domain and need point that domain to a Hasura cluster, you just need to point the domain to the cluster IP and add a domain configuration here.
 
-Checkout :ref:`Adding a custom domain <adding-custom-domain>` for more details.
+Check out :ref:`Adding a custom domain <adding-custom-domain>` for more details.
 
 You can find the default file at `conf/domains.yaml <https://github.com/hasura/base/blob/master/conf/domains.yaml>`_ in the base repo.

@@ -54,9 +54,9 @@ Typical response of the ``/v1/signup`` request is :
 
 * ``auth_token``  is the authentication token of the user for the current
   session.
-* ``hasura_roles``  is an list of all roles assigned to the user.
+* ``hasura_roles``  is a list of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id``  is the Hasura identifier of the user.
 
 
 Login
@@ -136,7 +136,7 @@ Typical response is :
   session.
 * ``hasura_roles``  is an array of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id``  is the Hasura identifier of the user.
 
 
 Logout
@@ -177,4 +177,4 @@ The Username provider does not have a forgot password feature. This is by
 design, as it does not have any channel (like email) to send a forgot password
 token to the user.
 
-If you want this feature, use either Email or Mobile/Password provider.
+If you want this feature, use either the email or mobile/password provider.

@@ -21,9 +21,9 @@ the files is changed. Let's look at a typical file structure:
             ├── index.css
             └── index.js
 
-``npm start`` can be executed inside app directory, which start a web-server
-which also watches for changes. Say ``App.js`` is changed, the script with
-reload the web server and the connected website so that new code is available.
+``npm start`` can be executed inside the app directory. It starts a web-server
+and also watches for changes. Say ``App.js`` is changed, the script
+reloads the web server and the connected website so that the new code is available.
 
 .. code-block:: dockerfile
    :caption: Dockerfile
@@ -52,7 +52,7 @@ reload the web server and the connected website so that new code is available.
 
 
 The ``app`` directory from the microservice is added as ``/app`` in the docker
-image for the container, as given in step 5. The, in step 7, we can see that
+image for the container, as described in step 5. In step 7, we can see that
 ``npm start`` is executed. When we commit and push this dockerfile, the
 microservice will be running a development webserver that can live-reload
 changes.
@@ -64,7 +64,7 @@ You also need to create a file called ``.env`` in your root directory and add th
 
     CHOKIDAR_USEPOLLING=true
 
-The ``sync`` command will keep local ``app`` directory in sync with the one
+The ``sync`` command will keep the local ``app`` directory in sync with the one
 inside the container for the microservice. As the dockerfile indicates, we start
 the sync between the ``app`` directories. Assuming the microservice is called
 ``ui``:
@@ -80,5 +80,5 @@ using another terminal window:
 
    $ hasura microservice open ui
 
-Make some changes to ``App.js`` and save. Voila! You can see that changes
+Make some changes to the ``App.js`` and save. Voila! You can see that it changes
 live in the browser tab.

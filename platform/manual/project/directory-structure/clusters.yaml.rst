@@ -22,9 +22,9 @@ The ``clusters.yaml`` file is a YAML file containing information about your clus
 
 It contains the alias as well as the infra spec for the cluster.
 
-Following fields make up the infra spec:
+The following fields make up the infra spec:
 
-* ``version``  : A Version_ string
+* ``version``  : A Version_ string.
 * ``provider`` : Provider_ name.
 * ``region``   : Region_ of the cluster
 * ``nodes``    : A list of Node_ of the cluster.

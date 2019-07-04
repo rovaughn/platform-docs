@@ -30,7 +30,7 @@ Inside your project directory, run:
 
 The first section shows general information about the cluster.
 
-The cluster configuration section will tell if there is a difference between the local and remote cluster configurations.
+The cluster configuration section will tell you if there is a difference between the local and remote cluster configurations.
 
 Microservices
 -------------
@@ -92,7 +92,7 @@ This is the LetsEncrypt agent which is responsible for generating SSL certificat
 
 notify
 ^^^^^^
-This microservice handles the Email/SMS communication.
+This microservice handles the email/SMS communication.
 
 platform-sync
 ^^^^^^^^^^^^^
@@ -111,7 +111,7 @@ sshd
 This microservice handles SSH access to the cluster.
 
 
-Next: Start building a back-end for a Blog app!
+Next: Start building a back-end for a blog app!
 -----------------------------------------------
 
 Next, head to :doc:`build-blog-app`

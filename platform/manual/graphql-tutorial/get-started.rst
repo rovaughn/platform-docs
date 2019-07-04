@@ -1,7 +1,7 @@
 Part I: Create a Hasura project and cluster
 ===========================================
 
-A Hasura project is a directory (ie: a code repo) that contains all the configuration files, the database
+A Hasura project is a directory (i.e. a code repo) that contains all the configuration files, the database
 migrations, along with the source code and configuration of your custom microservices. This project directory should be
 a git repo, so that you can ``git push hasura master`` to deploy everything in the repo to a Hasura cluster.
 
@@ -110,14 +110,14 @@ To deploy the project to the cluster, run the following:
    $ git push hasura master   # hasura is the cluster alias to deploy to
 
 
-The ``git push`` will deploy everything, ie: the project conf, migrations and microservices, to the cluster.
+The ``git push`` will deploy everything, i.e. the project conf, migrations and microservices, to the cluster.
 
-The hasura cluster comes with a bunch of in-built microservices for Database, Authentication, Files, Routing etc. The GraphQL API is served by the Data Microservice.
+The Hasura cluster comes with a bunch of in-built microservices for database, authentication, files, routing etc. The GraphQL API is served by the data microservice.
 
 Read more about :doc:`../cluster/index`
 
 
-Next: GraphQL Schema
+Next: GraphQL schema
 --------------------
 
 Next, let's head to :doc:`graphql-schema`.

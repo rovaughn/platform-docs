@@ -33,7 +33,7 @@ Sometimes, you might want to start using a cluster for an entirely different pro
         # OR apply your migrations again:
         $ hasura migration apply
 
-#. Finally, apply the configurations, migrations and microservices of the new project to cluster.
+#. Finally, apply the configurations, migrations and microservices of the new project to the cluster.
 
    .. code-block:: bash
 

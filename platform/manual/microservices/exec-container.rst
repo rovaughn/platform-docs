@@ -25,7 +25,7 @@ Sometimes, your container might not have ``bash``, and might only have ``sh``.
    $ hasura ms exec <my-app> -ti -- /bin/sh
    $ # This is a sh prompt in your container
 
-**Open psql in your hasura `postgres` container:**
+**Open psql in your Hasura `postgres` container:**
 
 .. code-block:: bash
 

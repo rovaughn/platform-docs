@@ -12,7 +12,7 @@ Follow the steps below to a mount secrets as a file in your microservice:
       # hasura secret update <secret-key> -f <file-path>
       $ hasura secret update credvalue.json -f ~/creds/credvalue.json
 
-#. Modify the k8s.yaml of your microservice (``microservices/<microservice-name>/k8s.yaml``) to mount this secret as a file, instead of evironment variable.
+#. Modify the ``k8s.yaml`` of your microservice (``microservices/<microservice-name>/k8s.yaml``) to mount this secret as a file, instead of as an evironment variable.
 
    .. code-block:: yaml
 

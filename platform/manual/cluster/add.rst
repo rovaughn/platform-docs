@@ -20,6 +20,6 @@ To add a cluster to a project we use:
 
 .. note::
 
-    The ``-c`` flag tells to create an alias ``hasura`` the for the cluster. This
+    The ``-c`` flag is used to create an alias ``hasura`` the for the cluster. This
     name can be anything. We can then use this alias in various other commands
     including git push.

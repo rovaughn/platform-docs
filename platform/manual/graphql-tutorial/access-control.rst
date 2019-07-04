@@ -1,4 +1,4 @@
-Part V: Access Control
+Part V: Access control
 ======================
 
 Now that we have the schema ready, lets go and try out the following sample query that fetches all articles along with the comments (from the comment table we created) using the comments relationship:
@@ -16,11 +16,11 @@ Now that we have the schema ready, lets go and try out the following sample quer
 
 Go to the API-Explorer section in the API-Console and choose ``GraphQL`` in the left panel:
 
-Type the query and press Play button:
+Type the query and press the play button:
 
 .. image:: ../../../img/platform/manual/graphql-tutorial/graphql_query_perm_fail.png
 
-If you tried it, the query must have failed throwing an error like:
+Once you've tried it, the query must have failed throwing an error like:
 
 .. code-block:: json
 
@@ -39,14 +39,14 @@ This is because we have not set the permissions for the ``comments`` table that 
 By default, the data APIs can only be accessed by users with the ``admin`` role. However,
 our app users will not have the admin role assigned. So, we need to allow access to the data APIs for
 roles other than ``admin``. This is handled by the permission layer of the ``data`` microservice,
-which lets you define row level and column level access control policies for all the roles for different query types.
+which lets you define row level and column level access control policies for all the roles and for the different query types.
 
 In our app, what roles do we have other than ``admin``?
 
 #. ``user`` for logged in users
 #. ``anonymous`` for users who haven't logged in.
 
-We need to define permissions on all the tables that we have created so far for ``user`` and ``anonymous`` roles.
+We need to define permissions on all the tables that we have created so far for the ``user`` and ``anonymous`` roles.
 
 Let's look at the access conditions we should set up for our tables:
 
@@ -330,7 +330,7 @@ Defining permissions:
 We can use the ``API console`` UI to add permissions for our tables. Head to *Data -> [table-name] -> Permissions* to
 see/modify the permissions on the table.
 
-**For example**, let's set the ``update`` permissions for ``user`` role on the ``article`` table:
+**For example**, let's set the ``update`` permissions for the ``user`` role on the ``article`` table:
 
 The *Permissions* tab of the ``article`` table should look like this:
 
@@ -340,7 +340,7 @@ Click on the *Edit* icon next to the user/update cell. It should open up an edit
 
 .. image:: ../../../img/platform/manual/graphql-tutorial/tutorial-permissions-edit-empty.png
 
-Now, set the permissions as described above. It should finally look like this:
+Now, set the permissions as described above. It should eventually look like this:
 
 .. image:: ../../../img/platform/manual/graphql-tutorial/tutorial-permissions-edit-filled.png
 
@@ -353,7 +353,7 @@ Once you have set the permissions, you can try the anonymous query to fetch the 
 .. image:: ../../../img/platform/manual/graphql-tutorial/graphql_query_perm_success.png
 
 
-Next: Customise Schema with Postgres Views
+Next: Customise schema with Postgres views
 ------------------------------------------
 
 Next, let's head to :doc:`customise-schema-views`.

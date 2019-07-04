@@ -11,7 +11,7 @@ over PostgreSQL, an extremely versatile open source relational database. We crea
 data using the APIs provided by the ``data`` microservice.
 
 Any user with the ``admin`` role has full-access to the data microservice. All GraphQL requests to the ``data`` microservice
-are ``POST`` requests to ``/v1alpha1/graphql`` endpoint.
+are ``POST`` requests to the ``/v1alpha1/graphql`` endpoint.
 
 Explore using the API explorer & the query builder
 --------------------------------------------------
@@ -24,7 +24,7 @@ Run:
    $ hasura api-console
 
 This will open up the ``API console`` and show you the ``API explorer`` page which you can use to understand the APIs
-provided by the Data microservice.
+provided by the data microservice.
 
 .. image:: ../../../img/platform/manual/graphql-tutorial/tutorial-api-console.png
 
@@ -35,10 +35,10 @@ provided by the Data microservice.
    Head to ``API explorer > Data > GraphQL`` for GraphQL APIs or head to ``API explorer > Data > JSON Query Builder``
    for JSON APIs
 
-Inserting Data
+Inserting data
 --------------
 
-Let's insert a couple of authors. The full definition of `insert` request can be found :ref:`here <data_insert>`.
+Let's insert a couple of authors. The full definition of an `insert` request can be found :ref:`here <data_insert>`.
 
 .. code-block:: graphql
 
@@ -52,10 +52,10 @@ Let's insert a couple of authors. The full definition of `insert` request can be
 
 Note the ``returning`` key. We would like to get back the ``id`` assigned for each inserted row.
 
-Querying Data
+Querying data
 -------------
 
-The query language lets you make simple to complex queries.
+The query language lets you make simple, as well as complex queries.
 
 Let's look at a simple `select` query on the article table. The full definition of a `select` query can be
 found :ref:`here <data_select>`
@@ -69,7 +69,7 @@ found :ref:`here <data_select>`
 	  }
 	}
 
-This query returns ``id`` and ``title`` of rows from ``article`` table.
+This query returns the ``id`` and ``title`` rows from the ``article`` table.
 
 In the above query, we can have a ``where`` clause to apply filters on the data. Boolean operators like ``$and``, ``$or``,
 ``$not`` can be used in a ``where`` clause. See :ref:`here <BoolExp>` for a full list of supported Boolean operators.
@@ -99,11 +99,11 @@ Example,
       }
     }
 
-Updating Data
+Updating data
 -------------
 
 The request to update data consists of two parts - the new values and a ``where`` indicating what to update. The syntax
-of where clause is same as in the `select` query. For the full syntax of update request, see :ref:`here <data_update>`.
+of the where clause is same as the one in the `select` query. For the full syntax of an update request, see :ref:`here <data_update>`.
 
 .. code-block:: graphql
 
@@ -113,11 +113,11 @@ of where clause is same as in the `select` query. For the full syntax of update 
 	  }
 	}
 
-Delete Data
+Delete data
 -----------
 
-The request to delete data takes a ``where`` clause indicating what to delete. The syntax of where clause is same as in
-the `select` query. For the full syntax of delete request, see :ref:`here <data_delete>`.
+The request to delete data takes a ``where`` clause indicating what to delete. The syntax of the where clause is the same as the one in
+the `select` query. For the full syntax of a delete request, see :ref:`here <data_delete>`.
 
 .. code-block:: graphql
 
@@ -127,7 +127,7 @@ the `select` query. For the full syntax of delete request, see :ref:`here <data_
 	  }
 	}
 
-Next: Add Relationships to Data
+Next: Add relationships to data
 --------------------------------
 
 Next, let's head to :doc:`relationships`.

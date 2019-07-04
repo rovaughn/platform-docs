@@ -10,7 +10,7 @@ Project structure: conf/dev-mode.yaml
 If development mode is set as ``true`` for certain microservices, an environment variable mentioning the microservice is in development will be set.
 This can be used to output debug logs or messages.
 
-``gateway`` makes use of this to display context aware error pages. For e.g., when someone visits a route that does not exist, in development mode,
+``gateway`` makes use of this to display context aware error pages. For example, when someone visits a route that does not exist, in development mode,
 gateway shows an error page indicating all the routes that are available.
 
 .. code-block:: yaml

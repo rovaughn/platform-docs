@@ -54,7 +54,7 @@ This is the LetsEncrypt agent which is responsible for generating SSL certificat
 
 notify
 ^^^^^^
-This microservice handles the Email/SMS communication.
+This microservice handles the email/SMS communication.
 
 platform-sync
 ^^^^^^^^^^^^^

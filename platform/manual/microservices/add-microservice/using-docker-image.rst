@@ -30,7 +30,7 @@ Let's say you name the microservice ``<my-blog>``. Run the following command:
   $ hasura microservice create <my-blog> --image ghost:latest --port 2368
 
 This will create a new directory called ``<my-blog>`` in the ``microservices``
-directory with Kubernetes specs file ``k8s.yaml``:
+directory with a Kubernetes specs file ``k8s.yaml``:
 
 .. code-block:: bash
 
@@ -52,7 +52,7 @@ This will generate a route for the microservice and append it to
 
 .. admonition:: Behind The Scenes
 
-   Checkout :ref:`routes.yaml <hasura-dir-conf-routes.yaml>` to learn more about this file 
+   Check out :ref:`routes.yaml <hasura-dir-conf-routes.yaml>` to learn more about this file 
 
 Step 3: Git push and deploy!
 ----------------------------

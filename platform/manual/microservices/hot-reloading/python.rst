@@ -5,8 +5,8 @@ Using Gunicorn with Flask
 -------------------------
 
 `Gunicorn <http://gunicorn.org/>`_ has a ``reload`` mode which can restart the
-server if any of the dependent file changes on disk. Let's see how this works
-for the `Flask <http://flask.pocoo.org/>`_ microservice in
+server if any of the dependent files change on the disk. Let's see how this works
+for the `Flask <http://flask.pocoo.org/>`_ microservice in the
 `hasura/hello-python-flask
 <https://hasura.io/hub/project/hasura/hello-python-flask>`_ quickstart. The
 directory structure is as shown below: 
@@ -26,7 +26,7 @@ directory structure is as shown below:
  
 Executing ``gunicorn --reload src:app`` here will start gunicorn in reload mode.
 It will restart the server for any change in the python files. Here, we have
-kept all the configuration in ``gunicorn_config.py``. Hence we set the reload
+kept all the configuration in ``gunicorn_config.py``. Hence, we set the reload
 parameter in this file:
 
 .. code-block:: python
@@ -56,10 +56,10 @@ Let's look at the dockerfile now:
    CMD ["gunicorn", "--config", "./conf/gunicorn_config.py", "src:app"]
 
 As per step 4, the current microservice directory is copied into ``/app`` into
-the container image. So, after setting reload flag in either step 5 or in
-``gunicorn_conf.py`` (note the conf file take precedence over command line
+the container image. So, after setting the reload flag in either step 5 or in
+``gunicorn_conf.py`` (note that the conf file takes precedence over command line
 flags), you can execute the following command to sync the ``src`` directory
-(assuming microservice is called ``api``):
+(assuming the microservice is called ``api``):
 
 .. code-block:: bash
 
@@ -73,4 +73,4 @@ using another terminal window:
    $ hasura microservice open api
 
 Make some changes to ``server.py`` and save. Refresh the browser and voila! You
-can see that changes live in the browser tab.
+can see that it changes live in the browser tab.

@@ -8,7 +8,7 @@ Adding a microservice from a template
 
 .. note::
 
-   If you're starting with a new project head to `hasura.io/hub <https://hasura.io/hub>`_ and get started with a new hasura project that already has the boilerplate for your stack.
+   If you're starting with a new project head to `hasura.io/hub <https://hasura.io/hub>`_ and get started with a new Hasura project that already has the boilerplate for your stack.
 
 Use this guide if you are adding a microservice to your existing Hasura project.
 
@@ -39,7 +39,7 @@ Examples:
     # Clone microservices 'api' and 'ui' from 'hasura/hello-react'
     $ hasura microservice clone api ui --from hasura/hello-react
 
-Step 3: Tell the hasura CLI that you want to git-push to deploy this microservice
+Step 3: Tell the Hasura CLI that you want to git-push to deploy this microservice
 ---------------------------------------------------------------------------------
 
 Add configuration to your ``conf/ci.yaml`` file so that ``git push hasura master`` will
@@ -70,7 +70,7 @@ This command above will add the default route configuration for your microservic
 
 .. admonition:: Behind The Scenes
 
-   Checkout :ref:`routes.yaml <hasura-dir-conf-routes.yaml>` to learn more about this file
+   Check out :ref:`routes.yaml <hasura-dir-conf-routes.yaml>` to learn more about this file
 
 Step 5: Git push and deploy!
 ----------------------------

@@ -13,7 +13,7 @@ extra steps to be performed to verify the user's email.
 .. note::
 
   For this provider to send emails, you have to :doc:`enable an email provider <../../../notify/email/index>` in
-  the Hasura Notify microservice.
+  the Hasura notify microservice.
 
 Configuration
 -------------
@@ -87,7 +87,7 @@ To signup a user, make a request to the signup endpoint : ``/v1/signup``.
    }
 
 
-If the request is successful, Hasura Auth will send a verification email to the
+If the request is successful, Hasura auth will send a verification email to the
 given email address and will return a response with user details.
 
 This will not login the user automatically (unlike the ``username`` provider),
@@ -116,15 +116,15 @@ Typical response of the ``/v1/signup`` request is :
   session. This is null because at this point the email verification is
   pending, hence no session is created for the user.
 
-* ``hasura_roles``  is an list of all roles assigned to the user.
+* ``hasura_roles``  is a list of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id``  is the Hasura identifier of the user.
 
 
-Verifying Email
+Verifying email
 ~~~~~~~~~~~~~~~
 
-To verify the email address upon signup, Hasura Auth will send an email with a
+To verify the email address upon signup, Hasura auth will send an email with a
 unique token to the user's email address. The email template can be configured
 in your project inside ``conf/auth.yaml``. The email template must include the
 complete verification link along with the ``token`` parameter.
@@ -149,7 +149,7 @@ If it is successful, then your application should ask the user to login.
 Login
 ~~~~~
 
-To login a user make a request to the login endpoint: ``/v1/login``.
+To login a user makes a request to the login endpoint: ``/v1/login``.
 
 .. code-block:: http
 
@@ -184,7 +184,7 @@ Typical response of the ``/v1/login`` request is :
   session.
 * ``hasura_roles``  is an array of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id``  is the Hasura identifier of the user.
 
 
 Get user info
@@ -222,7 +222,7 @@ Typical response is :
   session.
 * ``hasura_roles``  is an array of all roles assigned to the user.
 
-* ``hasura_id``  is the hasura identifier of the user.
+* ``hasura_id``  is the Hasura identifier of the user.
 
 
 Logout
@@ -264,15 +264,15 @@ If a user has forgotten their password, it can be reset.
 
 .. note::
 
-  This flow is meant for users who have forgotten their password and
-  can't login. For logged-in user to change their password use
+  This process is meant for users who have forgotten their password and
+  can't login. For logged-in user to change their password, use the
   ``/v1/user/change-password`` endpoint.
 
 
 To reset a password first a reset token has to be obtained. This is done by
 sending a forgot password email to the user's email address.
 
-To send a forgot password email make a request to ``/v1/providers/email/forgot-password`` endpoint
+To send a forgot password email make a request to the ``/v1/providers/email/forgot-password`` endpoint
 with the user's email address.
 
 .. code-block:: http
@@ -290,7 +290,7 @@ email address.
 You have to configure the email templates in ``conf/auth.yaml`` (in your Hasura
 project) to include a link to your application in the email content.  This link
 will include a ``token`` parameter, that your application has to retrieve.
-After obtaining the ``token``, your application should make auth API call to
+After obtaining the ``token``, your application should make an auth API call to the
 ``/v1/providers/email/reset-password`` endpoint to reset the user's password.
 
 The reset password endpoint takes the ``token`` and the new password of the

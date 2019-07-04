@@ -1,8 +1,8 @@
 Passing ENV variables to a microservice
 ========================================
 
-There might be certain variables that your microservices need but depend on the environment the microservices are running
-in. eg: API keys for dev vs prod.
+There might be certain variables that your microservices need but they might depend on the environment the microservices are running
+in. For example, API keys for dev vs prod.
 
 You can provide environment variables (or env variables) for a microservice to use
 by editing the ``k8s.yaml`` file found at ``/microservices/<my-microservice>/k8s.yaml``
@@ -17,7 +17,7 @@ you get a highly configurable environment.
 Let's say you need to add four ENV variables as follows:
 
 * ``CLUSTER_NAME`` should get the name of the cluster
-* ``RELEASE_MODE`` should be ``production`` for cluster with alias ``prod`` and ``dev`` for all other clusters.
+* ``RELEASE_MODE`` should be ``production`` for the cluster with alias ``prod`` and ``dev`` for all other clusters
 * ``X_ACCNT_ID`` is a fixed value, say ``GH456C``
 * ``X_API_KEY`` is a secret value, say ``x.api.key``  (See :doc:`Project secrets <../project/secrets/index>`)
 

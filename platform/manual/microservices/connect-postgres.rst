@@ -31,7 +31,7 @@ To connect to any PostgreSQL instance, we need the hostname, port, username and 
    session-redis   Running   session-redis.hasura   
    sshd            Running   sshd.hasura        
 
-As we can see from the list, Postgres microservice is available at "Internal URL" (hostname) ``postgres.hasura``. Internal URL should be used while accessing any microservice from inside the cluster. Since our microservice is going to be deployed on the cluster, we should use the internal URL. The port is ``5432``.
+As we can see from the list, the Postgres microservice is available at "Internal URL" (hostname) ``postgres.hasura``. The internal URL should be used while accessing any microservice from inside the cluster. Since our microservice is going to be deployed on the cluster, we should use the internal URL. The port is ``5432``.
                
 Username and password can be accessed through Hasura Secrets.
 
@@ -62,7 +62,7 @@ The standard practice is to access these parameters as environment variables and
 
 (The following section assumes that you have a Hasura cluster and project ready, with at least one microservice [say ``<my-app>``])
 
-1. Edit ``k8s.yaml`` file inside ``microservices/<my-app>`` directory and add the highlighted code:
+1. Edit the ``k8s.yaml`` file inside the ``microservices/<my-app>`` directory and add the highlighted code:
 
    .. code-block:: yaml
       :emphasize-lines: 23-37
@@ -154,7 +154,7 @@ The standard practice is to access these parameters as environment variables and
 
    .. note::
 
-      Name of the database available through Hasura API Console and Hasura Data API is ``hasuradb``
+      The name of the database available through Hasura API Console and Hasura data API is ``hasuradb``
 
 
    An example with Python and psycopg2:

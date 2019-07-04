@@ -1,7 +1,7 @@
 Upgrading a cluster
 ===================
 
-Upgrading (ie: scaling) a cluster is only possible for a :doc:`Hasura pro-tier cluster <pro-tier/index>`.
+Upgrading (i.e. scaling) a cluster is only possible for a :doc:`Hasura pro-tier cluster <pro-tier/index>`.
 
 A cluster's initial configuration is set in ``clusters.yaml``.
 

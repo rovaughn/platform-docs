@@ -20,9 +20,9 @@ Adding collaborators to your project
 Assuming you already have a Hasura project and clusters,
 
 * Push your project to an online git repository (like |github-link|) and share the URL with all collaborators to share the project source code
-* Open |dashboard-link|
+* Open the |dashboard-link|
 * Click on a cluster name that is added to the project
-* Click on ``Collaborators`` tab
+* Click on the ``Collaborators`` tab
 * Add emails of those who you want to add as collaborators to give access to the cluster
 * Repeat for any other clusters
 
