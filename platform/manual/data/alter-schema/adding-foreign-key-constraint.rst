@@ -5,7 +5,7 @@ If many records will refer to the same data, it is more efficient and less error
 
 In this section, we will show how to add a foreign key constraint over a column. Consider a sample schema with an ``article`` and an ``author`` table. Lets try to add a foreign key constraint over the ``author_id`` column of the ``article`` table.
 
-#. Open the API Console and go to to the Data Tab.
+#. Open the API Console and go to the Data Tab.
 #. Choose the ``article`` table on the left panel.
 #. Click on the ``Modify`` tab.
 #. Click on the column name that you wish to add a foreign key constraint over (in this case, ``author_id``).
