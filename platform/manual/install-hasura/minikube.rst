@@ -183,3 +183,8 @@ resources Hasura created by executing the following commands:
    # once inside the VM,
    sudo rm -r /data/hasura-data
    # Ctrl+D to exit
+
+.. note::
+    
+    The Hasura Kubernetes Platform is available under these `Terms of Service <https://hasura.io/legal/platform-terms-of-service/>`_.
+

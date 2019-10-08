@@ -269,3 +269,7 @@ commands:
    kubectl delete clusterrolebinding hasura-cluster-admin-binding
 
    # Next, delete all the infrastructure components like disks, ip address etc.
+
+.. note::
+    
+    The Hasura Kubernetes Platform is available under these `Terms of Service <https://hasura.io/legal/platform-terms-of-service/>`_.

@@ -20,4 +20,4 @@ Docker for Desktop.
 
 .. note::
     
-    The Hasura Kubernetes Platform is available under these `Terms of Use <https://hasura.io/legal/platform-terms-of-use/>`_.
+    The Hasura Kubernetes Platform is available under these `Terms of Service <https://hasura.io/legal/platform-terms-of-service/>`_.

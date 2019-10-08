@@ -80,3 +80,7 @@ Deep dive
 
 Alternatively, if you'd like to get a deep understanding of how Hasura works, head to :doc:`The complete
 tutorial <../tutorial/index>`.
+
+.. note::
+    
+    The Hasura Kubernetes Platform is available under these `Terms of Service <https://hasura.io/legal/platform-terms-of-service/>`_.
