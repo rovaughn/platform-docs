@@ -8,25 +8,6 @@
     <a class="docs_label" href="{{ pathto('', 1) }}">
       <div class="inline-block hero"> docs </div>
     </a>
-    <a class="version_txt">
-      <select value="{{ version }}" onchange="location = this.value;" class="selected">
-        {%- if version == '0.13' %}
-          <option class="option_val" value="https://docs.{{ BASE_DOMAIN }}/0.13" selected="selected">v0.13</option>
-        {%- else -%}
-          <option class="option_val" value="https://docs.{{ BASE_DOMAIN }}/0.13">v0.13</option>
-        {% endif %}
-        {%- if version == '0.14' %}
-          <option class="option_val" value="https://docs.{{ BASE_DOMAIN }}/0.14/manual" selected="selected">v0.14</option>
-        {%- else -%}
-          <option class="option_val" value="https://docs.{{ BASE_DOMAIN }}/0.14/manual">v0.14</option>
-        {% endif %}
-        {%- if version == '0.15' %}
-          <option class="option_val" value="https://docs.{{ BASE_DOMAIN }}/0.15" selected="selected">v0.15</option>
-        {%- else -%}
-          <option class="option_val" value="https://docs.{{ BASE_DOMAIN }}/0.15">v0.15</option>
-        {% endif %}
-      </select>
-    </a>
   </div>
 
   {{ toc_full }}
